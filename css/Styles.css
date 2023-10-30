@@ -122,7 +122,6 @@ footer {
     background-position: 95% center; /* Adjust the position for the icon */
 }
 
-
 /* Style the circular buttons */
 .circular-button {
     display: flex;
@@ -139,8 +138,59 @@ footer {
     max-height: 100%; /* Ensure the image inside the button fits */
 }
 
+#general {
+    position: absolute;
+    transform: translateY(-20%) translateX(-50%);
+    width: 1600px;
+    height: 630px;
+    left: 50%;
+    z-index: 1;
+    border-radius: 60px;
+    background: #082138;
+    display: flex;
+    align-items: center;
+}
+
+#general img {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 800px;
+    height: 576.604px;
+    border-radius: 60px;
+    display: block;
+    object-fit: cover;
+}
+
+#general .text-container {
+    position: absolute;
+    top: 12.5%;
+    width: 680px;
+    margin-left: 53.5%;
+}
+
+#general h1 {
+    color: #FFF;
+    font-family: EB Garamond;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#general p {
+    color: #FFF;
+    font-family: EB Garamond;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
 /* Style the "Rekomendasi Buku" section */
 #rekomendasi-buku {
+    
     background-color: #f5f5f5;
     padding: 20px;
 }
