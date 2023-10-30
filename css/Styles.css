@@ -5,15 +5,38 @@ body, header {
 }
 
 /* Style the footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
+.footer {
+    background-color: #fff;
+    color: #000;
+    text-align: right;
     padding: 10px 0;
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    height: 100px;
     width: 100%;
+    box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.35);
+    display: flex; /* Use flexbox for vertical centering */
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center; /* Center content vertically */
 }
+
+/* Style the footer links */
+.footer a {
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none; /* Remove underlines from links */
+    margin: 0 50px; /* Add spacing between links if needed */
+    display: inline; /* Display links in a line */
+}
+
+.footer a:last-child {
+    margin-right: 50px;
+}
+
 
 /* Style the logo */
 .logo-container {
