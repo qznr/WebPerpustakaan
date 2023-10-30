@@ -64,8 +64,10 @@ footer {
     display: flex; /* Use flexbox for centering */
     justify-content: center; /* Horizontally center the content */
     background-image: url(../img/Group10.png);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 550px;
     text-align: center;
     color: #fff;
