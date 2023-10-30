@@ -4,20 +4,6 @@ body, header {
     padding: 0;
 }
 
-.navbar-logo {
-    float: left; /* Float the logo to the left */
-}
-
-.navbar-title {
-    float: left; /* Float the title to the left */
-    margin-left: 20px; /* Adjust the left margin to create space between logo and title */
-}
-
-.navbar-nav {
-    float: right; /* Float the navigation links to the right */
-}
-
-
 /* Style the footer */
 footer {
     background-color: #333;
