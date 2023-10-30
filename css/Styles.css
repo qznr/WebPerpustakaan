@@ -1,0 +1,80 @@
+/* Reset some default styles for the body and header */
+body, header {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-logo {
+    float: left; /* Float the logo to the left */
+}
+
+.navbar-title {
+    float: left; /* Float the title to the left */
+    margin-left: 20px; /* Adjust the left margin to create space between logo and title */
+}
+
+.navbar-nav {
+    float: right; /* Float the navigation links to the right */
+}
+
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.logo-container {
+    padding: 10px; /* Adjust padding as needed */
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 70%; /* The logo will adjust to the container's width */
+    height: auto; /* Maintain the logo's aspect ratio */
+}
+
+.title {
+    position: absolute;
+    font-family: 'EB Garamond', serif;
+    color: #000; /* Change text color */
+    font-size:40px; /* Change font size */
+    text-align: center;
+    display: block; /* Ensure the text is displayed as a block element */
+    width: 100%; /* Set width to 100% to center text within the container */
+    border-bottom: #000;
+    border-width: 6px;
+}
+
+.thin-shadow {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Style the "cover" class */
+.cover {
+    background-image: url(../img/Group10.png);
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed; /* Add this property to make the image fixed */
+    height: 550px;
+    mix-blend-mode: multiply;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0; /* Adjust the padding as needed */
+    margin-top: 15px; /* Adjust the top margin to your desired value */
+}
+
+/* Style the "Rekomendasi Buku" section */
+#rekomendasi-buku {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+
+/* Add more styles and customize as needed */
