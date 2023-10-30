@@ -41,15 +41,15 @@ footer {
 }
 
 .title {
+    float: none;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: 'EB Garamond', serif;
     color: #000; /* Change text color */
     font-size:40px; /* Change font size */
-    text-align: center;
-    display: block; /* Ensure the text is displayed as a block element */
-    width: 100%; /* Set width to 100% to center text within the container */
-    border-bottom: #000;
-    border-width: 6px;
+    border-bottom: 6px solid #999999;
 }
 
 .thin-shadow {
