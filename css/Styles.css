@@ -29,6 +29,7 @@ footer {
     width: 100%;
 }
 
+/* Style the logo */
 .logo-container {
     padding: 10px; /* Adjust padding as needed */
     display: flex;
@@ -65,7 +66,6 @@ footer {
     background-image: url(../img/Group10.png);
     background-size: contain;
     background-position: center;
-    background-attachment: fixed; /* Add this property to make the image fixed */
     height: 550px;
     text-align: center;
     color: #fff;
@@ -73,6 +73,7 @@ footer {
     margin-top: 15px; /* Adjust the top margin to your desired value */
 }
 
+/* Style the transparent box */
 .transparent-box {
     position: relative;
     width: 600px;
@@ -104,6 +105,7 @@ footer {
     font-size:50px;
 }
 
+/* Style the Search bar */
 .search-field {
     position: absolute;
     top: 70%;
@@ -138,6 +140,7 @@ footer {
     max-height: 100%; /* Ensure the image inside the button fits */
 }
 
+/* Style the "General" section */
 #general {
     position: absolute;
     transform: translateY(-20%) translateX(-50%);
@@ -184,8 +187,6 @@ footer {
     font-weight: 400;
     line-height: normal;
 }
-
-
 
 /* Style the "Rekomendasi Buku" section */
 #rekomendasi-buku {
