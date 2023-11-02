@@ -98,10 +98,13 @@
 }
 
 /*Style the login white box*/
-.login-white-box{
-    position: relative;
+.login-white-box {
+    position: absolute;
     width: 1086px;
     height: 748px;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
     flex-shrink: 0;
 }
 
@@ -159,7 +162,7 @@
     padding: 30px; 
 }
 
-.login-pass-box::before{
+.pass-box::before{
     position: absolute;
     content: "";
     display: block;
@@ -191,6 +194,7 @@
     position: relative;
     top: 61%;
     left: 12%;
+    width: 220px;
     transform: translate(-50%, -50%);
     flex-shrink: 0;
     justify-content: center;
