@@ -84,6 +84,23 @@ body, header {
     margin-top: 15px; /* Adjust the top margin to your desired value */
 }
 
+/* Style the login cover */
+.login-cover{
+    top : 40%;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Horizontally center the content */
+    background-image: url(../img/Group10.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 1000px;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0; /* Adjust the padding as needed */
+    margin-top: 15px; /* Adjust the top margin to your desired value */
+}
+
 /* Style the transparent box */
 .transparent-box {
     position: relative;
@@ -105,6 +122,7 @@ body, header {
     
 }
 
+
 .forty-percent-text-white{
     float: none;
     position: absolute;
@@ -115,6 +133,110 @@ body, header {
     color: #fff;
     font-size:50px;
 }
+
+/*Style the login white box*/
+.login-white-box{
+    position: relative;
+    width: 1086px;
+    height: 748px;
+    flex-shrink: 0;
+}
+
+.login-white-box::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1086px;
+    height: 748px;
+    border-radius: 60px;
+    background: rgba(214, 214, 214, 0.90);
+}
+
+.login-text{
+    float: none;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 60px;
+    position: absolute;
+}
+
+/* Style the login username and password box */
+.login-username-box{
+    position: relative;
+    top: 40%;
+    width: 866px;
+    height: 78px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    font-size: 50px;
+    padding: 30px;
+}
+
+.login-username-box::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 866px;
+    height: 78px;
+    border-radius: 60px;
+    background: rgba(238, 238, 238, 0.70);
+}
+
+.login-pass-box{
+    position: relative;
+    top: 55%;
+    width: 866px;
+    height: 78px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    font-size: 50px;
+    padding: 30px; 
+}
+
+.login-pass-box::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 866px;
+    height: 78px;
+    border-radius: 60px;
+    background: rgba(238, 238, 238, 0.70);
+}
+
+/* Style the login button */
+.login-button{
+    position: relative;
+    display: flex;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 203px;
+    height: 92px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #082138;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+}
+
+/* Style the Sign Up button */
+.signUp-button{
+    position: relative;
+    top: 61%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #000;
+    font-weight: 400;
+}
+
 
 /* Style the Search bar */
 .search-field {
