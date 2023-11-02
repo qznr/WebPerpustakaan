@@ -130,7 +130,7 @@
 }
 
 /* Style the login username and password box */
-.login-username-box{
+.login-input-box{
     position: relative;
     top: 40%;
     width: 866px;
@@ -141,28 +141,11 @@
     padding: 30px;
 }
 
-.login-username-box::before{
-    position: absolute;
-    content: "";
-    display: block;
-    width: 866px;
-    height: 78px;
-    border-radius: 60px;
-    background: rgba(238, 238, 238, 0.70);
+.login-input-box + .login-input-box{
+    margin-top: 90px;
 }
 
-.login-pass-box{
-    position: relative;
-    top: 55%;
-    width: 866px;
-    height: 78px;
-    flex-shrink: 0;
-    border-radius: 60px;
-    font-size: 50px;
-    padding: 30px; 
-}
-
-.pass-box::before{
+.login-input-box::before{
     position: absolute;
     content: "";
     display: block;
@@ -176,7 +159,7 @@
 .login-button{
     position: relative;
     display: flex;
-    top: 68%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 203px;
@@ -192,7 +175,7 @@
 /* Style the Sign Up button */
 .signUp-button{
     position: relative;
-    top: 61%;
+    top: 48%;
     left: 12%;
     width: 220px;
     transform: translate(-50%, -50%);
