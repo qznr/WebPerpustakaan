@@ -2,11 +2,7 @@
 body, header {
     margin: 0;
     padding: 0;
-    zoom: 67%;
-    min-height: 2995px;
-    margin-bottom: 100px;
 }
-
 
 /* Style the footer */
 .footer {
@@ -162,7 +158,7 @@ body, header {
     width: 1600px;
     height: 630px;
     left: 50%;
-    /* z-index: 1; */
+    z-index: 1;
     border-radius: 60px;
     background: #082138;
     display: flex;
@@ -210,58 +206,5 @@ body, header {
     padding: 20px;
 }
 
-/* Style Pinjam Sekarang! */
-.choices {
-    position: relative;
-    top : 40%;
-    display: flex; /* Use flexbox for centering */
-    background-color: #eee;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 560px;
-    padding: 100px 0; /* Adjust the padding as needed */
-    margin-top: 600px; /* Adjust the top margin to your desired value */
-    align-items: center;
-}
-
-.choices a {
-    position: relative;
-    color: black;
-    font-family: EB Garamond;
-    font-size: 86px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-left: 3%;
-}
-.choices .card{
-    position: relative;
-    width: 330px;
-    height: 505px;
-    background-color: #082138;
-    overflow: hidden;
-    margin-left: 5%;
-    border-radius: 50px;
-    align-items: center;
-}
-
-.choices img {
-    margin-top: 15%;
-    max-width: 35%; /* The logo will adjust to the card's width */
-    height: auto;
-}
-
-.choices h2 {
-    color: #FFF;
-    font-family: EB Garamond;
-    font-size: 46px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    max-width: 80%;
-    margin-top: 10%;
-}
 
 /* Add more styles and customize as needed */
