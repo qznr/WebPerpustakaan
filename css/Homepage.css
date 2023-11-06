@@ -1,3 +1,4 @@
+/* (REQUIRED EVERY CSS FILE) */
 /* Reset some default styles for the body and header */
 body, header {
     margin: 0;
@@ -7,10 +8,12 @@ body, header {
     margin-bottom: 100px;
 }
 
+/* (REQUIRED EVERY CSS FILE) */
 .navbar {
     position: sticky;
 }
 
+/* (REQUIRED EVERY CSS FILE) */
 /* Style the footer */
 .footer {
     background-color: #fff;
@@ -27,6 +30,7 @@ body, header {
     align-items: center; /* Center content vertically */
 }
 
+/* (REQUIRED EVERY CSS FILE) */
 /* Style the footer links */
 .footer a {
     color: #000;
@@ -45,6 +49,7 @@ body, header {
 }
 
 
+/* (REQUIRED EVERY CSS FILE) */
 /* Style the logo */
 .logo-container {
     padding: 10px; /* Adjust padding as needed */
@@ -72,6 +77,23 @@ body, header {
 
 .thin-shadow {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* (REQUIRED EVERY CSS FILE) */
+/* Style the circular buttons */
+.circular-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px; /* Adjust the width of the circular button */
+    height: 75px; /* Adjust the height of the circular button */
+    border-radius: 50%; /* Make the button circular */
+    margin-right: 20px;
+}
+
+.circular-button img {
+    max-width: 100%; /* Ensure the image inside the button fits */
+    max-height: 100%; /* Ensure the image inside the button fits */
 }
 
 /* Style the "cover" class */
@@ -140,22 +162,6 @@ body, header {
     background-image: url(../img/search.png); /* Set the URL to your search icon image */
     background-repeat: no-repeat;
     background-position: 95% center; /* Adjust the position for the icon */
-}
-
-/* Style the circular buttons */
-.circular-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 75px; /* Adjust the width of the circular button */
-    height: 75px; /* Adjust the height of the circular button */
-    border-radius: 50%; /* Make the button circular */
-    margin-right: 20px;
-}
-
-.circular-button img {
-    max-width: 100%; /* Ensure the image inside the button fits */
-    max-height: 100%; /* Ensure the image inside the button fits */
 }
 
 /* Style the "General" section */
