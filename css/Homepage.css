@@ -221,18 +221,19 @@ body, header {
 
 /* Style Pinjam Sekarang! */
 .choices {
-    position: relative;
-    top : 40%;
-    display: flex; /* Use flexbox for centering */
+    position: flex;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     background-color: #eee;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 560px;
-    padding: 100px 0; /* Adjust the padding as needed */
-    margin-top: 600px; /* Adjust the top margin to your desired value */
-    align-items: center;
+    margin-top: 30%;
+    padding: 100px;
+    
 }
 
 .choices a {
@@ -244,9 +245,11 @@ body, header {
     font-weight: 400;
     line-height: normal;
     margin-left: 3%;
+    
 }
 .choices .card{
     position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     width: 330px;
     height: 505px;
     background-color: #082138;
@@ -254,12 +257,31 @@ body, header {
     margin-left: 5%;
     border-radius: 50px;
     align-items: center;
+    transition: transform 0.3s ease;
 }
 
-.choices img {
+.choices .card:hover {
+    transform: scale(1.05); /* Increase the scale on hover (you can adjust the value) */
+    background-color: #000000;
+}
+
+.choices .card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    width: 100%; /* Ensure the anchor takes up the entire card */
+    margin-left: 62%; /* Position*/
+}
+
+.choices img{
     margin-top: 15%;
     max-width: 35%; /* The logo will adjust to the card's width */
     height: auto;
+    transition: transform 0.3s ease;
+}
+
+.choices img:hover {
+    transform: scale(1.1); /* Increase the scale on hover (you can adjust the value) */
 }
 
 .choices h2 {
