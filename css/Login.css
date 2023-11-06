@@ -4,7 +4,6 @@ body, header {
     margin: 0;
     padding: 0;
     zoom: 67%;
-    min-height: 2995px;
     margin-bottom: 100px;
 }
 
@@ -106,7 +105,7 @@ body, header {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment:fixed;
-    height:1000px;
+    height:900px;
     text-align: center;
     color: #fff;
     padding: 100px 0; /* Adjust the padding as needed */
