@@ -95,96 +95,105 @@ body, header {
     max-height: 100%; /* Ensure the image inside the button fits */
 }
 
-/* Style the cover */
-.register-cover{
-    top: 40%;
-    display: flex;
-    justify-content: center;
+.about-cover{
+    top : 40%;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Horizontally center the content */
     background-image: url(../img/Group10.png);
-    background-size: 100% 100%; /* Menutupi seluruh elemen */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 300vh;
+    height: 150px;
     text-align: center;
     color: #fff;
-    padding: 10vh 0; /* Menyesuaikan padding menggunakan viewport height */
+    padding: 100px 0; /* Adjust the padding as needed */
     margin-top: 15px; /* Adjust the top margin to your desired value */
 }
 
-/* Style the register white box */
-.register-white-box{
-    position: absolute;
-    width: 1086px;
-    height: 700px;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+.about-imgsection{
+    position: flex;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 560px;
+    margin-top: 4%;
+    padding: 100px;  
+}
+
+.about-img{
+    position: flex;
+    width: 903px;
+    height: 655px;
     flex-shrink: 0;
 }
 
-.register-white-box::before{
-    position: absolute;
-    content: "";
-    display: block;
-    width: 1086px;
-    height: 1900px;
-    border-radius: 60px;
-    background: rgba(214, 214, 214, 0.90);
+.about-textcontainer{
+    position: flex;
+    margin-left: 70px;
+    transform: translatey(-10%);
 }
 
-/* Style the register text */
-.register-text{
-    float: none;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.about-textcontainer h1{
     color: #000;
     font-family: EB Garamond;
-    font-size: 60px;
-    position: absolute;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-/* Style the registration form */
-.register-input-box{
-    position: relative;
-    top: 40%;
-    width: 866px;
-    height: 78px;
-    flex-shrink: 0;
-    border-radius: 60px;
+.about-textcontainer h3{
+    color: #000;
+    font-family: EB Garamond;
     font-size: 50px;
-    padding: 30px; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-
-.register-input-box + .register-input-box {
-    margin-top: 100px; /* Add margin to the top of the input input box */
-}
-
-.register-input-box::before{
-    position: absolute;
-    content: "";
-    display: block;
-    width: 866px;
-    height: 78px;
-    border-radius: 60px;
-    background: rgba(238, 238, 238, 0.70);
-}
-
-/* Style the register button */
-.register-button{
-    position: relative;
-    display: flex;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 250px;
-    height: 100px;
+.about-textcontainer p{
+    margin-top: 20px;
+    width: 753px;
+    height: 302px;
     flex-shrink: 0;
-    border-radius: 20px;
-    background: #082138;
-    justify-content: center;
-    align-items: center;
-    font-size: 45px;
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.about-contacts{
+    position: flex;
+    height: 250px;
+    flex-shrink: 0;
+    margin-top: 90px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: #000;
+    text-align: center;
+    font-family: EB Garamond;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.about-contacts p{
+    margin-top: 30px;
+}
+
+.about-back{
+    position: absolute;
+    height: 220px;
+    transform: translateX(30%);
+    flex-shrink: 0;
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
