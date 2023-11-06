@@ -6,6 +6,7 @@ body, header {
     zoom: 67%;
     min-height: 2995px;
     margin-bottom: 100px;
+    box-sizing: border-box;
 }
 
 /* (REQUIRED EVERY CSS FILE) */
@@ -221,7 +222,7 @@ body, header {
 
 /* Style Pinjam Sekarang! */
 .choices {
-    position: flex;
+    position: relative;
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
@@ -233,7 +234,6 @@ body, header {
     height: 560px;
     margin-top: 30%;
     padding: 100px;
-    
 }
 
 .choices a {
@@ -244,9 +244,38 @@ body, header {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-left: 3%;
+    margin-right: 3%;
     
 }
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 100px;
+    position: relative;
+}
+
+  /* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0 -5px;
+}
+
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  /* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+.column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    }
+}
+
 .choices .card{
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
@@ -294,5 +323,65 @@ body, header {
     max-width: 80%;
     margin-top: 10%;
 }
+
+
+/* Rekomendasi Buku*/
+.rekomendasi-buku{
+    position: flex;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.rekomendasi-buku h2{
+    margin-top: 8%;
+    color: black;
+    font-family: EB Garamond;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Cover Rekomendasi Buku */
+.container{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    width: 1920px; 
+    height: 100%;
+    margin-top: 5%;
+}
+
+.slide-wrapper{
+    position: relative;
+    max-width: 1920px;
+}
+
+.slide-wrapper .image-list{
+    display: grid;
+    gap: 5%;
+    overflow-x: auto;
+    scrollbar-width:auto !important;
+    grid-template-columns: repeat(10,1fr);
+}
+
+.slide-wrapper .image-list .image-item {
+    width: 380px;
+    height: 563px;
+    object-fit: cover;
+}
+
+.lihat h2 {
+    color: black;
+    font-family: EB Garamond;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 1%;
+    margin-right: 5%;
+}
+
 
 /* Add more styles and customize as needed */
