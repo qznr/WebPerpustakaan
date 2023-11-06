@@ -97,20 +97,21 @@ body, header {
 
 /* Style the login cover */
 .login-cover{
-    top : 40%;
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Horizontally center the content */
+    top: 40%;
+    display: flex;
+    justify-content: center;
     background-image: url(../img/Group10.png);
-    background-size: cover;
+    background-size: 100% 100%; /* Menutupi seluruh elemen */
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment:fixed;
-    height:900px;
+    background-attachment: fixed;
+    height: 130vh;
     text-align: center;
     color: #fff;
-    padding: 100px 0; /* Adjust the padding as needed */
+    padding: 10vh 0; /* Menyesuaikan padding menggunakan viewport height */
     margin-top: 15px; /* Adjust the top margin to your desired value */
 }
+
 
 /*Style the login white box*/
 .login-white-box {
