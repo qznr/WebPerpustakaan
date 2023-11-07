@@ -95,7 +95,7 @@ body, header {
     max-height: 100%; /* Ensure the image inside the button fits */
 }
 
-/* Style the web background */
+/*Style for background web */
 .background {
     top : 40%;
     display: flex; /* Use flexbox for centering */
@@ -113,9 +113,7 @@ body, header {
     margin-top: 15px; /* Adjust the top margin to your desired value */
 }
 
-/* Style the request box */
-
-.request-box {
+.donasi-box {
     width: 1086px;
     height: 1222px;
     flex-shrink: 0;
@@ -123,7 +121,7 @@ body, header {
     background: rgba(214, 214, 214, 0.90);
 }
 
-.request-headline {
+.donasi-headline {
     width: 620px;
     height: 110px;
     margin :105px 228px 54px 238px ;
@@ -137,11 +135,10 @@ body, header {
     line-height: normal;
 }
 
-.request-box input {
+.donasi-box input {
     width: 866px;
     height: 78px;
     flex-shrink: 0;
-    color: black;
     margin-bottom: 111px;
     padding : 9px 549px 0px 30px;
     border-radius: 60px;
@@ -149,7 +146,7 @@ body, header {
 }
 
 ::placeholder {
-   color: #000;
+    color: #000;
 }
 
 .input-text {
