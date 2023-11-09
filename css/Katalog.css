@@ -1,8 +1,10 @@
+/* (REQUIRED EVERY CSS FILE) */
+/* Reset some default styles for the body and header */
 body, header {
     margin: 0;
     padding: 0;
     zoom: 67%;
-    min-height: 2047px;
+    min-height: 2995px;
     margin-bottom: 100px;
     box-sizing: border-box;
 }
@@ -153,9 +155,6 @@ body, header {
     font-family: 'EB Garamond', serif;
     font-size: 30px;
 }
-
-
-
 
 /* Style the Search bar */
 .search-field {
