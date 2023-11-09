@@ -248,13 +248,6 @@ body, header {
     
 }
 
-.column {
-    float: left;
-    width: 25%;
-    padding: 0 100px;
-    position: relative;
-}
-
   /* Remove extra left and right margins, due to padding in columns */
 .row {
     margin: 0 -5px;
@@ -267,14 +260,6 @@ body, header {
     clear: both;
 }
 
-  /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-.column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-    }
-}
 
 .choices .card{
     position: relative;
@@ -381,6 +366,14 @@ body, header {
     line-height: normal;
     margin-top: 1%;
     margin-right: 5%;
+}
+
+/* Add this CSS code in your stylesheet to customize the card width on small screens */
+@media (max-width: 768px) {
+    .choices .card {
+        max-width: 100%; /* Allow it to take up the full width on smaller screens */
+        margin-left: 5%; /* Adjust margin as needed */
+    }
 }
 
 
