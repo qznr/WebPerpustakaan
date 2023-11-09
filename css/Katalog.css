@@ -4,7 +4,7 @@ body, header {
     margin: 0;
     padding: 0;
     zoom: 67%;
-    min-height: 2995px;
+    min-height: 2050px;
     margin-bottom: 100px;
     box-sizing: border-box;
 }
@@ -172,3 +172,34 @@ body, header {
     background-repeat: no-repeat;
     background-position: 95% center; /* Adjust the position for the icon */
 }
+
+.the-body {
+    position: relative;
+    display: flex;
+    margin: 75px auto;
+    justify-content: center;
+    align-items: center;
+    width: 2050px;
+    height: 1250px;
+    background-color: #082138;
+    overflow: hidden;
+}
+
+.the-body .image-list{
+    display: grid;
+    width: 98%;
+    gap: 5%;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(10,2fr);
+    max-height: 1250px
+}
+
+.the-body .image-list .image-item {
+    width: 380px;
+    height: 563px;
+    object-fit: cover;
+    grid-row: span 1; /* Place image items in the first row */
+    grid-column: span 2; /* Make each image item span 2 columns */
+}
+
