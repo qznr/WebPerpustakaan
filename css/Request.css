@@ -4,7 +4,9 @@ body, header {
     margin: 0;
     padding: 0;
     zoom: 67%;
+    min-height: 2995px;
     margin-bottom: 100px;
+    box-sizing: border-box;
 }
 
 /* (REQUIRED EVERY CSS FILE) */
@@ -93,6 +95,17 @@ body, header {
 .circular-button img {
     max-width: 100%; /* Ensure the image inside the button fits */
     max-height: 100%; /* Ensure the image inside the button fits */
+}
+
+/* (REQUIRED EVERY CSS FILE) */
+/* Style the dropdown text */
+.drop-text{
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 /* Style the web background */
