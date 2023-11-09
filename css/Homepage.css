@@ -245,7 +245,6 @@ body, header {
     font-weight: 400;
     line-height: normal;
     margin-right: 3%;
-    
 }
 
   /* Remove extra left and right margins, due to padding in columns */
@@ -258,22 +257,6 @@ body, header {
     content: "";
     display: table;
     clear: both;
-}
-
-.column {
-    float: left;
-    width: 25%;
-    padding: 0 100px;
-    position: relative;
-}
-
-  /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-.column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-    }
 }
 
 .choices .card{
@@ -381,6 +364,52 @@ body, header {
     line-height: normal;
     margin-top: 1%;
     margin-right: 5%;
+}
+
+/* Add this CSS code in your stylesheet to customize the card width on small screens */
+@media (max-width: 992px) {
+    .choices .card{
+        width: 100%;
+        height: 120px;
+        margin-left: 0%;
+        border-radius: 0px;
+        align-items: center;
+    }
+    
+    .choices .card:hover {
+        transform: scale(1.05); /* Increase the scale on hover (you can adjust the value) */
+        background-color: #000000;
+    }
+    
+    .choices .card a {
+        background-color: #000;
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        width: 100%; /* Ensure the anchor takes up the entire card */
+    }
+    
+    .choices img{
+        display: none;
+    }
+
+    .choices h2 {
+        margin: initial;
+        color: #FFF;
+        font-family: EB Garamond;
+        font-size: 2em;
+    }
+
+    .choices a {
+        position: relative;
+        color: black;
+        font-family: EB Garamond;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-bottom: 15px; 
+    }
 }
 
 

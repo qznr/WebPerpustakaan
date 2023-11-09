@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap">
     <link rel="stylesheet" href="css/Homepage.css">
     <!-- Include Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <title>Perpustakaan</title>
 </head>
@@ -19,7 +19,7 @@
         <span class="navbar-text text-center title">
             Beranda
         </span>
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ms-auto">
             <li class="nav-item">
                 <a class="nav-link circular-button" href="#">
                     <img src="img/Book.png" alt="Button 1">
@@ -56,42 +56,39 @@
         </div>
     </section>
 
-    <div class = "choices">
-        <a href="#">
-            Pinjam <br />Sekarang!
-        </a>
+    <div class = "choices d-flex flex-column flex-lg-row">
+        
+        <a href="#" class="text-center d-none d-lg-block">Pinjam <br />Sekarang!</a>
+        <a href="#" class="text-center d-block d-lg-none">Pinjam Sekarang!</a>
 
         <div class="row">
-            <div class="column">
+            <div class="col-xl-3 col-lg-12">
                 <div class="card">
                     <img src="img/Book2.png" alt="book2">
                     <h2 class="text-center">Cari dan Pinjam Buku Pilihanmu</h2>
                 </div>
             </div>
-            <div class="column">
+            <div class="col-xl-3 col-lg-12">
                 <div class="card">
                     <img src="img/perpanjang.png" alt="perpanjang">
                     <h2 class="text-center">Perpanjang Masa Pinjam Bukumu</h2>
                 </div>
             </div>
-            <div class="column">
+            <div class="col-xl-3 col-lg-12">
                 <div class="card">
-                    <a href="#"> 
-                        <img src="img/donation.png" alt="donasi">
-                    </a>
+                    <a href="#"> <img src="img/donation.png" alt="donasi"> </a>
                     <h2 class="text-center">Bagi Kebaikan Dengan Donasi Bukumu</h2>
                 </div>
             </div>
-            <div class="column">
+            <div class="col-xl-3 col-lg-12s">
                 <div class="card">
-                    <a href="Request.html">
-                        <img src="img/request.png" alt="request">
-                    </a>
+                    <a href="Request.html"> <img src="img/request.png" alt="request"> </a>
                     <h2 class="text-center">Tidak Ada Buku Yang Dicari? </h2>
                 </div>  
             </div>
         </div>
     </div>
+
 
     <div class="rekomendasi-buku">
         <h2 class="text-center"> REKOMENDASI BUKU </h2>
