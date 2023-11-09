@@ -122,7 +122,8 @@ body, header {
 }
 
 .detail-textcontainer {
-    margin-left: 20%;
+    margin-top: 5%;
+    margin-left: 15%;
     transform: translateY(-10%);
 }
 
@@ -155,7 +156,7 @@ body, header {
 }
 
 .detail-textcontainer p {
-    width: 50%; /* Menggunakan persentase untuk lebar elemen */
+    width: 1187px; /* Menggunakan persentase untuk lebar elemen */
     margin-top: 50px;
     color: #000;
     font-family: 'EB Garamond';
