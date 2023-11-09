@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap">
-    <link rel="stylesheet" href="css/Request.css">
-    <!-- Include Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <title>Request</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap">
+        <link rel="stylesheet" href="css/Request.css">
+        <!-- Include Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <title>Request</title>
+    </head>
 <body>
-    <!--Navbar start-->
-    <nav class="navbar navbar-expand-lg navbar-white bg-white thin-shadow fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-white bg-white thin-shadow fixed-top ">        
         <a class="navbar-brand logo-container" href="#">
             <img src="img/logo-perpus.png" alt="Logo">
         </a>
         <span class="navbar-text text-center title">
-            Request
+            Beranda
         </span>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown"></div>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link circular-button" href="#">
@@ -30,14 +31,17 @@
                     <img src="img/cart.png" alt="Button 2">
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link circular-button" href="#">
+            <li class="nav-item dropdown">
+                <a class="nav-link circular-button" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="img/default-user.png" alt="Button 3">
                 </a>
-            </li>
-        </ul>
-    </nav>
-    <!--Navbar end-->
+                <ul class="dropdown-menu">
+                    <li><a class="drop-text dropdown-item" href="#">Login</a></li>
+                </ul>
+            </li>          
+        </ul>                        
+    </div>
+</nav>
 
     <!--Content start-->
     <div class="background">
