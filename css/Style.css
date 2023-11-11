@@ -12,6 +12,7 @@ body, header {
 
 .navbar {
     position: sticky;
+    height: 12vh;
 }
 
 /* Style the logo */
@@ -78,7 +79,7 @@ body, header {
     padding: 10px 0;
     position: fixed;
     bottom: 0;
-    height: 100px;
+    height: 12vh;
     width: 100%;
     box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.35);
     display: flex; /* Use flexbox for vertical centering */
@@ -120,35 +121,35 @@ body, header {
 }
 
 .about .cover{
-    height: 150px;
+    height: 23vh;
 }
 
 .detail-buku .cover{
-    height: 150px;
+    height: 23vh;
 }
 
 .donasi .cover{
-    height: 2538px;
+    height: 390vh;
 }
 
 .homepage .cover{
-    height: 550px;;
+    height: 84vh;;
 }
 
 .katalog .cover{
-    height: 379px;
+    height: 58vh;
 }
 
 .login .cover{
-    height: 130vh;
+    height: 145vh;
 }
 
 .register .cover{
-    height: 2358px;
+    height: 330vh;
 }
 
 .request .cover{
-    height: 2538px;
+    height: 390vh;
 }
 
 /*---------------------------------------------------------WHITE BOX---------------------------------------------------------------*/
@@ -170,7 +171,8 @@ body, header {
 }
 
 .register .white-box{
-    top: 110%;
+    margin-top: 30%;
+    /* top: 110%; */
     content: "";
     display: block;
     width: 1086px;
