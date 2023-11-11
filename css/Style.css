@@ -152,6 +152,10 @@ body, header {
     height: 145vh;
 }
 
+.donasi .cover{
+    height: 145vh;
+}
+
 
 /*---------------------------------------------------------WHITE BOX---------------------------------------------------------------*/
 .white-box {
@@ -189,6 +193,15 @@ body, header {
     border-radius: 60px;
     background: rgba(214, 214, 214, 0.90);
 }
+
+.donasi .white-box {
+    width: 1086px;
+    height: 1222px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    background: rgba(214, 214, 214, 0.90);
+}
+
 /*---------------------------------------------------------TRANSPARENT BOX---------------------------------------------------------------*/
 .transparent-box {
     position: relative;
@@ -247,6 +260,20 @@ body, header {
 }
 
 .request .text {
+    width: 620px;
+    height: 110px;
+    margin :105px 228px 54px 238px ;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: EB Garamond;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.donasi .text {
     width: 620px;
     height: 110px;
     margin :105px 228px 54px 238px ;
@@ -326,6 +353,24 @@ body, header {
     color: #000;
 }
 
+.donasi .input-box {
+    width: 866px;
+    height: 78px;
+    flex-shrink: 0;
+    margin-bottom: 111px;
+    padding : 9px 549px 0px 30px;
+    border-radius: 60px;
+    transform: translateY(-267%);
+    background: rgba(238, 238, 238, 0.70);
+    flex-shrink: 0;
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 /*---------------------------------------------------------BUTTON---------------------------------------------------------------*/
 .button{
     position: relative;
@@ -382,6 +427,22 @@ body, header {
 }
 
 .request button {
+    width: 240px;
+    height: 92px;
+    flex-shrink: 0;
+    transform: translateY(300%);
+    border-radius: 20px;
+    background: #082138;
+    color: #EEE;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.donasi button {
     width: 240px;
     height: 92px;
     flex-shrink: 0;
