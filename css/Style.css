@@ -1,56 +1,19 @@
-/* (REQUIRED EVERY CSS FILE) */
+/*---------------------------------------------------------NAVBAR---------------------------------------------------------------*/
+
 /* Reset some default styles for the body and header */
 body, header {
     margin: 0;
     padding: 0;
     zoom: 67%;
-    min-height: 2995px;
+    /* min-height: 2995px; */
     margin-bottom: 100px;
     box-sizing: border-box;
 }
 
-/* (REQUIRED EVERY CSS FILE) */
 .navbar {
     position: sticky;
 }
 
-/* (REQUIRED EVERY CSS FILE) */
-/* Style the footer */
-.footer {
-    background-color: #fff;
-    color: #000;
-    text-align: right;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.35);
-    display: flex; /* Use flexbox for vertical centering */
-    justify-content: flex-end; /* Align content to the right */
-    align-items: center; /* Center content vertically */
-}
-
-/* (REQUIRED EVERY CSS FILE) */
-/* Style the footer links */
-.footer a {
-    color: #000;
-    font-family: EB Garamond;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: none; /* Remove underlines from links */
-    margin: 0 50px; /* Add spacing between links if needed */
-    display: inline; /* Display links in a line */
-}
-
-.footer a:last-child {
-    margin-right: 50px;
-}
-
-
-/* (REQUIRED EVERY CSS FILE) */
 /* Style the logo */
 .logo-container {
     padding: 10px; /* Adjust padding as needed */
@@ -80,7 +43,6 @@ body, header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* (REQUIRED EVERY CSS FILE) */
 /* Style the circular buttons */
 .circular-button {
     display: flex;
@@ -97,7 +59,6 @@ body, header {
     max-height: 100%; /* Ensure the image inside the button fits */
 }
 
-/* (REQUIRED EVERY CSS FILE) */
 /* Style the dropdown text */
 .drop-text{
     color: #000;
@@ -107,46 +68,113 @@ body, header {
     font-weight: 400;
     line-height: normal;
 }
-/* Style the login cover */
-.login-cover{
-    top: 40%;
-    display: flex;
-    justify-content: center;
+
+/*---------------------------------------------------------FOOTER---------------------------------------------------------------*/
+/* Style the footer */
+.footer {
+    background-color: #fff;
+    color: #000;
+    text-align: right;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.35);
+    display: flex; /* Use flexbox for vertical centering */
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center; /* Center content vertically */
+}
+
+/* Style the footer links */
+.footer a {
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none; /* Remove underlines from links */
+    margin: 0 50px; /* Add spacing between links if needed */
+    display: inline; /* Display links in a line */
+}
+
+.footer a:last-child {
+    margin-right: 50px;
+}
+
+/*---------------------------------------------------------COVER---------------------------------------------------------------*/
+.cover{
+    top : 40%;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Horizontally center the content */
     background-image: url(../img/Group10.png);
-    background-size: 100% 100%; /* Menutupi seluruh elemen */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 130vh;
     text-align: center;
     color: #fff;
-    padding: 10vh 0; /* Menyesuaikan padding menggunakan viewport height */
+    padding: 100px 0; /* Adjust the padding as needed */
     margin-top: 15px; /* Adjust the top margin to your desired value */
 }
 
+.about .cover{
+    height: 150px;
+}
 
-/*Style the login white box*/
-.login-white-box {
+.detail-buku .cover{
+    height: 150px;
+}
+
+.donasi .cover{
+    height: 2538px;
+}
+
+.homepage .cover{
+    height: 550px;;
+}
+
+.katalog .cover{
+    height: 379px;
+}
+
+.login .cover{
+    height: 130vh;
+}
+
+.register .cover{
+    height: 300vh;
+}
+
+.request .cover{
+    height: 2538px;
+}
+
+/*---------------------------------------------------------WHITE BOX---------------------------------------------------------------*/
+.white-box {
     position: absolute;
-    width: 1086px;
-    height: 748px;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     flex-shrink: 0;
 }
 
-.login-white-box::before{
-    position: absolute;
-    content: "";
-    display: block;
+.login .white-box{
     width: 1086px;
     height: 748px;
+    content: "";
+    display: block;
     border-radius: 60px;
     background: rgba(214, 214, 214, 0.90);
 }
 
-.login-text{
+/*---------------------------------------------------------TEXT---------------------------------------------------------------*/
+.text{
+    
+}
+
+.login .text{
     float: none;
     top: 20%;
     left: 50%;
@@ -157,8 +185,8 @@ body, header {
     position: absolute;
 }
 
-/* Style the login username and password box */
-.login-input-box{
+/*---------------------------------------------------------INPUT BOX---------------------------------------------------------------*/
+.input-box{
     position: relative;
     top: 40%;
     width: 866px;
@@ -169,11 +197,7 @@ body, header {
     padding: 30px;
 }
 
-.login-input-box + .login-input-box{
-    margin-top: 90px;
-}
-
-.login-input-box::before{
+.login .input-box::before{
     position: absolute;
     content: "";
     display: block;
@@ -183,13 +207,23 @@ body, header {
     background: rgba(238, 238, 238, 0.70);
 }
 
-/* Style the login button */
-.login-button{
+
+.login .input-box + .input-box{
+    margin-top: 90px;
+}
+
+/*---------------------------------------------------------BUTTON---------------------------------------------------------------*/
+.button{
+    position: relative;
+    display: flex;
+}
+
+.login .button .login{
     position: relative;
     display: flex;
     top: 55%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 400%);
     width: 203px;
     height: 92px;
     flex-shrink: 0;
@@ -200,13 +234,12 @@ body, header {
     font-size: 45px;
 }
 
-/* Style the Sign Up button */
-.signUp-button{
+.login .button .signup{
     position: relative;
     top: 48%;
     left: 12%;
     width: 220px;
-    transform: translate(-50%, -50%);
+    transform: translate(-150%, 450%);
     flex-shrink: 0;
     justify-content: center;
     align-items: center;
