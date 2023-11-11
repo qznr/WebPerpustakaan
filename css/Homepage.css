@@ -1,37 +1,5 @@
 
 
-/* Style the transparent box */
-.transparent-box {
-    position: relative;
-    width: 600px;
-    height: 240px;
-}
-
-.transparent-box::before {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 600px;
-    height: 240px;
-    border-radius: 48px;
-    background: #B9B9B9;
-    mix-blend-mode: color-burn;
-    backdrop-filter: blur(2px);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-    
-}
-
-.forty-percent-text-white{
-    float: none;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'EB Garamond', serif;
-    color: #fff;
-    font-size:50px;
-}
-
 /* Style the Search bar */
 .search-field {
     position: absolute;

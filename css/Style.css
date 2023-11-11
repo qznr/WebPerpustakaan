@@ -181,6 +181,27 @@ body, header {
     background: rgba(214, 214, 214, 0.90);
 }
 
+/*---------------------------------------------------------TRANSPARENT BOX---------------------------------------------------------------*/
+.transparent-box {
+    position: relative;
+    width: 600px;
+    height: 240px;
+}
+
+.homepage .transparent-box::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 600px;
+    height: 240px;
+    border-radius: 48px;
+    background: #B9B9B9;
+    mix-blend-mode: color-burn;
+    backdrop-filter: blur(2px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
 /*---------------------------------------------------------TEXT---------------------------------------------------------------*/
 .text{
     position: absolute;
@@ -204,6 +225,17 @@ body, header {
     color: #000;
     font-family: EB Garamond;
     font-size: 60px;
+}
+
+.homepage .text{
+    float: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'EB Garamond', serif;
+    color: #fff;
+    font-size:50px;
 }
 
 /*---------------------------------------------------------INPUT BOX---------------------------------------------------------------*/
@@ -269,6 +301,7 @@ body, header {
     justify-content: center;
     align-items: center;
     font-size: 45px;
+    color: #fff;
 }
 
 .login .button .signup{
@@ -283,6 +316,7 @@ body, header {
     font-size: 40px;
     color: #000;
     font-weight: 400;
+    text-decoration: none;
 }
 
 .register button{
