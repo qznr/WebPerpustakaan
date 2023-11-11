@@ -149,8 +149,9 @@ body, header {
 }
 
 .request .cover{
-    height: 390vh;
+    height: 145vh;
 }
+
 
 /*---------------------------------------------------------WHITE BOX---------------------------------------------------------------*/
 .white-box {
@@ -181,6 +182,13 @@ body, header {
     background: rgba(214, 214, 214, 0.90);
 }
 
+.request .white-box{
+    width: 1086px;
+    height: 1222px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    background: rgba(214, 214, 214, 0.90);
+}
 /*---------------------------------------------------------TRANSPARENT BOX---------------------------------------------------------------*/
 .transparent-box {
     position: relative;
@@ -238,6 +246,20 @@ body, header {
     font-size:50px;
 }
 
+.request .text {
+    width: 620px;
+    height: 110px;
+    margin :105px 228px 54px 238px ;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: EB Garamond;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 /*---------------------------------------------------------INPUT BOX---------------------------------------------------------------*/
 .input-box{
     position: relative;
@@ -279,6 +301,29 @@ body, header {
 
 .register .input-box + .input-box{
     margin-top: 100px;
+}
+
+.request .input-box {
+    width: 880px;
+    height: 78px;
+    flex-shrink: 0;
+    border: none;
+    color: black;
+    transform: translateY(-267%);
+    margin-bottom: 111px;
+    padding : 9px 549px 0px 30px;
+    border-radius: 60px;
+    background: rgba(238, 238, 238, 0.70);
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+::placeholder {
+    color: #000;
 }
 
 /*---------------------------------------------------------BUTTON---------------------------------------------------------------*/
@@ -334,4 +379,20 @@ body, header {
     align-items: center;
     font-size: 45px;
     color: white;
+}
+
+.request button {
+    width: 240px;
+    height: 92px;
+    flex-shrink: 0;
+    transform: translateY(300%);
+    border-radius: 20px;
+    background: #082138;
+    color: #EEE;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
