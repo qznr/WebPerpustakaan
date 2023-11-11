@@ -144,7 +144,7 @@ body, header {
 }
 
 .register .cover{
-    height: 300vh;
+    height: 2358px;
 }
 
 .request .cover{
@@ -169,9 +169,19 @@ body, header {
     background: rgba(214, 214, 214, 0.90);
 }
 
+.register .white-box{
+    top: 110%;
+    content: "";
+    display: block;
+    width: 1086px;
+    height: 1900px;
+    border-radius: 60px;
+    background: rgba(214, 214, 214, 0.90);
+}
+
 /*---------------------------------------------------------TEXT---------------------------------------------------------------*/
 .text{
-    
+    position: absolute;
 }
 
 .login .text{
@@ -182,7 +192,16 @@ body, header {
     color: #000;
     font-family: EB Garamond;
     font-size: 60px;
-    position: absolute;
+}
+
+.register .text{
+    float: none;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -320%);
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 60px;
 }
 
 /*---------------------------------------------------------INPUT BOX---------------------------------------------------------------*/
@@ -203,13 +222,29 @@ body, header {
     display: block;
     width: 866px;
     height: 78px;
-    border-radius: 60px;
     background: rgba(238, 238, 238, 0.70);
 }
 
 
 .login .input-box + .input-box{
     margin-top: 90px;
+}
+
+.register .input-box{
+    transform: translateY(-630%);
+}
+
+.register .input-box::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 866px;
+    height: 78px;
+    background: rgba(238, 238, 238, 0.70);
+} 
+
+.register .input-box + .input-box{
+    margin-top: 100px;
 }
 
 /*---------------------------------------------------------BUTTON---------------------------------------------------------------*/
@@ -246,4 +281,21 @@ body, header {
     font-size: 40px;
     color: #000;
     font-weight: 400;
+}
+
+.register button{
+    position: relative;
+    display: flex;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -850%);
+    width: 250px;
+    height: 90px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #082138;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    color: white;
 }
