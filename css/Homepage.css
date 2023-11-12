@@ -85,7 +85,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 560px;
+    height: 19%;
     margin-top: 30%;
     padding: 100px;
 }
@@ -116,7 +116,7 @@
 .choices .card{
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    width: 330px;
+    width: 90%;
     height: 505px;
     background-color: #082138;
     overflow: hidden;
@@ -290,16 +290,15 @@
 .lihat h2 {
     color: black;
     font-family: EB Garamond;
-    font-size: 60px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 1%;
-    margin-right: 5%;
+    transform: translateX(80%);
 }
 
 /* Add this CSS code in your stylesheet to customize the card width on small screens */
-@media (max-width: 992px) {
+@media (max-width: 100px) {
     .choices .card{
         width: 100%;
         height: 120px;
@@ -309,7 +308,7 @@
     }
     
     .choices .card:hover {
-        transform: scale(1.05); /* Increase the scale on hover (you can adjust the value) */
+        transform: scale(1.05); 
         background-color: #000000;
     }
     
@@ -318,7 +317,7 @@
         display: block;
         text-decoration: none;
         color: inherit;
-        width: 100%; /* Ensure the anchor takes up the entire card */
+        width: 100%; 
     }
     
     .choices img{
