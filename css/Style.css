@@ -152,9 +152,15 @@ body, header {
     height: 145vh;
 }
 
+.isi-data .cover {
+    height: 149vh;
+}
+
 .donasi .cover{
     height: 145vh;
 }
+
+
 
 
 /*---------------------------------------------------------WHITE BOX---------------------------------------------------------------*/
@@ -194,6 +200,14 @@ body, header {
     background: rgba(214, 214, 214, 0.90);
 }
 
+.isi-data .white-box {
+    width: 1086px;
+    height: 1360px;
+    flex-shrink: 0; 
+    border-radius: 60px;
+    background: rgba(214, 214, 214, 0.90);
+}
+
 .donasi .white-box {
     width: 1086px;
     height: 1222px;
@@ -201,6 +215,7 @@ body, header {
     border-radius: 60px;
     background: rgba(214, 214, 214, 0.90);
 }
+
 
 /*---------------------------------------------------------TRANSPARENT BOX---------------------------------------------------------------*/
 .transparent-box {
@@ -264,6 +279,20 @@ body, header {
     height: 110px;
     margin :105px 228px 54px 238px ;
     flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: EB Garamond;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.isi-data .text {
+    width: 620px;
+    height: 110px;
+    flex-shrink: 0;
+    margin: 40px 228px 54px 238px;
     color: #000;
     text-align: center;
     font-family: EB Garamond;
@@ -342,6 +371,23 @@ body, header {
     border-radius: 60px;
     background: rgba(238, 238, 238, 0.70);
     color: #000;
+    font-family: EB Garamond;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.isi-data .input-box {
+    width: 866px;
+    height: 78px;
+    flex-shrink: 0;
+    color: black;
+    transform: translateY(-400%);
+    margin-bottom: 111px;
+    padding : 9px 549px 0px 30px;
+    border-radius: 60px;
+    background: rgba(238, 238, 238, 0.70);
     font-family: EB Garamond;
     font-size: 40px;
     font-style: normal;
@@ -431,6 +477,22 @@ body, header {
     height: 92px;
     flex-shrink: 0;
     transform: translateY(300%);
+    border-radius: 20px;
+    background: #082138;
+    color: #EEE;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.isi-data button {
+    width: 240px;
+    height: 92px;
+    flex-shrink: 0;
+    transform: translateY(237%);
     border-radius: 20px;
     background: #082138;
     color: #EEE;
