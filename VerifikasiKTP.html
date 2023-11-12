@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap">
-        <link rel="stylesheet" href="css/About.css">
+        <link rel="stylesheet" href="css/Style.css">
+        <script src="js/filename.js"></script>
         <!-- Include Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -13,43 +14,72 @@
         </title>
     </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-white bg-white thin-shadow fixed-top ">        
-        <a class="navbar-brand logo-container" href="#">
-            <img src="img/logo-perpus.png" alt="Logo">
-        </a>
-        <span class="navbar-text text-center title">
-            Verifikasi KTP
-        </span>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown"></div>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link circular-button" href="#">
-                        <img src="img/Book.png" alt="Button 1">
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link circular-button" href="#">
-                        <img src="img/cart.png" alt="Button 2">
-                    </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link circular-button" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="img/default-user.png" alt="Button 3">
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="drop-text dropdown-item" href="#">Login</a></li>
-                    </ul>
-                </li>          
-            </ul>                        
+    <!--Navbar Start-->
+    <body id="verifikasi">
+        <nav class="navbar navbar-expand-lg navbar-white bg-white thin-shadow fixed-top ">        
+            <a class="navbar-brand logo-container" href="#">
+                <img src="img/logo-perpus.png" alt="Logo">
+            </a>
+            <span class="navbar-text text-center title">
+                Verifikasi KTP
+            </span>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown"></div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link circular-button" href="#">
+                            <img src="img/Book.png" alt="Button 1">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link circular-button" href="#">
+                            <img src="img/cart.png" alt="Button 2">
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link circular-button" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="img/default-user.png" alt="Button 3">
+                        </a>
+                        <ul class="dropdown-menu drop-margin">
+                            <li><a class="drop-text dropdown-item" href="#">Login</a></li>
+                        </ul>
+                    </li>          
+                </ul>                        
+            </div>
+        </nav>
+        <!--Navbar End-->
+
+        <!--Content Start-->
+        <div class="cover">
+            <div class="white-box">
+                <h1 class="text">Verifikasi KTP</h1>
+                <div class="input-box">
+                    <input type="file" id="fileInput1" onchange="updateFileName('fileInput1')">
+                    <label for="fileInput1">Upload</label>
+                    <span id="fileName1" class="fileName">Upload Foto Wajah</span>
+                </div>
+                <div class="input-box">
+                    <input type="file" id="fileInput2" onchange="updateFileName('fileInput2')">
+                    <label for="fileInput2">Upload</label>
+                    <span id="fileName2" class="fileName">Upload Foto KTP</span>
+                </div>
+                <div class="input-box">
+                    <input type="file" id="fileInput3" onchange="updateFileName('fileInput3')">
+                    <label for="fileInput3">Upload</label>
+                    <span id="fileName3" class="fileName">Upload Foto Diri Dengan KTP</span>
+                </div>
+                <a href="#">
+                    <button>Verify</button>
+                </a>
+            </div>
         </div>
-    </nav>
+        <!--Content End-->
 
-
-    <footer class = "footer">
-        <a href="#">Help</a>
-        <a href="About.html">About Us</a>
-    </footer>
-</body>
+        <!--Footer Start-->
+        <footer class = "footer">
+            <a href="#">Help</a>
+            <a href="About.html">About Us</a>
+        </footer>
+        <!--Footer End-->
+    </body>
 
 </html>

@@ -10,6 +10,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <script src="js/login.js"></script>
         <title>Login</title>
     </head>
 
@@ -37,7 +38,7 @@
                     <a class="nav-link circular-button" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="img/default-user.png" alt="Button 3">
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu drop-margin">
                         <li><a class="drop-text dropdown-item" href="#">Login</a></li>
                     </ul>
                 </li>          
@@ -47,17 +48,17 @@
 
     <div class="cover">
         <div class="white-box">
-            <div class = "text">
+            <div class="text">
                 Please Enter Username and Password
-            </div> 
-            <input type="text" class="input-box" placeholder="Username">
-            <input type="password" class="input-box" placeholder="Password">
+            </div>
+            <input type="text" id="username" class="input-box" placeholder="Username">
+            <input type="password" id="password" class="input-box" placeholder="Password">
             <div class="button">
-                <Button class="login" onclick="window.location.href='index.html'">
+                <button class="login" onclick="login()">
                     Login
-                </Button>
+                </button>
                 <a class="signup" href="Register.html">
-                    signup
+                    Signup
                 </a>
             </div>
         </div>
