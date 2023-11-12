@@ -136,6 +136,11 @@ body, header {
     height: 240px;
 }
 
+/*---------------------------------------------------------CONTAINER---------------------------------------------------------------*/
+.container{
+    position: relative;
+}
+
 /*---------------------------------------------------------TEXT---------------------------------------------------------------*/
 .text{
     position: absolute;
@@ -171,8 +176,115 @@ body, header {
 
 
 /*---------------------------------------------------------ABOUT---------------------------------------------------------------*/
+
 #about .cover{
     height: 23vh;
+}
+
+#about #first .container {
+    transform: translateY(10%);
+    height: auto;
+}
+
+#about .container .image{
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 560px;
+    margin-top: 4%;
+    padding: 100px;  
+}
+
+#about .container .image img{
+    position: flex;
+    width: 903px;
+    height: 655px;
+    flex-shrink: 0;
+}
+ 
+#about .container .text{
+    position: relative;
+    margin-left: 70px;
+    transform: translatey(-10%);
+}
+
+#about .container .text h1{
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#about .container .text h3{
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#about .container .text p{
+    margin-top: 20px;
+    width: 753px;
+    height: 302px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#about #second .container {
+    transform: translateY(60%);
+}
+
+#about .container .contact{
+    position: flex;
+    height: 250px;
+    
+}
+
+#about .container .contact h1{
+    flex-shrink: 0;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: #000;
+    text-align: center;
+    font-family: EB Garamond;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#about #third .container {
+    display: flex;
+    column-gap: 15%;
+}
+
+#about #fourth .container{
+    transform: translate(-15%, 100%);
+    margin-bottom: 9%;
+}
+
+#about .container .back{
+    text-decoration: none;
+    position: relative;
+    height: auto;
+    flex-shrink: 0;
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
 }
 
 
