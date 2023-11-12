@@ -24,6 +24,11 @@ body, header {
     height: 12vh;
 }
 
+.drop-margin{
+    transform: translateX(-40%);
+}
+
+
 /* Style the logo */
 .logo-container {
     padding: 10px; /* Adjust padding as needed */
@@ -145,6 +150,11 @@ body, header {
     height: 240px;
 }
 
+/*---------------------------------------------------------CONTAINER---------------------------------------------------------------*/
+.container{
+    position: relative;
+}
+
 /*---------------------------------------------------------TEXT---------------------------------------------------------------*/
 .text{
     position: absolute;
@@ -180,8 +190,115 @@ body, header {
 
 
 /*---------------------------------------------------------ABOUT---------------------------------------------------------------*/
+
 #about .cover{
     height: 23vh;
+}
+
+#about #first .container {
+    transform: translateY(10%);
+    height: auto;
+}
+
+#about .container .image{
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 560px;
+    margin-top: 4%;
+    padding: 100px;  
+}
+
+#about .container .image img{
+    position: flex;
+    width: 903px;
+    height: 655px;
+    flex-shrink: 0;
+}
+ 
+#about .container .text{
+    position: relative;
+    margin-left: 70px;
+    transform: translatey(-10%);
+}
+
+#about .container .text h1{
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#about .container .text h3{
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#about .container .text p{
+    margin-top: 20px;
+    width: 753px;
+    height: 302px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#about #second .container {
+    transform: translateY(60%);
+}
+
+#about .container .contact{
+    position: flex;
+    height: 250px;
+    
+}
+
+#about .container .contact h1{
+    flex-shrink: 0;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: #000;
+    text-align: center;
+    font-family: EB Garamond;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#about #third .container {
+    display: flex;
+    column-gap: 15%;
+}
+
+#about #fourth .container{
+    transform: translate(-15%, 100%);
+    margin-bottom: 9%;
+}
+
+#about .container .back{
+    text-decoration: none;
+    position: relative;
+    height: auto;
+    flex-shrink: 0;
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
 }
 
 
@@ -240,7 +357,7 @@ body, header {
 
 /*---------------------------------------------------------DONASI---------------------------------------------------------------*/
 #donasi .cover{
-    height: 390vh;
+    height: 145vh;
 }
 
 #donasi .white-box {
@@ -298,15 +415,132 @@ body, header {
     font-weight: 400;
     line-height: normal;
 }
+/*---------------------------------------------------------DONASI ISI DATA---------------------------------------------------------------*/
+#donasi-isi-data .cover {
+    height: 145vh;
+}
+
+#donasi-isi-data .white-box {
+    width: 1086px;
+    height: 1222px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    background: rgba(214, 214, 214, 0.90);
+}
+
+#donasi-isi-data .text {
+    width: 620px;
+    height: 110px;
+    margin :105px 228px 54px 238px ;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: EB Garamond;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#donasi-isi-data .input-box {
+    width: 866px;
+    height: 78px;
+    flex-shrink: 0;
+    margin-bottom: 111px;
+    padding : 9px 549px 0px 30px;
+    border-radius: 60px;
+    transform: translateY(-267%);
+    background: rgba(238, 238, 238, 0.70);
+    flex-shrink: 0;
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#donasi-isi-data button {
+    width: 240px;
+    height: 92px;
+    flex-shrink: 0;
+    transform: translateY(300%);
+    border-radius: 20px;
+    background: #082138;
+    color: #EEE;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 
+/*---------------------------------------------------------JADWAL DONASI---------------------------------------------------------------*/
+#donasi-jadwal .cover {
+    height: 145vh;
+}
+
+#donasi-jadwal .white-box {
+    width: 1086px;
+    height: 663px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    background: rgba(214, 214, 214, 0.90);
+}
+
+#donasi-jadwal .text {
+    width: 620px;
+    height: 110px;
+    flex-shrink: 0;
+    margin: 105px 228px 54px 238px;
+    color: #000;
+    text-align: center;
+    font-family: EB Garamond;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#donasi-jadwal .input-box {
+    width: 866px;
+    height: 78px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    border: none;
+    background: rgba(238, 238, 238, 0.70);
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#donasi-jadwal button {
+    width: 240px;
+    height: 92px;
+    flex-shrink: 0;
+    transform: translateY(400%);
+    border-radius: 20px;
+    background: #082138;
+    color: #EEE;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 /*---------------------------------------------------------EDIT PROFILE---------------------------------------------------------------*/
 
 /*---------------------------------------------------------HELP---------------------------------------------------------------*/
 
 /*---------------------------------------------------------HOMEPAGE---------------------------------------------------------------*/
 #homepage .cover{
-    height: 84vh;;
+    height: 84vh;
 }
 
 #homepage .transparent-box::before {
@@ -333,7 +567,6 @@ body, header {
     color: #fff;
     font-size:50px;
 }
-/*---------------------------------------------------------JADWAL DONASI---------------------------------------------------------------*/
 
 /*---------------------------------------------------------KATALOG---------------------------------------------------------------*/
 #katalog .cover{
