@@ -66,9 +66,8 @@
     justify-content: center;
     align-items: center;
     width: 1920px;
-    height: 1250px;
-    /* background-color: #082138; */
-    overflow: hidden;
+    height: 1300px;
+    background-color: #08213852;
     border-color: #fff;
     border-radius: 10%;
 }
@@ -76,12 +75,13 @@
 .the-body .image-list{
     display: grid;
     width: 98%;
-    gap: 5%;
-    overflow-x: auto;
+    column-gap: 5%;
+    overflow-x: hidden;
+    overflow-y: hidden;
     grid-template-columns: repeat(9,2fr);
-    max-height: 100%;
+    height: 100%;
     max-width: 100%;
-    transform: translateX(2%);
+    transform: translateX(2.15%);
 }
 
 .the-body .image-list::-webkit-scrollbar {
@@ -89,23 +89,41 @@
 }
 
 .the-body .image-list .image-item {
+    transform: translateY(7%);
+    align-items: center;
     width: 380px;
     height: 563px;
     object-fit: cover;
     grid-row: span 1; /* Place image items in the first row */
     grid-column: span 2; /* Make each image item span 2 columns */
+    transition: transform 0.3s ease
+}
+
+.the-body .image-list .image-item:hover {
+    content: ""; /* Add a pseudo-element for the background */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #f9b234;
+    z-index: -1;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: transform 0.5s ease; /* Use the same transition for consistency */
 }
 
 .the-body .slide-button {
     position: absolute;
-    top: 45%;
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     color: #fff;
     border: none;
     outline: none;
     background: #082138;
-    font-size: 2.5rem;
+    font-size: 4rem;
     cursor: pointer;
     border-radius: 50%;
     transform: translateY(-50%);
@@ -116,9 +134,40 @@
 }
 
 .the-body .slide-button#prev-slide {
-    transform: translateX(-50%);
+    left: -20px;
 }
 
 .the-body .slide-button#next-slide {
-    transform: translateX(50%);
+    right: -20px;
+}
+
+.page-number{
+    position: relative;
+    display: flex;
+    column-gap: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-70%);
+}
+
+.page-number .the-number {
+    color: black;
+    font-family: EB Garamond;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transform: translateX(80%);
+}
+
+.page-number .the-number:hover {
+    color: black;
+    font-family: EB Garamond;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transform: translateX(80%);
+    border-bottom: 6px solid #999999;
 }
