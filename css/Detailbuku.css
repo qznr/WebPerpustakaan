@@ -9,51 +9,6 @@
     position: relative; /* Tambahkan posisi relatif pada wadah */
 }
 
-.detail-textcontainer {
-    margin-top: 5%;
-    margin-left: 15%;
-    transform: translateY(-10%);
-}
-
-.detail-textcontainer h1 {
-    color: #000;
-    font-family: 'EB Garamond';
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.detail-textcontainer h2 {
-    width: 50%; /* Menggunakan persentase untuk lebar elemen */
-    color: #000;
-    font-family: 'EB Garamond';
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.detail-textcontainer h3 {
-    color: #000;
-    font-family: 'EB Garamond';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.detail-textcontainer p {
-    width: 1187px; /* Menggunakan persentase untuk lebar elemen */
-    margin-top: 50px;
-    color: #000;
-    font-family: 'EB Garamond';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
 .detail-booksection img {
     position: absolute; /* Tambahkan posisi absolut pada gambar */
 }
