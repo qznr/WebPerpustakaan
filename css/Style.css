@@ -20,6 +20,11 @@ body, header {
     height: 12vh;
 }
 
+.drop-margin{
+    transform: translateX(-40%);
+}
+
+
 /* Style the logo */
 .logo-container {
     padding: 10px; /* Adjust padding as needed */
