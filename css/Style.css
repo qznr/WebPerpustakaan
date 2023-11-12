@@ -120,49 +120,6 @@ body, header {
     margin-top: 15px; /* Adjust the top margin to your desired value */
 }
 
-.about .cover{
-    height: 23vh;
-}
-
-.detail-buku .cover{
-    height: 23vh;
-}
-
-.donasi .cover{
-    height: 390vh;
-}
-
-.homepage .cover{
-    height: 84vh;;
-}
-
-.katalog .cover{
-    height: 58vh;
-}
-
-#login .cover{
-    height: 145vh;
-}
-
-.register .cover{
-    height: 330vh;
-}
-
-.request .cover{
-    height: 145vh;
-}
-
-.isi-data .cover {
-    height: 149vh;
-}
-
-.donasi .cover{
-    height: 145vh;
-}
-
-
-
-
 /*---------------------------------------------------------WHITE BOX---------------------------------------------------------------*/
 .white-box {
     position: absolute;
@@ -172,51 +129,6 @@ body, header {
     flex-shrink: 0;
 }
 
-#login .white-box{
-    width: 1086px;
-    height: 748px;
-    content: "";
-    display: block;
-    border-radius: 60px;
-    background: rgba(214, 214, 214, 0.90);
-}
-
-.register .white-box{
-    margin-top: 30%;
-    /* top: 110%; */
-    content: "";
-    display: block;
-    width: 1086px;
-    height: 1900px;
-    border-radius: 60px;
-    background: rgba(214, 214, 214, 0.90);
-}
-
-.request .white-box{
-    width: 1086px;
-    height: 1222px;
-    flex-shrink: 0;
-    border-radius: 60px;
-    background: rgba(214, 214, 214, 0.90);
-}
-
-.isi-data .white-box {
-    width: 1086px;
-    height: 1360px;
-    flex-shrink: 0; 
-    border-radius: 60px;
-    background: rgba(214, 214, 214, 0.90);
-}
-
-.donasi .white-box {
-    width: 1086px;
-    height: 1222px;
-    flex-shrink: 0;
-    border-radius: 60px;
-    background: rgba(214, 214, 214, 0.90);
-}
-
-
 /*---------------------------------------------------------TRANSPARENT BOX---------------------------------------------------------------*/
 .transparent-box {
     position: relative;
@@ -224,7 +136,171 @@ body, header {
     height: 240px;
 }
 
-.homepage .transparent-box::before {
+/*---------------------------------------------------------TEXT---------------------------------------------------------------*/
+.text{
+    position: absolute;
+}
+
+/*---------------------------------------------------------INPUT BOX---------------------------------------------------------------*/
+.input-box{
+    position: relative;
+    top: 40%;
+    width: 866px;
+    height: 78px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    font-size: 50px;
+    padding: 30px;
+}
+
+::placeholder {
+    color: #000;
+}
+
+/*---------------------------------------------------------BUTTON---------------------------------------------------------------*/
+.button{
+    position: relative;
+    display: flex;
+}
+
+/*---------------------------------------------------------CSS FOR EVERY PAGE---------------------------------------------------------------*/
+/*---------------------------------------------------------CSS FOR EVERY PAGE---------------------------------------------------------------*/
+/*---------------------------------------------------------CSS FOR EVERY PAGE---------------------------------------------------------------*/
+/*---------------------------------------------------------CSS FOR EVERY PAGE---------------------------------------------------------------*/
+/*---------------------------------------------------------CSS FOR EVERY PAGE---------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------ABOUT---------------------------------------------------------------*/
+#about .cover{
+    height: 23vh;
+}
+
+
+/*---------------------------------------------------------CHECKOUT---------------------------------------------------------------*/
+
+/*---------------------------------------------------------DETAIL BUKU---------------------------------------------------------------*/
+#detail-buku .cover{
+    height: 23vh;
+}
+
+#detail-buku .text{
+    margin-top: 5%;
+    margin-left: 15%;
+    transform: translateY(-10%);
+}
+
+#detail-buku .text h1{
+    color: #000;
+    font-family: 'EB Garamond';
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#detail-buku .text h2{
+    width: 50%; /* Menggunakan persentase untuk lebar elemen */
+    color: #000;
+    font-family: 'EB Garamond';
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#detail-buku .text h3{
+    color: #000;
+    font-family: 'EB Garamond';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#detail-buku .text p{
+    width: 1187px; /* Menggunakan persentase untuk lebar elemen */
+    margin-top: 50px;
+    color: #000;
+    font-family: 'EB Garamond';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/*---------------------------------------------------------DONASI---------------------------------------------------------------*/
+#donasi .cover{
+    height: 390vh;
+}
+
+#donasi .white-box {
+    width: 1086px;
+    height: 1222px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    background: rgba(214, 214, 214, 0.90);
+}
+
+#donasi .input-box {
+    width: 866px;
+    height: 78px;
+    flex-shrink: 0;
+    margin-bottom: 111px;
+    padding : 9px 549px 0px 30px;
+    border-radius: 60px;
+    transform: translateY(-267%);
+    background: rgba(238, 238, 238, 0.70);
+    flex-shrink: 0;
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#donasi button {
+    width: 240px;
+    height: 92px;
+    flex-shrink: 0;
+    transform: translateY(300%);
+    border-radius: 20px;
+    background: #082138;
+    color: #EEE;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#donasi .text {
+    width: 620px;
+    height: 110px;
+    margin :105px 228px 54px 238px ;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: EB Garamond;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/*---------------------------------------------------------EDIT PROFILE---------------------------------------------------------------*/
+
+/*---------------------------------------------------------HELP---------------------------------------------------------------*/
+
+/*---------------------------------------------------------HOMEPAGE---------------------------------------------------------------*/
+#homepage .cover{
+    height: 84vh;;
+}
+
+#homepage .transparent-box::before {
     position: absolute;
     content: "";
     display: block;
@@ -238,9 +314,39 @@ body, header {
     
 }
 
-/*---------------------------------------------------------TEXT---------------------------------------------------------------*/
-.text{
+#homepage .text{
+    float: none;
     position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'EB Garamond', serif;
+    color: #fff;
+    font-size:50px;
+}
+/*---------------------------------------------------------JADWAL DONASI---------------------------------------------------------------*/
+
+/*---------------------------------------------------------KATALOG---------------------------------------------------------------*/
+#katalog .cover{
+    height: 58vh;
+}
+
+
+
+/*---------------------------------------------------------KERANJANG---------------------------------------------------------------*/
+
+/*---------------------------------------------------------LOGIN---------------------------------------------------------------*/
+#login .cover{
+    height: 145vh;
+}
+
+#login .white-box{
+    width: 1086px;
+    height: 748px;
+    content: "";
+    display: block;
+    border-radius: 60px;
+    background: rgba(214, 214, 214, 0.90);
 }
 
 #login .text{
@@ -251,81 +357,6 @@ body, header {
     color: #000;
     font-family: EB Garamond;
     font-size: 60px;
-}
-
-.register .text{
-    float: none;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -320%);
-    color: #000;
-    font-family: EB Garamond;
-    font-size: 60px;
-}
-
-.homepage .text{
-    float: none;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'EB Garamond', serif;
-    color: #fff;
-    font-size:50px;
-}
-
-.request .text {
-    width: 620px;
-    height: 110px;
-    margin :105px 228px 54px 238px ;
-    flex-shrink: 0;
-    color: #000;
-    text-align: center;
-    font-family: EB Garamond;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.isi-data .text {
-    width: 620px;
-    height: 110px;
-    flex-shrink: 0;
-    margin: 40px 228px 54px 238px;
-    color: #000;
-    text-align: center;
-    font-family: EB Garamond;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.donasi .text {
-    width: 620px;
-    height: 110px;
-    margin :105px 228px 54px 238px ;
-    flex-shrink: 0;
-    color: #000;
-    text-align: center;
-    font-family: EB Garamond;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-/*---------------------------------------------------------INPUT BOX---------------------------------------------------------------*/
-.input-box{
-    position: relative;
-    top: 40%;
-    width: 866px;
-    height: 78px;
-    flex-shrink: 0;
-    border-radius: 60px;
-    font-size: 50px;
-    padding: 30px;
 }
 
 #login .input-box::before{
@@ -342,88 +373,7 @@ body, header {
     margin-top: 90px;
 }
 
-.register .input-box{
-    transform: translateY(-630%);
-}
-
-.register .input-box::before{
-    position: absolute;
-    content: "";
-    display: block;
-    width: 866px;
-    height: 78px;
-    background: rgba(238, 238, 238, 0.70);
-} 
-
-.register .input-box + .input-box{
-    margin-top: 100px;
-}
-
-.request .input-box {
-    width: 880px;
-    height: 78px;
-    flex-shrink: 0;
-    border: none;
-    color: black;
-    transform: translateY(-267%);
-    margin-bottom: 111px;
-    padding : 9px 549px 0px 30px;
-    border-radius: 60px;
-    background: rgba(238, 238, 238, 0.70);
-    color: #000;
-    font-family: EB Garamond;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.isi-data .input-box {
-    width: 866px;
-    height: 78px;
-    flex-shrink: 0;
-    color: black;
-    transform: translateY(-400%);
-    margin-bottom: 111px;
-    padding : 9px 549px 0px 30px;
-    border-radius: 60px;
-    background: rgba(238, 238, 238, 0.70);
-    font-family: EB Garamond;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-::placeholder {
-    color: #000;
-}
-
-.donasi .input-box {
-    width: 866px;
-    height: 78px;
-    flex-shrink: 0;
-    margin-bottom: 111px;
-    padding : 9px 549px 0px 30px;
-    border-radius: 60px;
-    transform: translateY(-267%);
-    background: rgba(238, 238, 238, 0.70);
-    flex-shrink: 0;
-    color: #000;
-    font-family: EB Garamond;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-/*---------------------------------------------------------BUTTON---------------------------------------------------------------*/
-.button{
-    position: relative;
-    display: flex;
-}
-
-#login .button .login{
+#login .button login{
     position: relative;
     display: flex;
     top: 55%;
@@ -455,7 +405,53 @@ body, header {
     text-decoration: none;
 }
 
-.register button{
+
+/*---------------------------------------------------------PENGEMBALIAN---------------------------------------------------------------*/
+
+/*---------------------------------------------------------REGISTER---------------------------------------------------------------*/
+#register .cover{
+    height: 330vh;
+}
+
+#register .white-box{
+    margin-top: 30%;
+    /* top: 110%; */
+    content: "";
+    display: block;
+    width: 1086px;
+    height: 1900px;
+    border-radius: 60px;
+    background: rgba(214, 214, 214, 0.90);
+}
+
+#register .text{
+    float: none;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -320%);
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 60px;
+}
+
+#register .input-box{
+    transform: translateY(-630%);
+}
+
+#register .input-box::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 866px;
+    height: 78px;
+    background: rgba(238, 238, 238, 0.70);
+} 
+
+#register .input-box + .input-box{
+    margin-top: 100px;
+}
+
+#register button{
     position: relative;
     display: flex;
     top: 60%;
@@ -472,23 +468,51 @@ body, header {
     color: white;
 }
 
-.request button {
-    width: 240px;
-    height: 92px;
+/*---------------------------------------------------------REQUEST ISI DATA---------------------------------------------------------------*/
+#request-isi-data .cover {
+    height: 149vh;
+}
+
+#request-isi-data .white-box {
+    width: 1086px;
+    height: 1360px;
+    flex-shrink: 0; 
+    border-radius: 60px;
+    background: rgba(214, 214, 214, 0.90);
+}
+
+#request-isi-data .text {
+    width: 620px;
+    height: 110px;
     flex-shrink: 0;
-    transform: translateY(300%);
-    border-radius: 20px;
-    background: #082138;
-    color: #EEE;
+    margin: 40px 228px 54px 238px;
+    color: #000;
     text-align: center;
-    font-family: Roboto;
-    font-size: 50px;
+    font-family: EB Garamond;
+    font-size: 60px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-.isi-data button {
+#request-isi-data .input-box {
+    width: 866px;
+    height: 78px;
+    flex-shrink: 0;
+    color: black;
+    transform: translateY(-400%);
+    margin-bottom: 111px;
+    padding : 9px 549px 0px 30px;
+    border-radius: 60px;
+    background: rgba(238, 238, 238, 0.70);
+    font-family: EB Garamond;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#request-isi-data button {
     width: 240px;
     height: 92px;
     flex-shrink: 0;
@@ -504,7 +528,53 @@ body, header {
     line-height: normal;
 }
 
-.donasi button {
+/*---------------------------------------------------------REQUEST---------------------------------------------------------------*/
+#request .cover{
+    height: 145vh;
+}
+
+#request .white-box{
+    width: 1086px;
+    height: 1222px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    background: rgba(214, 214, 214, 0.90);
+}
+
+#request .text {
+    width: 620px;
+    height: 110px;
+    margin :105px 228px 54px 238px ;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: EB Garamond;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#request .input-box {
+    width: 880px;
+    height: 78px;
+    flex-shrink: 0;
+    border: none;
+    color: black;
+    transform: translateY(-267%);
+    margin-bottom: 111px;
+    padding : 9px 549px 0px 30px;
+    border-radius: 60px;
+    background: rgba(238, 238, 238, 0.70);
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#request button {
     width: 240px;
     height: 92px;
     flex-shrink: 0;
@@ -519,3 +589,7 @@ body, header {
     font-weight: 400;
     line-height: normal;
 }
+
+/*---------------------------------------------------------USER PROFILE---------------------------------------------------------------*/
+
+/*---------------------------------------------------------VERIFIKASI KTP---------------------------------------------------------------*/
