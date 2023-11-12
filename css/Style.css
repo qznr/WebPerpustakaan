@@ -140,7 +140,7 @@ body, header {
     height: 58vh;
 }
 
-.login .cover{
+#login .cover{
     height: 145vh;
 }
 
@@ -172,7 +172,7 @@ body, header {
     flex-shrink: 0;
 }
 
-.login .white-box{
+#login .white-box{
     width: 1086px;
     height: 748px;
     content: "";
@@ -243,7 +243,7 @@ body, header {
     position: absolute;
 }
 
-.login .text{
+#login .text{
     float: none;
     top: 20%;
     left: 50%;
@@ -328,7 +328,7 @@ body, header {
     padding: 30px;
 }
 
-.login .input-box::before{
+#login .input-box::before{
     position: absolute;
     content: "";
     display: block;
@@ -338,7 +338,7 @@ body, header {
 }
 
 
-.login .input-box + .input-box{
+#login .input-box + .input-box{
     margin-top: 90px;
 }
 
@@ -423,7 +423,7 @@ body, header {
     display: flex;
 }
 
-.login .button .login{
+#login .button .login{
     position: relative;
     display: flex;
     top: 55%;
@@ -440,7 +440,7 @@ body, header {
     color: #fff;
 }
 
-.login .button .signup{
+#login .button .signup{
     position: relative;
     top: 48%;
     left: 12%;
