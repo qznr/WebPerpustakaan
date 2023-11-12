@@ -8,6 +8,11 @@ body, header {
     /* min-height: 2995px; */
     margin-bottom: 100px;
     box-sizing: border-box;
+    
+}
+
+#Homepage {
+    margin-bottom: 100px;
 }
 
 .navbar {
