@@ -10,6 +10,7 @@
         <!-- Include Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="js/katalog.js" defer></script>
         <meta name="viewport" content="width=device-width,initial-scale=1"/>
         <title>Katalog</title>
     </head>
@@ -64,6 +65,69 @@
     <div class="the-body">
         <button id= "prev-slide" class= "slide-button material-symbols-rounded">chevron_left</button>
         <div class="image-list">
+            <div class="image-item">
+                <img src="img/coverbuku1.jpg" alt="cb1" class="image-content">
+                <button class="btn" onclick="togglePopup(0)">Lihat</button>
+            </div>
+            <div class="image-item">
+                <img src="img/coverbuku2.jpg" alt="cb2" class="image-content">
+                <button class="btn" onclick="togglePopup(1)">Lihat</button>
+            </div>
+            <div class="image-item">
+                <img src="img/coverbuku3.jpg" alt="cb3" class="image-content">
+                <button class="btn" onclick="togglePopup(2)">Lihat</button>
+            </div>
+            <div class="image-item">
+                <img src="img/coverbuku4.webp" alt="cb4" class="image-content">
+                <button class="btn" onclick="togglePopup(3)">Lihat</button>
+            </div>
+            <div class="image-item">
+                <img src="img/coverbuku5.jpeg" alt="cb5" class="image-content">
+                <button class="btn" onclick="togglePopup(4)">Lihat</button>
+            </div>
+            <div class="image-item">
+                <img src="img/coverbuku6.webp" alt="cb6" class="image-content">
+                <button class="btn" onclick="togglePopup(5)">Lihat</button>
+            </div>
+            <div class="image-item">
+                <img src="img/coverbuku7.jpeg" alt="cb7" class="image-content">
+                <button class="btn" onclick="togglePopup(6)">Lihat</button>
+            </div>
+            <div class="image-item">
+                <img src="img/coverbuku8.webp" alt="cb8" class="image-content">
+                <button class="btn" onclick="togglePopup(7)">Lihat</button>
+            </div>
+            <!-- Repeat for other images -->
+        </div>
+
+        <button id= "next-slide" class= "slide-button material-symbols-rounded">chevron_right</button>
+    </div>
+
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <img id="popup-image" src="" alt="Popup Image" class="popup-image">
+            <h1>Buku Tersedia</h1>
+            <h2>Judul Buku</h2>
+            <h3>Penulis</h3>
+            <div class="text-wrapper">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat dui quis odio volutpat feugiat sed vel nibh. Suspendisse faucibus enim ut vestibulum vulputate. Nulla ac consectetur risus, a consectetur ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; </p>
+            </div>
+            <button class="btn-2" onclick="window.location.href=''">Pinjam</button>
+            <button class="btn-3">Detail</button>
+            <div class="star-wrapper">
+            <a href="#" class="fas fa-star s1"></a>
+            <a href="#" class="fas fa-star s2"></a>
+            <a href="#" class="fas fa-star s3"></a>
+            <a href="#" class="fas fa-star s4"></a>
+            <a href="#" class="fas fa-star s5"></a>
+            </div>
+            <script src="https://kit.fontawesome.com/5ea815c1d0.js"></script> <!-- for star rating-->
+        </div>
+    </div>
+
+        <!-- <div class="image-list">
             <img src="img/coverbuku1.jpg" alt="cb1" class="image-item">
             <img src="img/coverbuku2.jpg" alt="cb2" class="image-item">
             <img src="img/coverbuku3.jpg" alt="cb3" class="image-item">
@@ -72,9 +136,7 @@
             <img src="img/coverbuku6.webp" alt="cb6" class="image-item">
             <img src="img/coverbuku7.jpeg" alt="cb7" class="image-item">
             <img src="img/coverbuku8.webp" alt="cb8" class="image-item">
-        </div>
-        <button id= "next-slide" class= "slide-button material-symbols-rounded">chevron_right</button>
-    </div>
+        </div> -->
 
     <div class="page-number">
         <div class="the-number">
