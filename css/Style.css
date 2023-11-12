@@ -307,6 +307,20 @@ body, header {
     background: rgba(214, 214, 214, 0.90);
 }
 
+#donasi-isi-data .text {
+    width: 620px;
+    height: 110px;
+    margin :105px 228px 54px 238px ;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: EB Garamond;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 #donasi-isi-data .input-box {
     width: 866px;
     height: 78px;
@@ -341,11 +355,25 @@ body, header {
     line-height: normal;
 }
 
-#donasi-isi-data .text {
+
+/*---------------------------------------------------------JADWAL DONASI---------------------------------------------------------------*/
+#donasi-jadwal .cover {
+    height: 440vh;
+}
+
+#donasi-jadwal .white-box {
+    width: 1086px;
+    height: 663px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    background: rgba(214, 214, 214, 0.90);
+}
+
+#donasi-jadwal .text {
     width: 620px;
     height: 110px;
-    margin :105px 228px 54px 238px ;
     flex-shrink: 0;
+    margin: 105px 228px 54px 238px;
     color: #000;
     text-align: center;
     font-family: EB Garamond;
@@ -355,16 +383,43 @@ body, header {
     line-height: normal;
 }
 
-/*---------------------------------------------------------JADWAL DONASI---------------------------------------------------------------*/
+#donasi-jadwal .input-box {
+    width: 866px;
+    height: 78px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    border: none;
+    background: rgba(238, 238, 238, 0.70);
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
-
+#donasi-jadwal button {
+    width: 240px;
+    height: 92px;
+    flex-shrink: 0;
+    transform: translateY(400%);
+    border-radius: 20px;
+    background: #082138;
+    color: #EEE;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 /*---------------------------------------------------------EDIT PROFILE---------------------------------------------------------------*/
 
 /*---------------------------------------------------------HELP---------------------------------------------------------------*/
 
 /*---------------------------------------------------------HOMEPAGE---------------------------------------------------------------*/
 #homepage .cover{
-    height: 84vh;;
+    height: 84vh;
 }
 
 #homepage .transparent-box::before {
