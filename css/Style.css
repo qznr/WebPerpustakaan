@@ -848,10 +848,10 @@ body, header {
 
 #user-profile #first .container{
     height: auto;
-    transform: translate(10%, 10%);
+    margin-bottom: 120px;
 }
 
-#user-profile .container .image {
+#user-profile .image {
     position: relative;
     display: flex;
     justify-content: center;
@@ -859,7 +859,7 @@ body, header {
     margin-top: 9%;
 }
 
-#user-profile .container .image img{
+#user-profile .image img{
     position: flex;
     width: 315.25px;
     height: 315.25px;
@@ -869,25 +869,26 @@ body, header {
     flex-shrink: 0;
 }
 
-#user-profile .container .data{
+#user-profile .data{
     margin-left: 100px;
     position: relative;
     width: 637px;
     flex-shrink: 0;
     border-radius: 0px;
-    transform: translateY(3%);
 }
 
-#user-profile .data .input-box{
+#user-profile #first #data .container{
     width: 637px;
-    height: 82px;
+    height: 82px;   
     flex-shrink: 0;
-    border-radius: 0px;
+    border-radius: 20px;
     background: #D9D9D9;
     margin-bottom: 60px;
+    padding: 15px;
 }
 
-#user-profile .data .input-box::placeholder{
+#user-profile #first #data .container p{
+    text-align: left;
     color: #000;
     font-family: EB Garamond;
     font-size: 40px;
@@ -898,25 +899,96 @@ body, header {
 
 
 
-#user-profile .data .button{
+#user-profile .button{
     position: relative;
     justify-content: center;
     align-items: center;
     font-size: 45px;
     color: white;
-    column-gap: 300px;
+    column-gap: 240px;
 }
 
-#user-profile .data .button .buttons{
+#user-profile .buttons{
     width: 200px;
     height: 78px;
+    flex-shrink: 0;
     border-radius: 20px;
     background: #082138;
     justify-content: center;
     font-size: 45px;
     color: white;
+    color: #EEE;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
 }
 
+#user-profile #second .container{
+    display: flex;
+}
+
+#user-profile #second #data .container{
+    width: 1110px;
+    height: 82px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #D9D9D9;
+    margin-bottom: 60px;
+    color: #000;
+}
+    
+
+#user-profile #second #data .container p{
+    transform: translateY(10%);
+    text-align: left;
+    font-family: EB Garamond;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#user-profile #third .container{
+    display: flex;
+    color: #000;
+    text-align: center;
+    font-family: EB Garamond;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#user-profile #fourth .container{
+    border-radius: 20px;
+    width: 1110px;
+    height: 559px;
+    flex-shrink: 0;
+    background: #D9D9D9;
+    padding-top: 40px;
+}
+
+#user-profile #fourth #data .container{
+    width: 1014px;
+    height: 108px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #FFF;
+    margin-bottom: 60px;
+}
+
+#user-profile #fourth #data .container p{
+    color: #000;
+        
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 
 
