@@ -134,6 +134,23 @@ body, header {
     margin-top: 15px; /* Adjust the top margin to your desired value */
 }
 
+/* Style the Search bar */
+.search-field {
+    position: relative;
+    width: 460px;
+    height: 60px;
+    flex-shrink: 0;
+    border: 2px solid #fff;
+    border-radius: 15px  !important;
+    color: #000;
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+    background-image: url(../img/search.png); /* Set the URL to your search icon image */
+    background-repeat: no-repeat;
+    background-position: 95% center; /* Adjust the position for the icon */
+    
+}
+
 /*---------------------------------------------------------WHITE BOX---------------------------------------------------------------*/
 .white-box {
     position: absolute;
