@@ -707,7 +707,93 @@ body, header {
     background-color: #ebebeb;
 }
 
+#keranjang .card-inside {
+    border-radius: 50px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 
+#keranjang .no-margin {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#keranjang .form-check {
+    align-content: center;
+}
+
+#keranjang .form-check-input {
+    transform: scale(2.5);
+}
+
+#keranjang .checkbox-label {
+    display: flex;
+    color: #000;
+    text-align: left;
+    font-family: EB Garamond;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+#keranjang .writer-frame {
+    padding-left: 5%;
+    padding-top: 50px;
+    border-bottom: 8px solid rgba(0, 0, 0, 0.30);
+}
+
+#keranjang .image-content{
+    display: flex;
+    position: relative;
+    width: 255px;
+    height: 348px;
+}
+
+#keranjang .card-inside h1 {
+    color: #000;
+    text-align: left;
+    font-family: EB Garamond;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+
+#keranjang .card-inside h2 {
+    color: #000;
+    text-align: left;
+    font-family: EB Garamond;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+#keranjang .card-inside h3 {
+    color: #000;
+    text-align: left;
+    font-family: EB Garamond;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#keranjang .card-inside h4 {
+    color: rgba(0, 0, 0, 0.50);
+    text-align: left;
+    font-family: EB Garamond;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 /*---------------------------------------------------------LOGIN---------------------------------------------------------------*/
 #login .cover{
