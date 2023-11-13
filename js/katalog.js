@@ -2,11 +2,13 @@
 //     document.getElementById("popup-1").classList.toggle("active");
 // }
 
+var popup = document.getElementById("popup-1");
+var image = popup.querySelector("#popup-image");
+var h1 = popup.querySelector("h1");
+var btn2 = popup.querySelector(".btn-2");
+var content = popup.querySelector(".content");
+
 function togglePopup(index) {
-    var popup = document.getElementById("popup-1");
-    var image = popup.querySelector("#popup-image");
-    var h1 = popup.querySelector("h1");
-    var btn2 = popup.querySelector(".btn-2");
 
     // Check if the function is called with an index parameter
     if (index !== undefined) {
@@ -42,8 +44,16 @@ function togglePopup(index) {
 
     // Toggle the popup's active class
     popup.classList.toggle("active");
-
-
 }
+
+window.addEventListener("scroll", function() {
+    // Calculate the new top position based on the scroll position
+    var newTop = window.scrollY + window.innerHeight / 1 - content.clientHeight / 2 ;
+
+    // Set the new top position for the content
+    content.style.top = newTop + "px";
+});
+
+
 
 
