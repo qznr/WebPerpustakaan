@@ -753,6 +753,7 @@ body, header {
 
 #keranjang .writer-frame:last-child {
     background: linear-gradient(0deg, rgba(0, 0, 255, 0.25) -16.23%, rgba(255, 255, 255, 0.00) 32.53%);
+    margin-bottom: 75px;
 }
 
 #keranjang .image-content{
