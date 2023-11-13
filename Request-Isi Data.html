@@ -54,11 +54,31 @@
                 <input type="text" class="input-box" placeholder="Publisher">
                 <input type="text" class="input-box" placeholder="Tahun Terbit">
                 <input type="text" class="input-box" placeholder="Referensi Tentang Buku">
-                <!--tombol pop up-->
-                <a href="#">
-                    <button>Ajukan</button>
-                </a>
+                <button id="showPopup">Ajukan</button>
             </div>
+            <!--Pop up Content Start-->
+            <div id="popupContainer" class="popUpShow">
+                <div class="popup-content">
+                    <img src="img/success.png" alt="Process Successfully" class="success">
+                    <h1 class="popup-text">Ajuan Dibuat!</h1>
+                    <p>Jika sudah tersedia akan diberitahukan.</p>
+                    <p>Terima Kasih!</p>
+                    <ul>
+                        <li>
+                            <a href="Index.html">
+                                <img src="img/Home.png" alt="Home Button" class="home">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Request.html">
+                                <button>Buat request lagi</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <script src="js/popup.js"></script>
+            <!--Pop up Content End-->
         </div>
         <!--Content End-->
 

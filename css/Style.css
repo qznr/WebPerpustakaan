@@ -770,6 +770,87 @@ body, header {
     line-height: normal;
 }
 
+#request-isi-data .popUpShow {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+}
+
+#request-isi-data .popup-content {
+    position: absolute;
+    width: 595.041px;
+    height: 600px;
+    flex-shrink: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFF;
+    padding: 20px;
+    border-radius: 70px;
+}
+
+#request-isi-data .popup-content h1 {
+    color: #000;
+    text-align: center;
+    font-family: EB Garamond;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#request-isi-data .popup-content p {
+    color: #000;
+    font-family: EB Garamond;
+    text-align: center;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%;
+}
+
+#request-isi-data .popup-content .success {
+    width: 216.198px;
+    height: 218px;
+    transform: translateX(-5%);
+    flex-shrink: 0;
+    margin: 71px 189.42px 0px 189.42px;
+}
+
+#request-isi-data .popup-content li {
+    padding-top: 14px;
+    list-style: none;
+    float: inline-end;
+}
+
+#request-isi-data .popup-content .home {
+    width: 73px;
+    height: 71px;
+    flex-shrink: 0;
+    margin: 5px 421px 71px 101.05px;
+}
+
+#request-isi-data .popup-content button {
+    width: 263.802px;
+    height: 74px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    margin-right: 35px;
+    background: #082138;
+    color: #EEE;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transform: translateY(-210%);
+}
+
 /*---------------------------------------------------------REQUEST---------------------------------------------------------------*/
 #request .cover{
     height: 145vh;
@@ -1081,4 +1162,3 @@ body, header {
     font-weight: 400;
     line-height: normal;
 }
-
