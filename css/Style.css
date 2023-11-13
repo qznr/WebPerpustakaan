@@ -725,6 +725,7 @@ body, header {
 
 #keranjang .form-check {
     align-content: center;
+    padding-bottom: 25px;
 }
 
 #keranjang .form-check-input {
