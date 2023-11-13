@@ -48,19 +48,53 @@
     </nav>
 
     <div class="cover">
-        <div class = "container"> 
-            <input type="text" class="search-field" placeholder="">
-            <div class="search-icon"></div>
+        <div class = "container mt-4"> 
+            <div class="input-group d-flex justify-content-center">
+                <input type="text" class="search-field">
 
-            <div class="text-left category-1">
-                Judul
+                <div class="dropdown px-2">
+                    <button
+                    class="btn btn-primary dropdown-toggle"
+                    style="border-radius: 30px; background: #FFF; color: #000; font-size: 30px;"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >
+                    Judul
+                    </button>
+                    <ul class="dropdown-menu" style="font-size: 30px;" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Judul 1</a></li>
+                    <li><a class="dropdown-item" href="#">Judul 2</a></li>
+                    <li><a class="dropdown-item" href="#">Judul 3</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown px-2" >
+                    <button
+                    class="btn btn-primary dropdown-toggle"
+                    style="border-radius: 30px; background: #FFF; color: #000; font-size: 30px;"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >
+                    Kategori
+                    </button>
+                    <ul class="dropdown-menu"  style="font-size: 30px;" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Kategori 1</a></li>
+                    <li><a class="dropdown-item" href="#">Kategori 2</a></li>
+                    <li><a class="dropdown-item" href="#">Kategori 3</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="text-left category-2">
-                Kategori
-            </div>
+
+    
             
         </div>
     </div>
+
+
 
     <div class="the-body">
         <button id= "prev-slide" class= "slide-button material-symbols-rounded">chevron_left</button>
