@@ -309,6 +309,12 @@ body, header {
     margin-bottom: 9%;
 }
 
+#about #fourth .container img{
+    width: 73px;
+    height: 71px;
+    transform: translateY(-25%);
+}
+
 #about .container .back{
     text-decoration: none;
     position: relative;

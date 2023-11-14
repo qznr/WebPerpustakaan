@@ -67,6 +67,13 @@ const initSlider = () => {
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
 
+function checkEnter(event) {
+    if (event.key === "Enter") {
+        // Ganti 'katalog.html' dengan URL yang sesuai
+        window.location.href = 'katalog.html';
+    }
+}
+
 
 //buat cek konstanta
 // const initSlider = () => {
