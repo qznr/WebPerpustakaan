@@ -535,7 +535,9 @@ body, header {
     height: 78px;
     flex-shrink: 0;
     border-radius: 60px;
+    transform: translateX(13%);
     border: none;
+    padding-left: 37px;
     background: rgba(238, 238, 238, 0.70);
     color: #000;
     font-family: EB Garamond;
@@ -546,7 +548,7 @@ body, header {
 }
 
 #donasi-jadwal .flatpickr-calendar {
-    transform: scale(1.3);
+    transform: scale(1.4);
 }
 
 #donasi-jadwal button {
