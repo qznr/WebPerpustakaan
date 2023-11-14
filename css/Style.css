@@ -379,10 +379,12 @@ body, header {
 
 /*---------------------------------------------------------DONASI---------------------------------------------------------------*/
 #donasi .cover{
-    height: 145vh;
+    height: 280vh;
 }
 
 #donasi .white-box {
+    margin-top: 20%;
+    margin-bottom: 20%;
     width: 1086px;
     height: 1222px;
     flex-shrink: 0;
@@ -439,10 +441,12 @@ body, header {
 }
 /*---------------------------------------------------------DONASI ISI DATA---------------------------------------------------------------*/
 #donasi-isi-data .cover {
-    height: 145vh;
+    height: 270vh;
 }
 
 #donasi-isi-data .white-box {
+    margin-top: 20%;
+    margin-bottom: 20%;
     width: 1086px;
     height: 1222px;
     flex-shrink: 0;
@@ -539,6 +543,10 @@ body, header {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+#donasi-jadwal .flatpickr-calendar {
+    transform: scale(1.3);
 }
 
 #donasi-jadwal button {
@@ -941,10 +949,12 @@ body, header {
 
 /*---------------------------------------------------------REQUEST ISI DATA---------------------------------------------------------------*/
 #request-isi-data .cover {
-    height: 149vh;
+    height: 273vh;
 }
 
 #request-isi-data .white-box {
+    margin-top: 20%;
+    margin-bottom: 20%;
     width: 1086px;
     height: 1360px;
     flex-shrink: 0; 
@@ -1082,10 +1092,12 @@ body, header {
 
 /*---------------------------------------------------------REQUEST---------------------------------------------------------------*/
 #request .cover{
-    height: 145vh;
+    height: 270vh;
 }
 
 #request .white-box{
+    margin-top: 20%;
+    margin-bottom: 20%;
     width: 1086px;
     height: 1222px;
     flex-shrink: 0;
