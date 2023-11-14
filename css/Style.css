@@ -769,8 +769,8 @@ body, header {
 #keranjang .image-content{
     display: flex;
     position: relative;
-    width: 255px;
-    height: 348px;
+    width: 229.5px;
+    height: 313.3px;
 }
 
 #keranjang .card-inside h1 {
@@ -806,7 +806,7 @@ body, header {
     line-height: normal;
 }
 
-#keranjang .card-inside h4 {
+#keranjang .card-inside p {
     color: rgba(0, 0, 0, 0.50);
     text-align: left;
     font-family: EB Garamond;
