@@ -548,8 +548,9 @@ body, header {
 }
 
 #donasi-jadwal .flatpickr-calendar {
-    transform: scale(1.4);
+    transform: scale(2.0) translateY(-28%);
 }
+
 
 #donasi-jadwal button {
     width: 240px;
@@ -588,6 +589,7 @@ body, header {
     background: #FFF;
     padding: 20px;
     border-radius: 70px;
+    
 }
 
 
@@ -641,6 +643,56 @@ body, header {
 /*---------------------------------------------------------EDIT PROFILE---------------------------------------------------------------*/
 
 /*---------------------------------------------------------HELP---------------------------------------------------------------*/
+#help .cover {
+    height: 345vh;
+}
+
+#help .white-box {
+    width: 1252px;
+    height: 1706px;
+    flex-shrink: 0;
+    margin-top: 30%;
+    margin-bottom: 30%;
+    border-radius: 69px;
+    background: #FFF;
+}
+
+#help .FAQ {
+    margin: 0px 565px 14px 55px;
+}
+
+#help .CustomerService {
+    margin-right: 52px;
+    transform: translateY(-10%);
+}
+
+#help h1 {
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    margin-left: 73px;
+}
+
+#help .pinjam-box {
+    width: 1108px;
+    height: 620px;
+    flex-shrink: 0;
+    background: #D9D9D9;
+    margin-left: 73px;
+    margin-bottom: 56px;
+}
+
+#help .kembali-box {
+    width: 1108px;
+    height: 620px;
+    flex-shrink: 0;
+    background: #D9D9D9;
+    margin-left: 73px;
+}
 
 /*---------------------------------------------------------HOMEPAGE---------------------------------------------------------------*/
 #homepage .cover{
