@@ -806,6 +806,15 @@ body, header {
     line-height: normal;
 }
 
+#keranjang .card-inside h4 {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: EB Garamond;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 #keranjang .card-inside p {
     color: rgba(0, 0, 0, 0.50);
     text-align: left;
@@ -814,6 +823,31 @@ body, header {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+#keranjang .outline-frame {
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.55);
+    background: #FFF;
+}
+
+#keranjang .btn-primary {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 2em;
+    border-radius: 20px;
+    background: #00F;
+}
+
+#keranjang .btn-outline-primary {
+    color: #233D63;
+    font-family: EB Garamond;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 50px;
+    border: 1px solid #000;
 }
 
 /*---------------------------------------------------------LOGIN---------------------------------------------------------------*/
