@@ -9,7 +9,7 @@ function login() {
                 // alert('Login successful! Redirecting...');
                 // Redirect to index.html after a brief delay (e.g., 2 seconds)
                 setTimeout(function () {
-                    window.location.href = 'index.html';
+                    window.location.href = 'homepage-after.html';
                 }, 0);
             } else {
                 alert('Invalid username or password.');
