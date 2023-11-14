@@ -705,7 +705,6 @@ body, header {
     background-color: #ebebeb;
     box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25) inset;
     z-index: 5;
-
 }
 
 #keranjang .file {
@@ -716,6 +715,29 @@ body, header {
     position: relative;
     z-index: 1;
 }
+
+@media only screen and (max-width: 576px) {
+    #keranjang .file {
+        width: 100%;
+        border-radius: 0px 0px 0px 0px !important;
+        fill: #EBEBEB;
+        box-shadow: none;
+        position: relative;
+        z-index: 1;
+    }
+
+    #keranjang .nav-link.active, .nav-link:active {
+        background-color: #ebebeb;
+        box-shadow: none;
+        z-index: 5;
+    }
+
+
+
+    #keranjang .nav-item-card:last-child {
+        transform: none;
+    }
+  }
 
 #keranjang .card-body {
     border: none;
@@ -734,12 +756,22 @@ body, header {
 }
 
 #keranjang .form-check {
-    align-content: center;
+    align-items: center;
     padding-bottom: 25px;
 }
 
 #keranjang .form-check-input {
-    transform: scale(2.5);
+    width: 2em;
+    height: 2em;
+}
+
+#keranjang label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#keranjang .col-12 {
+    padding-top: 10px;
 }
 
 #keranjang .checkbox-label {
@@ -829,6 +861,7 @@ body, header {
     border-radius: 50px;
     border: 1px solid rgba(0, 0, 0, 0.55);
     background: #FFF;
+    margin-bottom: 35px;
 }
 
 #keranjang .btn-primary {
@@ -839,15 +872,15 @@ body, header {
     background: #00F;
 }
 
-#keranjang .btn-outline-primary {
-    color: #233D63;
+#keranjang .btn-outline-dark {
     font-family: EB Garamond;
     font-size: 2em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     border-radius: 50px;
-    border: 1px solid #000;
+    float: right;
+    padding-inline: 40px;
 }
 
 /*---------------------------------------------------------LOGIN---------------------------------------------------------------*/
