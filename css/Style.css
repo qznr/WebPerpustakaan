@@ -1487,6 +1487,7 @@ body, header {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-left: 60px;
 }
 
 #user-profile #fourth .container{
