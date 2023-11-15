@@ -730,6 +730,15 @@ body, header {
     font-size:50px;
 }
 
+#homepage .drop-opacity{
+    opacity: 40%;
+}
+
+#homepage .drop-opacity-text p{
+    opacity: 100%;
+}
+
+
 /*---------------------------------------------------------KATALOG---------------------------------------------------------------*/
 #katalog .cover{
     height: 58vh;
