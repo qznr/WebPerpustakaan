@@ -23,7 +23,7 @@ function togglePopup(index) {
             if (index === 6) {
                 // Modify the h1 and btn-2 text
                 h1.textContent = "Tidak Tersedia";
-                btn2.textContent = "Reservation";
+                btn2.textContent = "Reservasi";
                 btn2.style.fontSize = "35px";
                 btn2.onclick = function() {
                     window.location.href = ""; // go to reservasi html
