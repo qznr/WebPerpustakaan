@@ -1013,6 +1013,84 @@ body, header {
 
 
 /*---------------------------------------------------------PENGEMBALIAN---------------------------------------------------------------*/
+#pengembalian .cover{
+    height: 171vh;
+}
+
+#pengembalian .white-box{
+    width: 1837px;
+    height: 964px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    background: rgba(214, 214, 214, 0.90);
+    margin-top: 4%;
+}
+
+#pengembalian .white-box p{
+    margin-top: 40PX;
+    color: #000;
+    text-align: center;
+    font-family: EB Garamond;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+#pengembalian .card-group{
+    justify-content: center;
+    scale: 0.9;
+}
+
+#pengembalian .card-group div{
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+#pengembalian .card-group img{
+    width: 380px;
+    height: 563px;
+    flex-shrink: 0;
+}
+
+#pengembalian .card-group p{
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 0px; 
+    color: #000;
+    text-align: center;
+    font-family: EB Garamond;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 322px;
+    padding-bottom: 70px;
+}
+
+#pengembalian .button{
+    position: relative;
+    display:inline;
+    width: 200px;
+    height: 78px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #082138;
+    scale: 0.8;
+
+    color: #EEE;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
 
 /*---------------------------------------------------------REGISTER---------------------------------------------------------------*/
 #register .cover{
