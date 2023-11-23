@@ -361,7 +361,7 @@ nav .nav-link {
     background: #FFF;
 }
 
-#checkout .card-outline .btn-primary {
+#checkout .card .card-outline .btn-primary {
     width: 100%;
     margin-block: 1rem;
     border-radius: 3.125rem;
@@ -376,6 +376,19 @@ nav .nav-link {
     line-height: normal;
 }
 
+#checkout .card .btn-primary {
+    width: 100%;
+    border-radius: 1.25rem;
+    background: #00F;
+
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 #checkout h1 {
     color: #000;
     font-family: EB Garamond;
@@ -384,6 +397,15 @@ nav .nav-link {
     font-weight: 700;
     line-height: normal;
     padding-left: 1rem;
+}
+
+#checkout h2 {
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 #checkout h3 {
