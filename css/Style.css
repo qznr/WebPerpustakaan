@@ -7,6 +7,11 @@ body, header {
     margin-bottom: 100px;
 }
 
+nav .nav-link {
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+}
+
 #homepage {
     margin: 0;
     padding: 0;
@@ -91,7 +96,7 @@ body, header {
 .drop-text{
     color: #000;
     font-family: EB Garamond;
-    font-size: 30px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -104,7 +109,6 @@ body, header {
     color: #000;
     text-align: right;
     padding: 10px 0;
-    position: fixed;
     bottom: 0;
     height: 12vh;
     width: 100%;
@@ -372,7 +376,6 @@ body, header {
     line-height: normal;
 }
 
-
 #checkout h1 {
     color: #000;
     font-family: EB Garamond;
@@ -381,8 +384,41 @@ body, header {
     font-weight: 700;
     line-height: normal;
     padding-left: 1rem;
-    transform: translateY(25%);
 }
+
+#checkout h3 {
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#checkout h4 {
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#checkout p {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: EB Garamond;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#checkout .book-container img {
+    width: 229.5px;
+    height: 313.3px;
+    object-fit: contain; /* This property ensures that the entire image is covered within the container */
+}
+
 
 
 
