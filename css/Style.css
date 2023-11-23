@@ -42,11 +42,13 @@ body, header {
     position: absolute;
     left: 0;
     right: 0;
-    margin: auto;
+    height: 12vh;
+    text-align: center;
     z-index: -1;
 }
 
 .title-text {
+    padding-top: 2rem;
     position: relative;
     text-align: center;
     font-family: 'EB Garamond', serif;
