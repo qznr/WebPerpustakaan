@@ -39,6 +39,8 @@ body, header {
 }
 
 .title {
+    position: absolute;
+    margin-inline: 50%;
     font-family: 'EB Garamond', serif;
     color: #000;
     font-size:40px;
