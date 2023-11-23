@@ -318,6 +318,26 @@ body, header {
 
 /*---------------------------------------------------------CHECKOUT---------------------------------------------------------------*/
 
+#checkout .card {
+    margin-block: 2.5rem;
+    padding-inline: 1.5rem;
+    padding-block: 3rem;
+    filter: drop-shadow(7px 7px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 3.125rem;
+    background: #FFF;
+}
+
+#checkout .card-outline {
+    padding: 1.5rem;
+    height: 12.8125rem;
+    margin-bottom: 1rem;
+    border-radius: 3.125rem;
+    border: 1px solid rgba(0, 0, 0, 0.60);
+    background: #FFF;
+}
+
+
+
 /*---------------------------------------------------------DETAIL BUKU---------------------------------------------------------------*/
 #detail-buku .cover{
     height: 23vh;
