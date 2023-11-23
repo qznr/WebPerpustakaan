@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/Style.css">
 
         <!-- Include Bootstrap CSS -->
@@ -19,27 +19,75 @@
 
 <body id="keranjang">
 
-    <nav class="navbar navbar-expand-xl navbar-white bg-white thin-shadow">        
-        <a class="navbar-brand logo-container" href="#">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex justify-content-center">
+                <a class="navbar-brand"><img src="img/logo-perpus.png" alt="Logo"></a>
+                <div class="mx-auto title">
+                    Keranjang
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span> Menu
+                </button>
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav ms-auto mr-md-3">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <div class="d-lg-none">
+                                    Home
+                                </div>
+                                <img src="img/Home.png" class = "circular-button d-none d-lg-block" alt="Button 1">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <div class="d-lg-none">
+                                    Katalog
+                                </div>
+                                <img src="img/Book.png" class = "circular-button d-none d-lg-block" alt="Button 2">
+                            </a>
+                        </li>                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="d-lg-none">
+                                Profil
+                            </div>
+                            <img src="img/default-user.png" class ="circular-button d-none d-lg-block" alt="Button 3">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                        </ul>
+                    </li>                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- <nav class="navbar navbar-expand-xl navbar-white bg-white thin-shadow">        
+        <a class="navbar-brand" href="#">
             <img src="img/logo-perpus.png" alt="Logo">
         </a>
-        <span class="navbar-text text-center title">
+        <span class="mx-auto title">
             Keranjang
         </span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span> Menu
+        </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown"></div>
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto mr-md-3">
                 <li class="nav-item">
-                    <a class="nav-link circular-button" href="Katalog.html">
+                    <a class="nav-link" href="Katalog.html">
                         <img src="img/Book.png" alt="Button 1">
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link circular-button" href="Index.html">
+                    <a class="nav-link" href="Index.html">
                         <img src="img/Home.png" alt="Button 1">
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link circular-button" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="img/default-user.png" alt="Button 3">
                     </a>
                     <ul class="dropdown-menu drop-margin">
@@ -48,7 +96,7 @@
                 </li>          
             </ul>                        
         </div>
-    </nav>
+    </nav> -->
 
     <div class="cover">
         <div class = "container mt-4"> 
