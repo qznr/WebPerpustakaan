@@ -39,10 +39,29 @@ body, header {
 }
 
 .title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.title-text {
+    position: relative;
+    text-align: center;
     font-family: 'EB Garamond', serif;
     color: #000;
-    font-size:40px;
+    font-size: 40px;
+    display: inline-block;
+}
+
+.title-text::after {
+    content: '';
+    display: block;
     border-bottom: 6px solid #999999;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .thin-shadow {
