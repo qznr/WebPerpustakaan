@@ -329,11 +329,37 @@ body, header {
 
 #checkout .card-outline {
     padding: 1.5rem;
-    height: 12.8125rem;
     margin-bottom: 1rem;
     border-radius: 3.125rem;
     border: 1px solid rgba(0, 0, 0, 0.60);
     background: #FFF;
+}
+
+#checkout .card-outline .btn-primary {
+    width: 100%;
+    margin-block: 1rem;
+    border-radius: 3.125rem;
+    background-color: transparent;
+    border: 1px solid black;
+
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+#checkout h1 {
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 1rem;
+    transform: translateY(25%);
 }
 
 
