@@ -1112,21 +1112,26 @@ nav .nav-link {
 
 
 /*---------------------------------------------------------PENGEMBALIAN---------------------------------------------------------------*/
-#pengembalian .cover{
-    height: 171vh;
+#pengembalian-riwayat .cover {
+    height: 425vh;
+
 }
 
-#pengembalian .white-box{
-    width: 1837px;
-    height: 964px;
+#pengembalian-riwayat .white-box {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: 250%;
+    margin-top: 950px;
     flex-shrink: 0;
     border-radius: 60px;
     background: rgba(214, 214, 214, 0.90);
-    margin-top: 4%;
 }
 
-#pengembalian .white-box p{
-    margin-top: 40PX;
+#pengembalian-riwayat h1 {
+    margin-top: 53px;
+    margin-bottom: 40px;
+    flex-shrink: 0;
     color: #000;
     text-align: center;
     font-family: EB Garamond;
@@ -1134,62 +1139,37 @@ nav .nav-link {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 20px;
 }
 
-#pengembalian .card-group{
+#pengembalian-riwayat .book-list {
+    display: flex;
+    flex-wrap: wrap;
+    transform: translateY(8%);
+    position :absolute;
     justify-content: center;
-    scale: 0.9;
+    align-content: flex-start;
+    height: 88%;
+    width: 90%;
+    column-gap: 3%;
+    row-gap: 5%;
+    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-#pengembalian .card-group div{
-    margin-left: 5px;
-    margin-right: 5px;
-
-}
-
-#pengembalian .card-group img{
+#pengembalian-riwayat .book-items {
     width: 380px;
     height: 563px;
     flex-shrink: 0;
+    background: #D9D9D9;
+    object-fit: cover;
 }
 
-#pengembalian .card-group p{
-    margin-left: 50px;
-    margin-right: 50px;
-    height: 0px; 
-    color: #000;
-    text-align: center;
-    font-family: EB Garamond;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 322px;
-    padding-bottom: 70px;
+#pengembalian-riwayat .book-content {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    height: 100%; /* Maintain the aspect ratio */
+    display: block;
 }
-
-#pengembalian .button{
-    position: relative;
-    display:inline;
-    width: 200px;
-    height: 78px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    background: #082138;
-    scale: 0.8;
-
-    color: #EEE;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-
-
 
 /*---------------------------------------------------------REGISTER---------------------------------------------------------------*/
 #register .cover{
