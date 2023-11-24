@@ -14,174 +14,189 @@
         <meta name="viewport" content="width=device-width,initial-scale=1"/>
         <title>Katalog</title>
     </head>
-<body id="katalog">
-
-    <nav class="navbar navbar-expand-lg navbar-white bg-white thin-shadow fixed-top ">        
-        <a class="navbar-brand logo-container" href="#">
-            <img src="img/logo-perpus.png" alt="Logo">
-        </a>
-        <span class="navbar-text text-center title">
-            Katalog
-        </span>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown"></div>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link circular-button" href="Index.html">
-                        <img src="img/Home.png" alt="Button 1">
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link circular-button" href="#">
-                        <img src="img/cart.png" alt="Button 2">
-                    </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link circular-button" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="img/default-user.png" alt="Button 3">
-                    </a>
-                    <ul class="dropdown-menu drop-margin">
-                        <li><a class="drop-text dropdown-item" href="#">Login</a></li>
-                    </ul>
-                </li>          
-            </ul>                        
+    <body id="katalog">
+        <div class="title">
+            <div class="title-text">
+                Katalog
+            </div>
         </div>
-    </nav>
-
-    <div class="cover">
-        <div class = "container mt-4"> 
-            <div class="input-group d-flex justify-content-center">
-                <input type="text" class="search-field">
-
-                <div class="dropdown px-2">
-                    <button
-                    class="btn btn-primary dropdown-toggle"
-                    style="border-radius: 30px; background: #FFF; color: #000; font-size: 30px;"
-                    type="button"
-                    id="dropdownMenuButton"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    >
-                    Judul
+        <div class="container-fluid thin-shadow">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid d-flex">
+                    <a class="navbar-brand"><img src="img/logo-perpus.png" alt="Logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span> Menu
                     </button>
-                    <ul class="dropdown-menu" style="font-size: 30px;" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href="#">Judul 1</a></li>
-                    <li><a class="dropdown-item" href="#">Judul 2</a></li>
-                    <li><a class="dropdown-item" href="#">Judul 3</a></li>
-                    </ul>
+                    <div class="collapse navbar-collapse" id="ftco-nav">
+                        <ul class="navbar-nav ms-auto mr-md-3">
+                            <li class="nav-item">
+                                <a href="Index.html" class="nav-link">
+                                    <div class="d-lg-none">
+                                        Home
+                                    </div>
+                                    <img src="img/Home.png" class = "circular-button d-none d-lg-block" alt="Button 1">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Keranjang.html" class="nav-link">
+                                    <div class="d-lg-none">
+                                        Keranjang
+                                    </div>
+                                    <img src="img/cart.png" class = "circular-button d-none d-lg-block" alt="Button 2">
+                                </a>
+                            </li>                        
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="d-lg-none">
+                                    Profil
+                                </div>
+                                <img src="img/default-user.png" class ="circular-button d-none d-lg-block" alt="Button 3">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                                <li><a class="dropdown-item drop-text" href="Login.html">Login</a></li>
+                            </ul>
+                        </li>                        
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="cover">
+            <div class = "container mt-4"> 
+                <div class="input-group d-flex justify-content-center">
+                    <input type="text" class="search-field">
+
+                    <div class="dropdown px-2">
+                        <button
+                        class="btn btn-primary dropdown-toggle"
+                        style="border-radius: 30px; background: #FFF; color: #000; font-size: 30px;"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        >
+                        Judul
+                        </button>
+                        <ul class="dropdown-menu" style="font-size: 30px;" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Judul 1</a></li>
+                        <li><a class="dropdown-item" href="#">Judul 2</a></li>
+                        <li><a class="dropdown-item" href="#">Judul 3</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown px-2" >
+                        <button
+                        class="btn btn-primary dropdown-toggle"
+                        style="border-radius: 30px; background: #FFF; color: #000; font-size: 30px;"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        >
+                        Kategori
+                        </button>
+                        <ul class="dropdown-menu"  style="font-size: 30px;" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Kategori 1</a></li>
+                        <li><a class="dropdown-item" href="#">Kategori 2</a></li>
+                        <li><a class="dropdown-item" href="#">Kategori 3</a></li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="dropdown px-2" >
-                    <button
-                    class="btn btn-primary dropdown-toggle"
-                    style="border-radius: 30px; background: #FFF; color: #000; font-size: 30px;"
-                    type="button"
-                    id="dropdownMenuButton"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    >
-                    Kategori
-                    </button>
-                    <ul class="dropdown-menu"  style="font-size: 30px;" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href="#">Kategori 1</a></li>
-                    <li><a class="dropdown-item" href="#">Kategori 2</a></li>
-                    <li><a class="dropdown-item" href="#">Kategori 3</a></li>
-                    </ul>
+        
+                
+            </div>
+        </div>
+
+
+
+        <div class="the-body">
+            <button id= "prev-slide" class= "slide-button material-symbols-rounded">chevron_left</button>
+            <div class="image-list">
+                <div class="image-item">
+                    <img src="img/coverbuku1.jpg" alt="cb1" class="image-content">
+                    <button class="btn" onclick="togglePopup(0)">Lihat</button>
                 </div>
+                <div class="image-item">
+                    <img src="img/coverbuku2.jpg" alt="cb2" class="image-content">
+                    <button class="btn" onclick="togglePopup(1)">Lihat</button>
+                </div>
+                <div class="image-item">
+                    <img src="img/coverbuku3.jpg" alt="cb3" class="image-content">
+                    <button class="btn" onclick="togglePopup(2)">Lihat</button>
+                </div>
+                <div class="image-item">
+                    <img src="img/coverbuku4.webp" alt="cb4" class="image-content">
+                    <button class="btn" onclick="togglePopup(3)">Lihat</button>
+                </div>
+                <div class="image-item">
+                    <img src="img/coverbuku5.jpeg" alt="cb5" class="image-content">
+                    <button class="btn" onclick="togglePopup(4)">Lihat</button>
+                </div>
+                <div class="image-item">
+                    <img src="img/coverbuku6.webp" alt="cb6" class="image-content">
+                    <button class="btn" onclick="togglePopup(5)">Lihat</button>
+                </div>
+                <div class="image-item">
+                    <img src="img/coverbuku7.jpeg" alt="cb7" class="image-content">
+                    <button class="btn" onclick="togglePopup(6)">Lihat</button>
+                </div>
+                <div class="image-item">
+                    <img src="img/coverbuku8.webp" alt="cb8" class="image-content">
+                    <button class="btn" onclick="togglePopup(7)">Lihat</button>
+                </div>
+                <!-- Repeat for other images -->
             </div>
 
-    
-            
-        </div>
-    </div>
-
-
-
-    <div class="the-body">
-        <button id= "prev-slide" class= "slide-button material-symbols-rounded">chevron_left</button>
-        <div class="image-list">
-            <div class="image-item">
-                <img src="img/coverbuku1.jpg" alt="cb1" class="image-content">
-                <button class="btn" onclick="togglePopup(0)">Lihat</button>
-            </div>
-            <div class="image-item">
-                <img src="img/coverbuku2.jpg" alt="cb2" class="image-content">
-                <button class="btn" onclick="togglePopup(1)">Lihat</button>
-            </div>
-            <div class="image-item">
-                <img src="img/coverbuku3.jpg" alt="cb3" class="image-content">
-                <button class="btn" onclick="togglePopup(2)">Lihat</button>
-            </div>
-            <div class="image-item">
-                <img src="img/coverbuku4.webp" alt="cb4" class="image-content">
-                <button class="btn" onclick="togglePopup(3)">Lihat</button>
-            </div>
-            <div class="image-item">
-                <img src="img/coverbuku5.jpeg" alt="cb5" class="image-content">
-                <button class="btn" onclick="togglePopup(4)">Lihat</button>
-            </div>
-            <div class="image-item">
-                <img src="img/coverbuku6.webp" alt="cb6" class="image-content">
-                <button class="btn" onclick="togglePopup(5)">Lihat</button>
-            </div>
-            <div class="image-item">
-                <img src="img/coverbuku7.jpeg" alt="cb7" class="image-content">
-                <button class="btn" onclick="togglePopup(6)">Lihat</button>
-            </div>
-            <div class="image-item">
-                <img src="img/coverbuku8.webp" alt="cb8" class="image-content">
-                <button class="btn" onclick="togglePopup(7)">Lihat</button>
-            </div>
-            <!-- Repeat for other images -->
+            <button id= "next-slide" class= "slide-button material-symbols-rounded">chevron_right</button>
         </div>
 
-        <button id= "next-slide" class= "slide-button material-symbols-rounded">chevron_right</button>
-    </div>
-
-    <div class="popup" id="popup-1">
-        <div class="overlay"></div>
-        <div class="content container-fluid">
-            <div class="close-btn" onclick="togglePopup()">&times;</div>
-            <img id="popup-image" src="" alt="Popup Image" class="popup-image">
-            <h1>Buku Tersedia</h1>
-            <h2>Judul Buku</h2>
-            <h3>Penulis</h3>
-            <div class="text-wrapper">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat dui quis odio volutpat feugiat sed vel nibh. Suspendisse faucibus enim ut vestibulum vulputate. Nulla ac consectetur risus, a consectetur ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; </p>
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content container-fluid">
+                <div class="close-btn" onclick="togglePopup()">&times;</div>
+                <img id="popup-image" src="" alt="Popup Image" class="popup-image">
+                <h1>Buku Tersedia</h1>
+                <h2>Judul Buku</h2>
+                <h3>Penulis</h3>
+                <div class="text-wrapper">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat dui quis odio volutpat feugiat sed vel nibh. Suspendisse faucibus enim ut vestibulum vulputate. Nulla ac consectetur risus, a consectetur ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; </p>
+                </div>
+                <button class="btn-2" onclick="window.location.href=''">Pinjam</button>
+                <button class="btn-3">Detail</button>
+                <div class="star-wrapper">
+                <a href="#" class="fas fa-star s1"></a>
+                <a href="#" class="fas fa-star s2"></a>
+                <a href="#" class="fas fa-star s3"></a>
+                <a href="#" class="fas fa-star s4"></a>
+                <a href="#" class="fas fa-star s5"></a>
+                </div>
+                <script src="https://kit.fontawesome.com/5ea815c1d0.js"></script> <!-- for star rating-->
             </div>
-            <button class="btn-2" onclick="window.location.href=''">Pinjam</button>
-            <button class="btn-3">Detail</button>
-            <div class="star-wrapper">
-            <a href="#" class="fas fa-star s1"></a>
-            <a href="#" class="fas fa-star s2"></a>
-            <a href="#" class="fas fa-star s3"></a>
-            <a href="#" class="fas fa-star s4"></a>
-            <a href="#" class="fas fa-star s5"></a>
+        </div>
+
+        <div class="page-number">
+            <div class="the-number">
+                1
             </div>
-            <script src="https://kit.fontawesome.com/5ea815c1d0.js"></script> <!-- for star rating-->
+            <div class="the-number">
+                2
+            </div>
+            <div class="the-number">
+                3
+            </div>
+            <div class="the-number">
+                4
+            </div>
+            <div class="the-number">
+                5
+            </div>
         </div>
-    </div>
 
-    <div class="page-number">
-        <div class="the-number">
-            1
-        </div>
-        <div class="the-number">
-            2
-        </div>
-        <div class="the-number">
-            3
-        </div>
-        <div class="the-number">
-            4
-        </div>
-        <div class="the-number">
-            5
-        </div>
-    </div>
-
-    <footer class = "footer">
-        <a href="#">Help</a>
-        <a href="About.html">About Us</a>
-    </footer>
-</body>
+        <footer class = "footer">
+            <a href="#">Help</a>
+            <a href="About.html">About Us</a>
+        </footer>
+    </body>
 </html>
