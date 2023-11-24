@@ -5,6 +5,7 @@ body, header {
     zoom: 67%;
     /* min-height: 2995px; */
     margin-bottom: 100px;
+    overflow-x: hidden;
 }
 
 nav .nav-link {
