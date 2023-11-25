@@ -1,5 +1,4 @@
 
-
 /* Style the Search bar */
 .search-field {
     position: absolute;
@@ -20,40 +19,22 @@
 }
 
 /* Style the "General" section */
-#general {
-    position: absolute;
-    transform: translateY(-20%) translateX(-50%);
-    max-height: 630px;
-    width: 70%;
-    height: 100%;
-    left: 50%;
-    /* z-index: 1; */
+#general .card {
+    transform: translateY(-25%);
     border-radius: 60px;
     background: #082138;
-    display: flex;
-    align-items: center;
 }
 
 #general img {
-    margin-left: 20px;
-    width: 50%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     border-radius: 60px;
-    display: block;
-    object-fit: cover;
-}
-
-#general .text-container {
-    position: absolute;
-    top: 12.5%;
-    width: 42.5%;
-    margin-left: 55%;
+    object-fit: cover; /* This property ensures that the entire image is covered within the container */
 }
 
 #general h1 {
     color: #FFF;
     font-family: EB Garamond;
-    font-size: 3em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -61,8 +42,8 @@
 
 #general p {
     color: #FFF;
+    font-size: 1.5rem;
     font-family: EB Garamond;
-    font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -92,26 +73,19 @@
 }
 
 .choices a {
-    position: relative;
-    color: black;
+    color: black !important;
+    text-align: center;
     font-family: EB Garamond;
-    font-size: 86px;
+    font-size: 5.375rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-right: 3%;
+    text-decoration: none;
 }
 
-  /* Remove extra left and right margins, due to padding in columns */
-.row {
-    margin: 0 -5px;
-}
-
-  /* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.choices a:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
 }
 
 .choices .card{
@@ -123,7 +97,6 @@
     overflow: hidden;
     margin-left: 5%;
     border-radius: 50px;
-    align-items: center;
     transition: transform 0.3s ease;
 }
 
@@ -132,18 +105,8 @@
     background-color: #000000;
 }
 
-.choices .card a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    width: 100%; /* Ensure the anchor takes up the entire card */
-    margin-left: 62%; /* Position*/
-}
-
-.choices img{
-    margin-top: 15%;
-    max-width: 35%; /* The logo will adjust to the card's width */
-    height: auto;
+.choices .card img{
+    max-width: 8rem;
     transition: transform 0.3s ease;
 }
 
@@ -162,6 +125,17 @@
     margin-top: 10%;
 }
 
+  /* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0 -5px;
+}
+
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /* Rekomendasi Buku*/
 .rekomendasi-buku{
