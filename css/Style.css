@@ -1,5 +1,5 @@
-/*---------------------------------------------------------NAVBAR---------------------------------------------------------------*/
 
+/*---------------------------------------------------------GENERAL--------------------------------------------------------------*/
 /* Reset some default styles for the body and header */
 body, header {
     zoom: 67%;
@@ -7,6 +7,19 @@ body, header {
     margin-bottom: 100px;
     overflow-x: hidden;
 }
+
+section {
+    margin-top: 15rem;
+}
+
+a {
+    color : black !important;
+    text-decoration: none;
+}
+
+/*---------------------------------------------------------NAVBAR---------------------------------------------------------------*/
+
+
 
 nav .nav-link, .navbar-toggler {
     font-family: 'EB Garamond', serif;

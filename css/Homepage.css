@@ -49,13 +49,6 @@
     line-height: normal;
 }
 
-/* Style the "Rekomendasi Buku" section */
-#rekomendasi-buku {
-    
-    background-color: #f5f5f5;
-    padding: 20px;
-}
-
 /* Style Pinjam Sekarang! */
 .choices {
     position: relative;
@@ -68,7 +61,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 19%;
-    margin-top: 30%;
+
     padding: 100px;
 }
 
@@ -125,6 +118,32 @@
     margin-top: 10%;
 }
 
+/* Style the "Rekomendasi Buku" section */
+#rekomendasi-buku {
+    
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+#rekomendasi-buku h2{
+    color: black;
+    font-family: EB Garamond;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#rekomendasi-buku a{
+    color: black;
+    text-decoration: none;
+}
+
+#rekomendasi-buku a:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}
+
   /* Remove extra left and right margins, due to padding in columns */
 .row {
     margin: 0 -5px;
@@ -145,15 +164,7 @@
     align-items: center; /* Center vertically */
 }
 
-.rekomendasi-buku h2{
-    margin-top: 8%;
-    color: black;
-    font-family: EB Garamond;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
+
 
 /* Cover Rekomendasi Buku */
 .container{
