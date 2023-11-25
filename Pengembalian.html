@@ -104,7 +104,7 @@
 
     <div class="popup" id="extend">
         <div class="overlay">
-            <div class="white-box extend">
+            <div class="white-box">
                 <div class="close-btn" onclick="togglePopup(1)">&times;</div>
                 <h1>
                     Masukkan ekstra waktu peminjaman
@@ -120,7 +120,7 @@
 
     <div class="popup" id="extendconfirm">
         <div class="overlay">
-            <div class="white-box extend">
+            <div class="white-box">
                 <div class="close-btn" onclick="togglePopup(2)">&times;</div>
                 <img src="img/success.png" alt="Process Successfully" class="success">
                 <h1>
@@ -133,13 +133,86 @@
 
     <div class="popup" id="return">
         <div class="overlay">
-            <div class="white-box extend">
+            <div class="white-box">
                 <div class="close-btn" onclick="togglePopup(3)">&times;</div>
-                <img src="img/success.png" alt="Process Successfully" class="success">
+                
                 <h1 class="text-center">
-                    ini return
+                    Pilih cara pengembalian
                 </h1>
+
+                <div class="option">
+                    <button class="choices" onclick="togglePopup(4)">
+                        <img src="img/onsite1.png" alt="Onsite">
+                        <h4>Onsite</h4>
+
+                    </button>
+                    <button class="choices" onclick="togglePopup(5)">
+                        <img src="img/delivery.png" alt="Delivery">
+                        <h4>Delivery</h4>
+                    </button>
+                </div>
         
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="onsite">
+        <div class="overlay">
+            <di class="white-box">
+                <div class="close-btn" onclick="togglePopup(7)">&times;</div>
+                <h1 class="text-center">
+                    Buku harus dikembalikan dalam waktu
+                </h1>
+                <p>
+                    23:59:59
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="delivery">
+        <div class="overlay">
+            <di class="white-box">
+                <div class="close-btn" onclick="togglePopup(5)">&times;</div>
+                <h1 class="text-center">
+                    Masukkan alamat anda
+                </h1>
+                <input type="text" id="alamat" class="input-box" placeholder="Alamat anda">
+                <button onclick="togglePopup(6)">
+                    <p>Konfirmasi</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="deliveryconfirm">
+        <div class="overlay">
+            <div class="white-box">
+                <div class="close-btn" onclick="togglePopup(7)">&times;</div>
+                <img src="img/success.png" alt="Process Successfully" class="success">
+                <h1>
+                    Berhasil, pengembalian buku akan di informasikan lebih lanjut melalui email
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="review">
+        <div class="overlay">
+            <div class="white-box">
+                <div class="close-btn" onclick="togglePopup(7)">&times;</div>
+                <h1>
+                    Terima kasih sudah meminjam di Malang Library. Berikan review buku yang anda baca
+                </h1>
+                <input type="text" id="review" class="input-box" placeholder="Berikan review">
+                <div class="star-wrapper">
+                    <a href="Pengembalian.html" class="fas fa-star s1"></a>
+                    <a href="Pengembalian.html" class="fas fa-star s2"></a>
+                    <a href="Pengembalian.html" class="fas fa-star s3"></a>
+                    <a href="Pengembalian.html" class="fas fa-star s4"></a>
+                    <a href="Pengembalian.html" class="fas fa-star s5"></a>
+                    </div>
+                    <script src="https://kit.fontawesome.com/5ea815c1d0.js"></script> <!-- for star rating-->
             </div>
         </div>
     </div>
