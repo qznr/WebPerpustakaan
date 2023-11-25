@@ -1208,7 +1208,8 @@ nav .nav-link, .navbar-toggler {
 }
 
 #pengembalian #extend .white-box,
-#pengembalian #extendconfirm .white-box {
+#pengembalian #extendconfirm .white-box,
+#pengembalian #return .white-box {
     width: 600px;
     height: 600px;
     flex-shrink: 0;
