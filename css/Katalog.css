@@ -362,6 +362,10 @@
     line-height: normal;
 }
 
+#confirm a .btn-2:hover {
+    background-color: #000;
+}
+
 
 @media (max-width: 756px) {
 
