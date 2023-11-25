@@ -1,5 +1,5 @@
 function extend() {
-    document.getElementById("popup-1").classList.toggle("active");
+    document.getElementById("extend").classList.toggle("active");
 }
 
 function returnn() {
