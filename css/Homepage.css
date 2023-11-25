@@ -23,8 +23,9 @@
 #general {
     position: absolute;
     transform: translateY(-20%) translateX(-50%);
-    width: 1600px;
-    height: 630px;
+    max-height: 630px;
+    width: 70%;
+    height: 100%;
     left: 50%;
     /* z-index: 1; */
     border-radius: 60px;
@@ -35,8 +36,8 @@
 
 #general img {
     margin-left: 20px;
-    width: 800px;
-    height: 576.604px;
+    width: 50%;
+    height: 90%;
     border-radius: 60px;
     display: block;
     object-fit: cover;
@@ -45,14 +46,14 @@
 #general .text-container {
     position: absolute;
     top: 12.5%;
-    width: 680px;
-    margin-left: 53.5%;
+    width: 42.5%;
+    margin-left: 55%;
 }
 
 #general h1 {
     color: #FFF;
     font-family: EB Garamond;
-    font-size: 60px;
+    font-size: 3em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -185,7 +186,7 @@
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center;
-    width: 1920px; 
+    width: 85%; 
     height: 100%;
     margin-top: 2%;
 }
@@ -296,52 +297,4 @@
     line-height: normal;
     transform: translateX(80%);
 }
-
-/* Add this CSS code in your stylesheet to customize the card width on small screens */
-@media (max-width: 100px) {
-    .choices .card{
-        width: 100%;
-        height: 120px;
-        margin-left: 0%;
-        border-radius: 0px;
-        align-items: center;
-    }
-    
-    .choices .card:hover {
-        transform: scale(1.05); 
-        background-color: #000000;
-    }
-    
-    .choices .card a {
-        background-color: #000;
-        display: block;
-        text-decoration: none;
-        color: inherit;
-        width: 100%; 
-    }
-    
-    .choices img{
-        display: none;
-    }
-
-    .choices h2 {
-        margin: initial;
-        color: #FFF;
-        font-family: EB Garamond;
-        font-size: 2em;
-    }
-
-    .choices a {
-        position: relative;
-        color: black;
-        font-family: EB Garamond;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        padding-bottom: 15px; 
-    }
-}
-
-
 /* Add more styles and customize as needed */
