@@ -73,26 +73,19 @@
 }
 
 .choices a {
-    position: relative;
-    color: black;
+    color: black !important;
+    text-align: center;
     font-family: EB Garamond;
-    font-size: 86px;
+    font-size: 5.375rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-right: 3%;
+    text-decoration: none;
 }
 
-  /* Remove extra left and right margins, due to padding in columns */
-.row {
-    margin: 0 -5px;
-}
-
-  /* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.choices a:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
 }
 
 .choices .card{
@@ -104,7 +97,6 @@
     overflow: hidden;
     margin-left: 5%;
     border-radius: 50px;
-    align-items: center;
     transition: transform 0.3s ease;
 }
 
@@ -113,18 +105,8 @@
     background-color: #000000;
 }
 
-.choices .card a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    width: 100%; /* Ensure the anchor takes up the entire card */
-    margin-left: 62%; /* Position*/
-}
-
-.choices img{
-    margin-top: 15%;
-    max-width: 35%; /* The logo will adjust to the card's width */
-    height: auto;
+.choices .card img{
+    max-width: 8rem;
     transition: transform 0.3s ease;
 }
 
@@ -143,6 +125,17 @@
     margin-top: 10%;
 }
 
+  /* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0 -5px;
+}
+
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /* Rekomendasi Buku*/
 .rekomendasi-buku{
