@@ -179,7 +179,7 @@
 
 .popup .content {
     position: absolute;
-    top: 60%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%) scale(0);
     background: #fff;
@@ -333,6 +333,35 @@
     transition: all 300ms ease-in-out;
     transform: translateX(-50%) scale(1);
 }
+
+#confirm .success {
+    width: 216.198px;
+    height: 218px;
+    transform: translateX(-5%);
+    flex-shrink: 0;
+    margin: 64px 150px 0px 180px;
+}
+
+#confirm a .btn-2 {
+    position: absolute;
+    bottom: 15%; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 11%;
+    background-color: #082138;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    font-family: 'Robto', serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 
 @media (max-width: 756px) {
 

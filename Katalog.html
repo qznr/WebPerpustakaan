@@ -163,7 +163,7 @@
                 <div class="text-wrapper">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat dui quis odio volutpat feugiat sed vel nibh. Suspendisse faucibus enim ut vestibulum vulputate. Nulla ac consectetur risus, a consectetur ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; </p>
                 </div>
-                <button class="btn-2" onclick="window.location.href=''">Pinjam</button>
+                <button class="btn-2" onclick="confirmPopup()">Pinjam</button>
                 <button class="btn-3">Detail</button>
                 <div class="star-wrapper">
                 <a href="#" class="fas fa-star s1"></a>
@@ -174,6 +174,21 @@
                 </div>
                 <script src="https://kit.fontawesome.com/5ea815c1d0.js"></script> <!-- for star rating-->
             </div>
+        </div>
+
+        <div class="popup" id="confirm">
+            <div class="overlay">
+                <div class="content container-fluid">
+                    <div class="close-btn" onclick="confirmPopup()">&times;</div>
+                    <img src="img/success.png" alt="Process Successfully" class="success">
+                    <h1>Buku ditambahkan!</h1>
+                    <a href="Checkout.html">
+                        <button class="btn-2" href = ''>Lihat Keranjang</button>
+                    </a>
+                   
+                </div>
+            </div>
+            
         </div>
 
         <div class="page-number">

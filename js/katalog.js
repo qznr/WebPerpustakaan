@@ -7,6 +7,7 @@ var image = popup.querySelector("#popup-image");
 var h1 = popup.querySelector("h1");
 var btn2 = popup.querySelector(".btn-2");
 var content = popup.querySelector(".content");
+var confirm = document.getElementById("confirm");
 
 function togglePopup(index) {
 
@@ -25,16 +26,11 @@ function togglePopup(index) {
                 h1.textContent = "Tidak Tersedia";
                 btn2.textContent = "Reservasi";
                 btn2.style.fontSize = "35px";
-                btn2.onclick = function() {
-                    window.location.href = ""; // go to reservasi html
-                };
+
             } else {
                 // Reset the h1 and btn-2 text for other indices
                 h1.textContent = "Buku Tersedia";
                 btn2.textContent = "Pinjam";
-                btn2.onclick = function() {
-                    window.location.href = ""; // go to pinjam html
-                };
             }
         } else {
             console.error("Invalid index:", index);
@@ -44,6 +40,12 @@ function togglePopup(index) {
 
     // Toggle the popup's active class
     popup.classList.toggle("active");
+}
+
+function confirmPopup(){
+    popup.classList.remove("active");
+    confirm.classList.toggle("active");
+
 }
 
 window.addEventListener("scroll", function() {

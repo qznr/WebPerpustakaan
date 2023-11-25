@@ -18,6 +18,10 @@ function togglePopup(index) {
         document.getElementById("extendconfirm").classList.toggle("active");
     }
 
+    if(index == 3) {
+        document.getElementById("return").classList.toggle("active");
+    }
+
 
 }
 
