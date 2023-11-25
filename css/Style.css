@@ -1470,7 +1470,7 @@ nav .nav-link, .navbar-toggler {
 
 /*---------------------------------------------------------PENGEMBALIAN RIWAYAT---------------------------------------------------------------*/
 #pengembalian-riwayat .cover {
-    height: 425vh;
+    height: 460vh;
 
 }
 
@@ -1479,7 +1479,7 @@ nav .nav-link, .navbar-toggler {
     justify-content: center;
     width: 95%;
     height: 250%;
-    margin-top: 950px;
+    margin-top: 1100px;
     flex-shrink: 0;
     border-radius: 60px;
     background: rgba(214, 214, 214, 0.90);
