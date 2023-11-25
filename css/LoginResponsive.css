@@ -1,0 +1,93 @@
+@media (max-width: 1375px) {
+    #login .white-box{
+        width: 50%;
+        
+    }
+
+    #login .input-box{
+        width: 80%;
+        /* height: 40%; */
+    }
+
+    #login .input-box::placeholder{
+        font-size: 40px;
+        /* height: 40%; */
+    }
+
+    #login .text{
+        font-size: 50px;
+        
+    }
+
+    #login .input-box + .input-box{
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 1075px) {
+    #login .text{
+        font-size: 45px;
+        
+    }
+
+    #login .input-box + .input-box{
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 965px) {
+    #login .text{
+        font-size: 55px;   
+    }
+
+    #login .input-box + .input-box{
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 845px) {
+    #login .text{
+        font-size: 50px;
+        
+    }
+
+    #login .input-box + .input-box{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 756px) {
+    #login .text{
+        font-size: 45px;
+        
+    }
+
+    #login .input-box + .input-box{
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 675px) {
+    #login .text{
+        font-size: 40px;    
+    }
+    #login .input-box + .input-box{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 556px) {
+    #login .text{
+        font-size: 35px;    
+    }
+
+    #login .input-box + .input-box{
+        margin-top: 20px;
+    }
+
+    #login .input-box::placeholder{
+        font-size: 20px;
+        transform: translateY(-40%);
+        /* height: 40%; */
+    }
+}
