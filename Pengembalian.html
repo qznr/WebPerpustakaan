@@ -84,8 +84,8 @@
                     <img src="img/coverbuku2.jpg" alt="">
                     <p>Waktu habis !</p>
                     <div>
-                        <button class="button" onclick="extend()">Extend</button>
-                        <button class="button" onclick="returnn()">Return</button>
+                        <button class="button" onclick="togglePopup(1)">Extend</button>
+                        <button class="button" onclick="togglePopup(2)">Return</button>
                     </div>
                 </div>
                 <div>
@@ -105,14 +105,27 @@
     <div class="popup" id="extend">
         <div class="overlay">
             <div class="white-box extend">
-                <div class="close-btn" onclick="extend()">&times;</div>
+                <div class="close-btn" onclick="togglePopup(1)">&times;</div>
                 <h1>
                     Masukkan ekstra waktu peminjaman
                 </h1>
                 <input type="text" id="tanggal" class="input-box" placeholder="Waktu Kembali">
-                <button onclick="extend()">
+                <button onclick="togglePopup(2)">
                     <p>Ajukan</p>
                 </button>
+        
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="extendconfirm">
+        <div class="overlay">
+            <div class="white-box extend">
+                <div class="close-btn" onclick="togglePopup(2)">&times;</div>
+                <img src="img/success.png" alt="Process Successfully" class="success">
+                <h1>
+                    Berhasil, perpanjangan buku akan di informasikan lebih lanjut melalui email
+                </h1>
         
             </div>
         </div>
