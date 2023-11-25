@@ -14,3 +14,19 @@
     display: block;
 }
 
+.popup .close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 7%;
+    height: 8%;
+    background: #222;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
