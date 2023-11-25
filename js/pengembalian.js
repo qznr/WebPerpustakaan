@@ -29,7 +29,7 @@ function togglePopup(index) {
     }
 
     if(index == 7) {
-        document.getElementById("extendconfirm").classList.remove("active");
+        document.getElementById("onsite").classList.remove("active");
         document.getElementById("deliveryconfirm").classList.remove("active");
         document.getElementById("review").classList.toggle("active");
     }
