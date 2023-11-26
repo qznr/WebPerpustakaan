@@ -2037,6 +2037,13 @@ nav .nav-link, .navbar-toggler {
     height: 330vh;
 }
 
+#register .flatpickr-calendar {
+    transform: scale(2.0);
+    animation: 0.3s ease-out;
+    position: flex;
+    position: absolute;
+}
+
 #register .white-box{
     margin-top: 35%;
     /* top: 110%; */
