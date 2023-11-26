@@ -1259,8 +1259,155 @@ nav .nav-link, .navbar-toggler {
     text-decoration: none;
 }
 
-@media (max-width: 756px) {
+@media (max-width: 1375px) {
+    #login .white-box{
+        width: 50%;
+    }
+
+    #login .input-box{
+        width: 80%;
+    }
+
+    #login .input-box::placeholder{
+        font-size: 40px;
+    }
+
+    #login .text{
+        font-size: 50px;
+        
+    }
+
+    #login .input-box + .input-box{
+        margin-top: 80px;
+    }
+
+    #login .button .login{
+        transform: translate(-50%, 390%);
+    }
+
+    #login .button .signup{
+        transform: translate(-60%, 620%);
+        position: absolute;
+    }
+        
 }
+
+@media (max-width: 1075px) {
+    #login .text{
+        font-size: 45px;
+        
+    }
+
+    #login .input-box + .input-box{
+        margin-top: 70px;
+    }
+
+    #login .button .login{
+        transform: translate(-50%, 380%);
+    }
+    
+    #login .button .signup{
+        transform: translate(-50%, 620%);
+        position: absolute;
+    }
+}
+
+@media (max-width: 965px) {
+    #login .text{
+        font-size: 55px;   
+    }
+
+    #login .input-box + .input-box{
+        margin-top: 60px;
+    }
+
+    #login .button .login{
+        transform: translate(-50%, 370%);
+    }
+    #login .button .signup{
+        transform: translate(10%, 480%);
+        position: sticky;
+    }
+}
+
+@media (max-width: 845px) {
+    #login .text{
+        font-size: 50px;
+        
+    }
+
+    #login .input-box + .input-box{
+        margin-top: 50px;
+    }
+
+    #login .button .login{
+        transform: translate(-50%, 360%);
+    }
+
+    #login .button .signup{
+        transform: translate(-10%, 480%);
+        position: sticky;
+    }
+}
+
+@media (max-width: 756px) {
+    #login .text{
+        font-size: 45px;
+        
+    }
+
+    #login .input-box + .input-box{
+        margin-top: 40px;
+    }
+
+    #login .button .login{
+        transform: translate(-50%, 350%);
+    }
+
+    #login .button .signup{
+        transform: translate(-30%, 480%);
+        position: sticky;
+    }
+}
+
+@media (max-width: 675px) {
+    #login .text{
+        font-size: 40px;    
+    }
+    #login .input-box + .input-box{
+        margin-top: 30px;
+    }
+
+    #login .button .login{
+        transform: translate(-50%, 340%);
+    }
+
+    #login .button .signup{
+        transform: translate(-50%, 480%);
+        position: sticky;
+    }
+}
+
+@media (max-width: 556px) {
+    #login .text{
+        font-size: 35px;    
+    }
+
+    #login .input-box + .input-box{
+        margin-top: 20px;
+    }
+
+    #login .input-box::placeholder{
+        font-size: 30px;
+        transform: translateY(-20%);
+    }
+
+    #login .button .signup{
+        transform: translate(-70%, 480%);
+        position: sticky;
+    }
+}
+
 
 
 /*---------------------------------------------------------PENGEMBALIAN---------------------------------------------------------------*/
@@ -1598,6 +1745,51 @@ nav .nav-link, .navbar-toggler {
 }
 #pengembalian #review .s5:hover ~ a {
     color: gold;
+}
+
+@media (max-width: 1375px) {
+    #pengembalian .cover {
+        height: 1150px;
+    }
+    #pengembalian .white-box{
+        width: 90%;
+        height: auto;
+    }   
+}
+
+@media (max-width: 1300px) {
+    #pengembalian .cover {
+        height: 1950px;
+    }
+    #pengembalian .white-box{
+        top: 90%;
+    }   
+}
+
+@media (max-width: 656px) {
+    #pengembalian .cover {
+        height: 3250px;
+    }
+    #pengembalian .white-box{
+        top: 160%;
+    }  
+}
+
+@media (max-width: 576px) {
+    #pengembalian .card-group{
+        padding-left: 155px;
+        padding-right: 155px;
+    }  
+}
+
+@media (max-width: 568px) {
+    #pengembalian .cover {
+        height: 3250px;
+    }
+    #pengembalian .card-group{
+        padding-left: 155px;
+        padding-right: 155px;
+    }  
 }
 
 
