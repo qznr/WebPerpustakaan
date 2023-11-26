@@ -17,12 +17,6 @@ canvas {
     z-index: -1; /* Place the canvas behind other elements */
 }
 
-body{ 
-    min-height: 100vh; 
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
-
 section {
     margin-top: 15rem;
 }
