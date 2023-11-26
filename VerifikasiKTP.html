@@ -68,29 +68,74 @@
         <!--Navbar End-->
 
         <!--Content Start-->
-        <div class="cover">
+
+        <div class="cover ">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-8 col-11 mx-auto white-box p-5">
+                        <div class="row gy-5 d-flex align-items-start">
+                            <div class="col-12 text-center">
+                                <h1>Verifikasi KTP</h1>
+                            </div>
+                            <div class="col-12">
+                                <div class="input-box d-flex align-items-center">
+                                    <span id="fileName1">Upload Foto Wajah</span>
+                                    <input type="file" id="fileInput1" onchange="updateFileName('fileInput1')">
+                                    <label class="ms-auto" for="fileInput1">Upload</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="input-box d-flex align-items-center">
+                                    <span id="fileName2">Upload Foto KTP</span>
+                                    <input type="file" id="fileInput2" onchange="updateFileName('fileInput2')">
+                                    <label class="ms-auto" for="fileInput2">Upload</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="input-box d-flex align-items-center">
+                                    <span  id="fileName3">Upload Foto Diri Dengan KTP</span>
+                                    <input type="file" id="fileInput3" onchange="updateFileName('fileInput3')">
+                                    <label class="ms-auto" for="fileInput3">Upload</label> 
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <a href="Login.html">
+                                    <button >Verify</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Content Start-->
+        <!-- <div class="cover">
             <div class="white-box">
                 <h1 class="text">Verifikasi KTP</h1>
-                <div class="input-box">
+                <div class="input-box d-flex">
+                    <h1 id="fileName1">Upload Foto Wajah</h1>
                     <input type="file" id="fileInput1" onchange="updateFileName('fileInput1')">
-                    <label for="fileInput1">Upload</label>
-                    <span id="fileName1" class="fileName">Upload Foto Wajah</span>
+                    <label  for="fileInput1">Upload</label>
+                    
                 </div>
                 <div class="input-box">
                     <input type="file" id="fileInput2" onchange="updateFileName('fileInput2')">
                     <label for="fileInput2">Upload</label>
-                    <span id="fileName2" class="fileName">Upload Foto KTP</span>
+                    <span id="fileName2">Upload Foto KTP</span>
                 </div>
                 <div class="input-box">
                     <input type="file" id="fileInput3" onchange="updateFileName('fileInput3')">
                     <label for="fileInput3">Upload</label>
-                    <span id="fileName3" class="fileName">Upload Foto Diri Dengan KTP</span>
+                    <span id="fileName3">Upload Foto Diri Dengan KTP</span>
                 </div>
                 <a href="Login.html">
                     <button>Verify</button>
                 </a>
             </div>
-        </div>
+        </div> -->
         <!--Content End-->
 
         <!--Footer Start-->

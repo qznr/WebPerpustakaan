@@ -1,7 +1,6 @@
 function updateFileName(inputId) {
     var fileInput = document.getElementById(inputId);
-    var fileName = document.getElementById('fileName' + inputId.charAt(inputId.length - 1));
-
+    var fileName = document.getElementById('fileName' + inputId.slice(-1));
     if (fileInput.files.length > 0) {
       var maxLength = 27;
       var displayedName = fileInput.files[0].name;
