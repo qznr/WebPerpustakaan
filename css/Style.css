@@ -1703,7 +1703,6 @@ nav .nav-link, .navbar-toggler {
     color: gold;
 }
 
-<<<<<<< HEAD
 @media (max-width: 1375px) {
     #pengembalian .cover {
         height: 1150px;
@@ -1739,7 +1738,7 @@ nav .nav-link, .navbar-toggler {
     }  
 }
 
-@media (max-width: 568px) {
+@media (max-width: 575px) {
     #pengembalian .cover {
         height: 3250px;
     }
@@ -1749,7 +1748,6 @@ nav .nav-link, .navbar-toggler {
     }  
 }
 
-=======
 #pengembalian #onsite img {
     width: 70px;
     height: 70px;
@@ -1765,7 +1763,6 @@ nav .nav-link, .navbar-toggler {
     font-weight: 400;
     line-height: normal;
 }
->>>>>>> d2d790224832cf84f651d13b6ebdc1f5fd006854
 
 
 /*---------------------------------------------------------PENGEMBALIAN RIWAYAT---------------------------------------------------------------*/
