@@ -349,6 +349,9 @@ nav .nav-link, .navbar-toggler {
 
 
 /*---------------------------------------------------------CHECKOUT---------------------------------------------------------------*/
+#checkout i {
+    cursor: pointer;
+}
 
 #checkout .card {
     margin-block: 2.5rem;
