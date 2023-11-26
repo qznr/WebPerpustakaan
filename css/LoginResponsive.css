@@ -1,7 +1,6 @@
 @media (max-width: 1375px) {
     #login .white-box{
         width: 50%;
-        
     }
 
     #login .input-box{
@@ -138,8 +137,8 @@
     }
 
     #login .input-box::placeholder{
-        font-size: 20px;
-        transform: translateY(-40%);
+        font-size: 30px;
+        transform: translateY(-20%);
     }
 
     #login .button .signup{

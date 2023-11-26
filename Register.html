@@ -14,36 +14,52 @@
     </head>
 
     <body id="register">
-        <nav class="navbar navbar-expand-lg navbar-white bg-white thin-shadow fixed-top ">        
-            <a class="navbar-brand logo-container" href="#">
-                <img src="img/logo-perpus.png" alt="Logo">
-            </a>
-            <span class="navbar-text text-center title">
+        <div class="title">
+            <div class="title-text">
                 Register
-            </span>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown"></div>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link circular-button" href="#">
-                            <img src="img/Book.png" alt="Button 1">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link circular-button" href="#">
-                            <img src="img/cart.png" alt="Button 2">
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link circular-button" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="img/default-user.png" alt="Button 3">
-                        </a>
-                        <ul class="dropdown-menu drop-margin">
-                            <li><a class="drop-text dropdown-item" href="#">Login</a></li>
-                        </ul>
-                    </li>          
-                </ul>                        
             </div>
-        </nav>
+        </div>
+        <div class="container-fluid thin-shadow">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid d-flex">
+                    <a class="navbar-brand"><img src="img/logo-perpus.png" alt="Logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span> Menu
+                    </button>
+                    <div class="collapse navbar-collapse" id="ftco-nav">
+                        <ul class="navbar-nav ms-auto mr-md-3">
+                            <li class="nav-item">
+                                <a href="Katalog.html" class="nav-link">
+                                    <div class="d-lg-none">
+                                        Katalog
+                                    </div>
+                                    <img src="img/Book.png" class = "circular-button d-none d-lg-block" alt="Button 1">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Keranjang.html" class="nav-link">
+                                    <div class="d-lg-none">
+                                        Keranjang
+                                    </div>
+                                    <img src="img/cart.png" class = "circular-button d-none d-lg-block" alt="Button 2">
+                                </a>
+                            </li>                        
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="d-lg-none">
+                                    Profil
+                                </div>
+                                <img src="img/default-user.png" class ="circular-button d-none d-lg-block" alt="Button 3">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                                <li><a class="dropdown-item drop-text" href="Login.html">Login</a></li>
+                            </ul>
+                        </li>                        
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
 
         <div class="cover">
             <div class="white-box">
