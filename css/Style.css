@@ -1600,6 +1600,21 @@ nav .nav-link, .navbar-toggler {
     color: gold;
 }
 
+#pengembalian #onsite img {
+    width: 70px;
+    height: 70px;
+}
+
+#pengembalian #onsite h5 {
+    margin-top: 10px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 
 /*---------------------------------------------------------PENGEMBALIAN RIWAYAT---------------------------------------------------------------*/
