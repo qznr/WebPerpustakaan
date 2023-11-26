@@ -846,6 +846,11 @@ nav .nav-link, .navbar-toggler {
     background: rgba(214, 214, 214, 0.90);
 }
 
+#donasi-isi-data .flatpickr-calendar {
+    transform: scale(2.0);
+    animation: transform 0.3s ease-out;
+}
+
 #donasi-isi-data .text {
     margin-top: 105px;
     margin-bottom: 54px;
