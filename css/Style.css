@@ -1973,16 +1973,16 @@ nav .nav-link, .navbar-toggler {
 
 /*---------------------------------------------------------PENGEMBALIAN RIWAYAT---------------------------------------------------------------*/
 #pengembalian-riwayat .cover {
-    height: 460vh;
+    height: 200vh;
 
 }
 
 #pengembalian-riwayat .white-box {
+    position: relative;
     display: flex;
     justify-content: center;
     width: 95%;
-    height: 250%;
-    margin-top: 1100px;
+    height: 100%;
     flex-shrink: 0;
     border-radius: 60px;
     background: rgba(214, 214, 214, 0.90);
