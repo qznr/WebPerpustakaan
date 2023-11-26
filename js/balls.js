@@ -108,7 +108,7 @@ for (let i = 0; i < 6; i++) {
         validPosition = balls.every(ball => !checkCollision({ x, y, radius: 350 }, ball));
     }
 
-    const radius = 200;
+    const radius = 275;
     const vx = (Math.random() - 0.5) * 5; // Random velocity
     const vy = (Math.random() - 0.5) * 5; // Random velocity
     const imageSrc = "img/wave.png"; // Replace with the actual path to your image
