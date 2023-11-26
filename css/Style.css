@@ -17,6 +17,32 @@ a {
     text-decoration: none;
 }
 
+.dropdown-menu {
+    display: none;
+    animation: slideIn 0.3s ease-out;
+}
+
+.dropdown.show .dropdown-menu {
+    display: block;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    to {
+        opacity: 1;
+        max-height: 200px;
+    }
+}
+
+input {
+    outline: none;
+}
+
+  
+  
 /*---------------------------------------------------------NAVBAR---------------------------------------------------------------*/
 
 
@@ -144,14 +170,11 @@ nav .nav-link, .navbar-toggler {
 /*---------------------------------------------------------COVER---------------------------------------------------------------*/
 .cover{
     top : 40%;
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Horizontally center the content */
     background-image: url(../img/Group10.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    text-align: center;
     color: #fff;
     padding: 100px 0; /* Adjust the padding as needed */
     margin-top: 15px; /* Adjust the top margin to your desired value */
@@ -160,7 +183,7 @@ nav .nav-link, .navbar-toggler {
 /* Style the Search bar */
 .search-field {
     position: relative;
-    width: 460px;
+    width: 100%;
     height: 60px;
     flex-shrink: 0;
     border: 2px solid #fff;
@@ -451,8 +474,48 @@ nav .nav-link, .navbar-toggler {
 }
 
 /*---------------------------------------------------------STRUK---------------------------------------------------------------*/
-#struk {
-    
+#struk h1 {
+    color: #000;
+    text-align: center;
+    font-family: EB Garamond;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#struk h2 {
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#struk h3 {
+    color: #000;
+    font-family: EB Garamond;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#struk .blockquote p {
+    color: #000;
+    text-align: center;
+    font-family: EB Garamond;
+    font-size: 2.5rem;
+    font-style: normal;
+    line-height: normal;
+}
+
+#struk .blockquote-footer {
+    font-family: EB Garamond;
+    font-size: 1.5rem;
+    font-style: normal;
+    line-height: normal;
 }
 
 

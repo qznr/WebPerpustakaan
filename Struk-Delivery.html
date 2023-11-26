@@ -66,53 +66,172 @@
 
     <div class="cover">
         <div class = "container mt-4"> 
-            <div class="input-group d-flex justify-content-center">
-                <input type="text" class="search-field">
-
-                <div class="dropdown px-2">
-                    <button
-                      class="btn btn-primary dropdown-toggle"
-                      style="border-radius: 30px; background: #FFF; color: #000; font-size: 30px;"
-                      type="button"
-                      id="dropdownMenuButton"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Judul
-                    </button>
-                    <ul class="dropdown-menu" style="font-size: 30px;" aria-labelledby="dropdownMenuButton">
-                      <li><a class="dropdown-item" href="#">Judul 1</a></li>
-                      <li><a class="dropdown-item" href="#">Judul 2</a></li>
-                      <li><a class="dropdown-item" href="#">Judul 3</a></li>
-                    </ul>
-                </div>
-
-                <div class="dropdown px-2" >
-                    <button
-                      class="btn btn-primary dropdown-toggle"
-                      style="border-radius: 30px; background: #FFF; color: #000; font-size: 30px;"
-                      type="button"
-                      id="dropdownMenuButton"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Kategori
-                    </button>
-                    <ul class="dropdown-menu"  style="font-size: 30px;" aria-labelledby="dropdownMenuButton">
-                      <li><a class="dropdown-item" href="#">Kategori 1</a></li>
-                      <li><a class="dropdown-item" href="#">Kategori 2</a></li>
-                      <li><a class="dropdown-item" href="#">Kategori 3</a></li>
-                    </ul>
+            <div class="row">
+                <div class="col-xl-9 col-10 mx-auto">
+                    <div class="row gy-3 gx-5">
+                        <div class="col-xl-6 col-12">
+                            <input type="text" class="search-field">
+                        </div>
+                        <div class="col-xl-auto col-6 d-flex justify-content-xl-start justify-content-center">
+                            <div class="dropdown">
+                                <button
+                                  class="btn btn-primary dropdown-toggle"
+                                  style="background: #FFF; border-color: transparent; color: #000; font-size: 30px; margin: 0;"
+                                  type="button"
+                                  id="dropdownMenuButton"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  Judul
+                                </button>
+                                <ul class="dropdown-menu" style="font-size: 30px;" aria-labelledby="dropdownMenuButton" >
+                                  <li><a class="dropdown-item" href="#">Judul 1</a></li>
+                                  <li><a class="dropdown-item" href="#">Judul 2</a></li>
+                                  <li><a class="dropdown-item" href="#">Judul 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-auto col-6 d-flex justify-content-xl-start justify-content-center">
+                            <div class="dropdown" >
+                                <button
+                                  class="btn btn-primary dropdown-toggle"
+                                  style=" background: #FFF; border-color: transparent; color: #000; font-size: 30px;"
+                                  type="button"
+                                  id="dropdownMenuButton"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  Kategori
+                                </button>
+                                <ul class="dropdown-menu"  style="font-size: 30px;" aria-labelledby="dropdownMenuButton">
+                                  <li><a class="dropdown-item" href="#">Kategori 1</a></li>
+                                  <li><a class="dropdown-item" href="#">Kategori 2</a></li>
+                                  <li><a class="dropdown-item" href="#">Kategori 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row my-3">
-            <div class="col-8 mx-auto">
+    <div class="container-fluid" style="background-color: #EBEBEB;">
+        <div class="row py-5">
+            <div class="col-lg-8 col-11 mx-auto">
                 <div class="card" style="border-radius: 3.125rem; border: none;">
-                    adsf
+                    <div class="row gy-4 p-5">
+                        <div class="col-6 me-auto">
+                            <img src="img/logo-perpus.png">
+                        </div>
+                        <div class="col-auto">
+                            <h3>Jl. kenangan lama</h3>
+                            <h3>085xxxxxxxx</h3>
+                            <h3>xxxxxx@ub.ac.id</h3>
+                        </div>
+                        <div class="col-12">
+                            <h1 class="text-center">Struk Peminjaman</h2>
+                        </div>
+                        <div class="col-12">
+                            <h2>Metode: Delivery</h2>
+                        </div>
+                        <div class="col-12">
+                            <h2>Lokasi Antar: lorem ipsum</h2>
+                        </div>
+
+                        <div class="col-12">
+                            <h2>Jam Antar: xx:yy</h2>
+                        </div>
+                        <hr>
+
+                        <div class="col-auto me-auto">
+                            <h2>Nama :</h2>
+                        </div>
+                        <div class="col-auto">
+                            <h2>Lorem Ipsum Dolor Sit Amet</h2>
+                        </div>
+                        <div class="w-100 g-0"></div>
+                        <div class="col-auto me-auto">
+                            <h2>Nomor</h2>
+                        </div>
+                        <div class="col-auto">
+                            <h2>xxxxxx-yyyyyy-zzz</h2>
+                        </div>
+                        <div class="w-100 g-0"></div>
+                        <div class="col-auto me-auto">
+                            <h2>Tanggal Peminjaman :</h2>
+                        </div>
+                        <div class="col-auto">
+                            <h2>dd-mm-yyyy</h2>
+                        </div>
+                        <div class="w-100 g-0"></div>
+                        <div class="col-auto me-auto">
+                            <h2>Tanggal Kembali</h2>
+                        </div>
+                        <div class="col-auto">
+                            <h2>dd-mm-yyyy</h2>
+                        </div>
+                        <div class="w-100 g-0"></div>
+                        <div class="col-auto me-auto">
+                            <h2>Nomor Referensi</h2>
+                        </div>
+                        <div class="col-auto">
+                            <h2>Bxxxxx-yyyy</h2>
+                        </div>
+                        <div class="w-100 g-0"></div>
+                        <hr>
+
+                        <div class="col-6 me-auto">
+                            <h2>Buku 1</h2>
+                        </div>
+                        <div class="col-auto">
+                            <h2>1</h2>
+                        </div>
+
+                        <div class="col-6 me-auto">
+                            <h2>Buku 2</h2>
+                        </div>
+                        <div class="col-auto">
+                            <h2>1</h2>
+                        </div>
+
+                        <div class="col-6 me-auto">
+                            <h2>Buku 3</h2>
+                        </div>
+                        <div class="col-auto">
+                            <h2>1</h2>
+                        </div>
+
+                        <div class="col-6 me-auto">
+                            <h2>Buku 4</h2>
+                        </div>
+                        <div class="col-auto">
+                            <h2>1</h2>
+                        </div>
+
+                        <div class="col-6 me-auto">
+                            <h2>Buku 5</h2>
+                        </div>
+                        <div class="col-auto">
+                            <h2>1</h2>
+                        </div>
+
+                        <hr>
+                        <div class="col-6 me-auto">
+                            <h2>Total</h2>
+                        </div>
+                        <div class="col-auto">
+                            <h2>5</h2>
+                        </div>
+                        <figure class="text-center">
+                            <blockquote class="blockquote">
+                              <p>Membaca bagi pikiran sama halnya dengan olahraga bagi tubuh.</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Joseph Addison 
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>
