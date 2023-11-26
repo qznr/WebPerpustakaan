@@ -65,20 +65,55 @@ function animate() {
 
     for (let i = 0; i < balls.length; i++) {
         balls[i].update();
-    }
 
-    // Add collision detection logic for balls interacting with each other here
+        // Check for collisions with other balls
+        for (let j = i + 1; j < balls.length; j++) {
+            if (checkCollision(balls[i], balls[j])) {
+                handleCollision(balls[i], balls[j]);
+            }
+        }
+    }
+}
+
+function checkCollision(ball1, ball2) {
+    const dx = ball2.x - ball1.x;
+    const dy = ball2.y - ball1.y;
+    const distance = Math.sqrt(dx * dx + dy * dy);
+
+    return distance < ball1.radius + ball2.radius;
+}
+
+function handleCollision(ball1, ball2) {
+    // Implement collision response logic here
+    // For example, you can swap the velocities of the colliding balls
+    const tempVx = ball1.vx;
+    const tempVy = ball1.vy;
+    ball1.vx = ball2.vx;
+    ball1.vy = ball2.vy;
+    ball2.vx = tempVx;
+    ball2.vy = tempVy;
 }
 
 // Create balls
-for (let i = 0; i < 3; i++) {
-    const x = Math.random() * canvas.width;
-    const y = Math.random() * canvas.height;
-    const radius = 350;
+for (let i = 0; i < 6; i++) {
+    let validPosition = false;
+    let x, y;
+
+    // Try generating a valid position that doesn't overlap with existing balls
+    while (!validPosition) {
+        x = Math.random() * canvas.width;
+        y = Math.random() * canvas.height;
+
+        // Check for collisions with existing balls
+        validPosition = balls.every(ball => !checkCollision({ x, y, radius: 350 }, ball));
+    }
+
+    const radius = 200;
     const vx = (Math.random() - 0.5) * 5; // Random velocity
     const vy = (Math.random() - 0.5) * 5; // Random velocity
     const imageSrc = "img/wave.png"; // Replace with the actual path to your image
     balls.push(new Ball(x, y, radius, vx, vy, imageSrc));
 }
+
 
 animate();
