@@ -68,3 +68,5 @@ var durationValue = 14; // Initial duration value
             window.location.href = "Pickup.html";
         }
     }
+
+    
