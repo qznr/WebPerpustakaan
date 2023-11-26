@@ -6,6 +6,17 @@ canvas.height = window.innerHeight;
 
 const balls = [];
 
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    // Redraw balls at their current positions
+    for (let i = 0; i < balls.length; i++) {
+        balls[i].draw();
+    }
+}
+window.addEventListener("resize", resizeCanvas);
+
 function Ball(x, y, radius, vx, vy, imageSrc) {
     this.x = x;
     this.y = y;
@@ -45,6 +56,9 @@ function Ball(x, y, radius, vx, vy, imageSrc) {
     };
 }
 
+
+resizeCanvas();
+
 function animate() {
     requestAnimationFrame(animate);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -54,7 +68,6 @@ function animate() {
     }
 
     // Add collision detection logic for balls interacting with each other here
-
 }
 
 // Create balls
