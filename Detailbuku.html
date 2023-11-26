@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap">
-        <link rel="stylesheet" href="css/Detailbuku.css">
         <link rel="stylesheet" href="css/Style.css">
+        <script src="js/detailbuku.js" defer></script>
         <!-- Include Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -131,7 +131,7 @@
                     <h5 class="text-center">Availability:</h5>
                     <p class="text-center">Available</p>
                 </div>
-                <button class="detail btn">
+                <button onclick="confirmPopup()" class="detail btn">
                     Pinjam/Reservasi
                 </button>
             </div> 
@@ -141,6 +141,19 @@
             <div class="back">
                 <img src="img/Book.png" alt="backbuku">
                 <a href="Katalog.html" class="backtext">Back</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="confirm">
+        <div class="overlay">
+            <div class="content container-fluid">
+                <div class="close-btn" onclick="confirmPopup()">&times;</div>
+                <img src="img/success.png" alt="Process Successfully" class="success">
+                <h1>Buku ditambahkan!</h1>
+                <a href="Keranjang.html">
+                    <button class="btn-2" href = ''>Lihat Keranjang</button>
+                </a>
             </div>
         </div>
     </div>

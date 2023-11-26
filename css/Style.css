@@ -654,6 +654,118 @@ nav .nav-link, .navbar-toggler {
     font-family: EB Garamond;
 }
 
+#detail-buku .popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    z-index: 1;
+    display: none;
+}
+
+#detail-buku .popup .content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    background: #fff;
+    width: 840px;
+    height: 715px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10%;
+    color: black;
+    font-family: EB Garamond;
+    font-style: normal;
+    font-weight: 400;
+    align-items: center;
+}
+
+#detail-buku .popup .content h1 {
+    font-size: 50px;
+}
+
+#detail-buku .popup .content .btn-2 {
+    position: absolute;
+    bottom: 15%; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(30%);
+    width: 24%;
+    height: 11%;
+    background-color: #082138;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    font-family: 'Robto', serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#detail-buku .popup .close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 7%;
+    height: 8%;
+    background: #222;
+    color: #fff;
+    font-size: 5vw;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#detail-buku .popup.active .overlay {
+    display: block;
+}
+
+#detail-buku .popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translateX(-50%) scale(1);
+}
+
+#detail-buku #confirm .success {
+    width: 216.198px;
+    height: 218px;
+    transform: translateX(-5%);
+    flex-shrink: 0;
+    margin: 64px 150px 0px 180px;
+}
+
+#detail-buku #confirm a .btn-2 {
+    position: absolute;
+    bottom: 15%; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 11%;
+    background-color: #082138;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    font-family: 'Robto', serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#detail-buku #confirm a .btn-2:hover {
+    background-color: #000;
+}
+
 
 /*---------------------------------------------------------DONASI---------------------------------------------------------------*/
 #donasi .cover{
@@ -2445,7 +2557,7 @@ nav .nav-link, .navbar-toggler {
     transform: translateY(-150%);
     text-align: left;
     margin-top: 10px;
-    display: block;
+    display: none;
 }
 
 #verifikasi button {
