@@ -9,6 +9,15 @@ body, header {
     overflow-x: hidden;
 }
 
+canvas {
+    position: fixed; /* or 'absolute' depending on your design */
+    padding-top: 7.2rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the canvas behind other elements */
+}
+
 body{ 
     min-height: 100vh; 
     display: grid;
