@@ -552,50 +552,6 @@ nav .nav-link, .navbar-toggler {
 
 /*---------------------------------------------------------DETAIL BUKU---------------------------------------------------------------*/
 
-#detail-buku .text{
-    margin-top: 5%;
-    margin-left: 15%;
-    transform: translateY(-10%);
-}
-
-#detail-buku .text h1{
-    color: #000;
-    font-family: 'EB Garamond';
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-#detail-buku .text h2{
-    width: 50%; /* Menggunakan persentase untuk lebar elemen */
-    color: #000;
-    font-family: 'EB Garamond';
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-#detail-buku .text h3{
-    color: #000;
-    font-family: 'EB Garamond';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-#detail-buku .text p{
-    width: 1187px; /* Menggunakan persentase untuk lebar elemen */
-    margin-top: 50px;
-    color: #000;
-    font-family: 'EB Garamond';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
 
 
 /*---------------------------------------------------------DONASI---------------------------------------------------------------*/
