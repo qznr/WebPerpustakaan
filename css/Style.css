@@ -2554,7 +2554,9 @@ nav .nav-link, .navbar-toggler {
     display: none;
 }
 
-#verifikasi button {
+
+
+#verifikasi .cover button {
     width: 200px;
     height: 78px;
     flex-shrink: 0;
