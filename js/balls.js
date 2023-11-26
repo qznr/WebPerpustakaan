@@ -115,5 +115,4 @@ for (let i = 0; i < 6; i++) {
     balls.push(new Ball(x, y, radius, vx, vy, imageSrc));
 }
 
-
 animate();
