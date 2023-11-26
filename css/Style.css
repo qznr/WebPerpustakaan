@@ -53,10 +53,6 @@ nav .nav-link, .navbar-toggler {
     color: black !important;
 }
 
-#katalog {
-    margin-bottom: 100px;
-}
-
 .drop-margin{
     transform: translateX(-40%);
 }
@@ -526,7 +522,7 @@ nav .nav-link, .navbar-toggler {
 
 #detail-buku .text{
     margin-top: 5%;
-    margin-left: 15%;
+    margin-left: 35%;
     transform: translateY(-10%);
 }
 
@@ -568,7 +564,6 @@ nav .nav-link, .navbar-toggler {
     font-weight: 400;
     line-height: normal;
 }
-
 
 /*---------------------------------------------------------DONASI---------------------------------------------------------------*/
 #donasi .cover{
