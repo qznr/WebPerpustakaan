@@ -1711,6 +1711,8 @@ nav .nav-link, .navbar-toggler {
 }
 
 #request-isi-data .form {
+    height: 100%;
+    width: 80%;
     transform: translateY(-25%);
 }
 
@@ -1728,7 +1730,7 @@ nav .nav-link, .navbar-toggler {
 }
 
 #request-isi-data .input-box {
-    width: 80%;
+    width: 100%;
     height: 78px;
     flex-shrink: 0;
     color: black;
@@ -1743,11 +1745,14 @@ nav .nav-link, .navbar-toggler {
 }
 
 #request-isi-data .ajukan-button {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, 880%);
     width: 240px;
     height: 92px;
     flex-shrink: 0;
-    transform: translateY(590%);
     border-radius: 20px;
     background: #082138;
     color: #EEE;
@@ -1870,11 +1875,13 @@ nav .nav-link, .navbar-toggler {
 }
 
 #request .form {
+    height: 100%;
+    width: 80%;
     transform: translateY(-15%);
 }
 
 #request .input-box {
-    width: 80%;
+    width: 100%;
     height: 78px;
     flex-shrink: 0;
     border: none;
@@ -1891,6 +1898,11 @@ nav .nav-link, .navbar-toggler {
 }
 
 #request .next-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, 660%);
     width: 240px;
     height: 92px;
     flex-shrink: 0;
@@ -1903,7 +1915,6 @@ nav .nav-link, .navbar-toggler {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    transform: translateY(485%);
 }
 
 /*---------------------------------------------------------USER PROFILE---------------------------------------------------------------*/
