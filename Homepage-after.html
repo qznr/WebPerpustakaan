@@ -19,52 +19,66 @@
 </head>
 <body id="homepage">
 
-    <nav class="navbar navbar-expand-lg navbar-white bg-white thin-shadow">        
-            <a class="navbar-brand logo-container" href="#">
-                <img src="img/logo-perpus.png" alt="Logo">
-            </a>
-            <span class="navbar-text text-center title">
-                Beranda
-            </span>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown"></div>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link circular-button" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="img/notifikasi.png" alt="Button 3">
-                    </a>
-                    <ul class="dropdown-menu drop-margin">
-                        <li><a class="drop-text dropdown-item drop" href="UserProfile.html">
-                            <p>Waktu peminjaman bu...</p>
-                            <p>Buku baru tersedia, klik...</p>
-                            <p>Buku baru tersedia, klik...</p>
-                            <p>Buku baru tersedia, klik...</p>
-                            <p>Buku baru tersedia, klik...</p>
-                        </a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link circular-button" href="Katalog.html">
-                        <img src="img/Book.png" alt="Button 1">
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link circular-button" href="Keranjang.html">
-                        <img src="img/cart.png" alt="Button 2">
-                    </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link circular-button" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="img/default-user.png" alt="Button 3">
-                    </a>
-                    <ul class="dropdown-menu drop-margin">
-                        <li><a class="drop-text dropdown-item" href="UserProfile.html">Profil</a></li>
-                        <li><a class="drop-text dropdown-item" href="Index.html">Logout</a></li>
-                    </ul>
-                </li>          
-            </ul>                        
+    <div class="title">
+        <div class="title-text">
+            Beranda
         </div>
-    </nav>
-
+    </div>
+    <div class="container-fluid thin-shadow">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid d-flex">
+                <a class="navbar-brand"><img src="img/logo-perpus.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span> Menu
+                </button>
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav ms-auto mr-md-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link circular-button" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="img/notifikasi.png" alt="Button 3">
+                            </a>
+                            <ul class="dropdown-menu drop-margin">
+                                <li><a class="drop-text dropdown-item drop" href="UserProfile.html">
+                                    <p>Waktu peminjaman bu...</p>
+                                    <p>Buku baru tersedia, klik...</p>
+                                    <p>Buku baru tersedia, klik...</p>
+                                    <p>Buku baru tersedia, klik...</p>
+                                    <p>Buku baru tersedia, klik...</p>
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Katalog.html" class="nav-link">
+                                <div class="d-lg-none">
+                                    Katalog
+                                </div>
+                                <img src="img/Book.png" class = "circular-button d-none d-lg-block" alt="Button 1">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Keranjang.html" class="nav-link">
+                                <div class="d-lg-none">
+                                    Keranjang
+                                </div>
+                                <img src="img/cart.png" class = "circular-button d-none d-lg-block" alt="Button 2">
+                            </a>
+                        </li>                        
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="d-lg-none">
+                                Profil
+                            </div>
+                            <img src="img/default-user.png" class ="circular-button d-none d-lg-block" alt="Button 3">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item drop-text" href="Login.html">Login</a></li>
+                        </ul>
+                    </li>                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
     <div class="cover d-flex justify-content-center">
         <div class = "transparent-box"> 
             <div class = text>
@@ -75,142 +89,144 @@
         </div>
     </div>
 
-    <canvas id="content">
-        <section id = "general" style="margin: 0;">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-9 mx-auto">
-                        <div class="card">
-                            <div class="ps-5 pe-5 my-5">
-                                <div class="row">
-                                    <div class="col-xl-6 col-12">
-                                        <div class="ratio ratio-4x3">
-                                            <img src="img/general.png" class="float-xl-start mx-auto d-block">
-                                        </div>
-                                        
+    <canvas id="myCanvas"></canvas>
+    <section id = "general" style="margin: 0;" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-9 mx-auto">
+                    <div class="card">
+                        <div class="ps-5 pe-5 my-5">
+                            <div class="row">
+                                <div class="col-xl-6 col-12">
+                                    <div class="ratio ratio-4x3">
+                                        <img src="img/general.png" class="float-xl-start mx-auto d-block">
                                     </div>
-                                    <div class="col-xl-6 col-12">
-                                        <h1 class="display-1">Lorem Ipsum Dolor Sit Amet</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat dui quis odio volutpat feugiat sed vel nibh. Suspendisse faucibus enim ut vestibulum vulputate. Nulla ac consectetur risus, a consectetur ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Suspendisse turpis nunc, porttitor eget felis vitae, auctor suscipit justo. Praesent nisi mi, sollicitudin non facilisis pharetra, efficitur non enim. Nullam vel volutpat neque. Etiam euismod feugiat odio, in venenatis enim faucibus vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque sed dui massa. In mattis lectus a ipsum blandit, eget condimentum lorem imperdiet. Maecenas faucibus, lorem nec malesuada maximus, quam sem commodo felis</p>        
-                                    </div>
+                                    
+                                </div>
+                                <div class="col-xl-6 col-12">
+                                    <h1 class="display-1">Lorem Ipsum Dolor Sit Amet</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat dui quis odio volutpat feugiat sed vel nibh. Suspendisse faucibus enim ut vestibulum vulputate. Nulla ac consectetur risus, a consectetur ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Suspendisse turpis nunc, porttitor eget felis vitae, auctor suscipit justo. Praesent nisi mi, sollicitudin non facilisis pharetra, efficitur non enim. Nullam vel volutpat neque. Etiam euismod feugiat odio, in venenatis enim faucibus vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque sed dui massa. In mattis lectus a ipsum blandit, eget condimentum lorem imperdiet. Maecenas faucibus, lorem nec malesuada maximus, quam sem commodo felis</p>        
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    
-        <div class = "choices d-flex flex-column flex-lg-row">
-            <div class="row gy-5">
-                <div class="col-xl-2 col-12 d-flex justify-content-center align-items-center">
-                    <a class="" href="#">Pinjam Sekarang!</a>
-                </div>
-                <div class="col-xl-10 col-12">
-                    <div class="row gy-5">
-                        <div class="col-xl-3 col-md-6 col-12">
-                            <div class="card d-flex justify-content-center">
-                                <img src="img/Book2.png" class="mx-auto" alt="book2">
-                                <h2 class="mx-auto text-center">Cari dan Pinjam Buku Pilihanmu</h2>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 col-12">
-                            <div class="card d-flex justify-content-center">
-                                <img src="img/perpanjang.png" class="mx-auto" alt="perpanjang">
-                                <h2 class="mx-auto text-center">Perpanjang Masa Pinjam Bukumu</h2>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 col-12">
-                            <div class="card d-flex justify-content-center">
-                                <img src="img/donation.png" class="mx-auto" alt="donasi">
-                                <a href="Donasi.html" class="mx-auto">
-                                    <h2 class="mx-auto text-center">Bagi Kebaikan Dengan Donasi Bukumu</h2>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 col-12">
-                            <div class="card d-flex justify-content-center">
-                                <img src="img/request.png" class="mx-auto" alt="request">
-                                <a href="Request.html">
-                                    <h2 class="mx-auto text-center">Tidak Ada Buku Yang Dicari? </h2>
-                                </a>
-                            </div>  
-                        </div>
-                    </div>
-                </div>
-    
             </div>
         </div>
-    
-        <section id = "rekomendasi-buku">
-            <div class="container-fluid my-3">
-                <h2 class="text-center"> REKOMENDASI BUKU </h2>
-                <div class="row" >
-                    <div class="carousel slide" id="book-carousel" data-bs-ride="carousel">
-                        <div class="carousel-inner" role="listbox" >
-                            <div class="carousel-item active">
-                                <div class="col-xl-2 col-md-4 mx-auto">
-                                    <img src="img/coverbuku1.jpg" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-xl-2 col-md-4 mx-auto">
-                                    <img src="img/coverbuku2.jpg" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-xl-2 col-md-4 mx-auto">
-                                    <img src="img/coverbuku3.jpg" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-xl-2 col-md-4 mx-auto">
-                                    <img src="img/coverbuku4.webp" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-xl-2 col-md-4 mx-auto">
-                                    <img src="img/coverbuku5.jpeg" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-xl-2 col-md-4 mx-auto">
-                                    <img src="img/coverbuku6.webp" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-xl-2 col-md-4 mx-auto">
-                                    <img src="img/coverbuku7.jpeg" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-xl-2 col-md-4 mx-auto">
-                                    <img src="img/coverbuku8.webp" class="img-fluid">
-                                </div>
-                            </div>
+    </section>
+
+    <div class = "choices d-flex flex-column flex-lg-row" style="margin-top: 6rem;" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-200">
+        <div class="row gy-5">
+            <div class="col-xl-2 col-12 d-flex justify-content-center align-items-center">
+                <a class="" href="#">Pinjam Sekarang!</a>
+            </div>
+            <div class="col-xl-10 col-12">
+                <div class="row gy-5">
+                    <div class="col-xl-3 col-md-6 col-12" data-aos="fade-right" data-aos-offset="-900" data-aos-anchor-placement="top-bottom">
+                        <div class="card d-flex justify-content-center">
+                            <img src="img/Book2.png" class="mx-auto" alt="book2">
+                            <h2 class="mx-auto text-center">Cari dan Pinjam Buku Pilihanmu</h2>
                         </div>
-    
-                        <button class="carousel-control-prev" type="button" data-bs-target="#book-carousel" data-bs-slide="prev">
-                            <i class="fa fa-3x fa-circle-chevron-left" style="color:black"></i>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        
-                        <button class="carousel-control-next" type="button" data-bs-target="#book-carousel" data-bs-slide="next">
-                            <i class="fa fa-3x fa-circle-chevron-right" style="color:black"></i>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                        
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12" data-aos="fade-right" data-aos-offset="-900" data-aos-anchor-placement="top-bottom">
+                        <div class="card d-flex justify-content-center">
+                            <img src="img/perpanjang.png" class="mx-auto" alt="perpanjang">
+                            <h2 class="mx-auto text-center">Perpanjang Masa Pinjam Bukumu</h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12" data-aos="fade-right" data-aos-offset="-900" data-aos-anchor-placement="top-bottom">
+                        <div class="card d-flex justify-content-center">
+                            <img src="img/donation.png" class="mx-auto" alt="donasi">
+                            <a href="Donasi.html" class="mx-auto">
+                                <h2 class="mx-auto text-center">Bagi Kebaikan Dengan Donasi Bukumu</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12" data-aos="fade-right" data-aos-offset="-900" data-aos-anchor-placement="top-bottom">
+                        <div class="card d-flex justify-content-center">
+                            <img src="img/request.png" class="mx-auto" alt="request">
+                            <a href="Request.html">
+                                <h2 class="mx-auto text-center">Tidak Ada Buku Yang Dicari? </h2>
+                            </a>
+                        </div>  
                     </div>
                 </div>
-                <h2 class="text-end"><a href="Katalog.html"> Lihat Lebih Banyak</a></h2>
             </div>
-        </section>
-    </canvas>
 
+        </div>
+    </div>
+
+    <section id = "rekomendasi-buku" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-1200">
+        <div class="container-fluid my-3 ">
+            <h2 class="text-center pb-5"> REKOMENDASI BUKU </h2>
+            <div class="row" >
+                <div class="carousel slide" id="book-carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox" >
+                        <div class="carousel-item active">
+                            <div class="col-xl-2 col-md-4 mx-auto">
+                                <img src="img/coverbuku1.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-xl-2 col-md-4 mx-auto">
+                                <img src="img/coverbuku2.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-xl-2 col-md-4 mx-auto">
+                                <img src="img/coverbuku3.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-xl-2 col-md-4 mx-auto">
+                                <img src="img/coverbuku4.webp" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-xl-2 col-md-4 mx-auto">
+                                <img src="img/coverbuku5.jpeg" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-xl-2 col-md-4 mx-auto">
+                                <img src="img/coverbuku6.webp" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-xl-2 col-md-4 mx-auto">
+                                <img src="img/coverbuku7.jpeg" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-xl-2 col-md-4 mx-auto">
+                                <img src="img/coverbuku8.webp" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#book-carousel" data-bs-slide="prev">
+                        <i class="fa fa-3x fa-circle-chevron-left" style="color:black"></i>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    
+                    <button class="carousel-control-next" type="button" data-bs-target="#book-carousel" data-bs-slide="next">
+                        <i class="fa fa-3x fa-circle-chevron-right" style="color:black"></i>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    
+                </div>
+            </div>
+            <h2 class="text-end pt-5"><a href="Katalog.html"> Lihat Lebih Banyak</a></h2>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-
+    <script src="js/carousel.js" defer></script>
+    <script src="js/balls.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        </script>
     <footer class = "footer">
         <a href="Help.html">Help</a>
         <a href="About.html">About Us</a>
