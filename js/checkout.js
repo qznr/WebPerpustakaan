@@ -57,3 +57,14 @@ var durationValue = 14; // Initial duration value
             element.innerHTML = durationValue + " hari";
         });
     }
+
+    function navigateToPage() {
+        var deliveryPickupText = document.querySelector(".deliveryPickupText");
+
+        // Check the current text and navigate accordingly
+        if (deliveryPickupText.innerHTML === "Delivery") {
+            window.location.href = "Struk-Delivery.html";
+        } else {
+            window.location.href = "Pickup.html";
+        }
+    }
