@@ -3,8 +3,6 @@
 /* Reset some default styles for the body and header */
 body, header {
     zoom: 67%;
-    min-height: 100vh; 
-    /* min-height: 2995px; */
     margin-bottom: 100px;
     overflow-x: hidden;
 }
