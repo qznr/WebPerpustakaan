@@ -551,7 +551,108 @@ nav .nav-link, .navbar-toggler {
 
 
 /*---------------------------------------------------------DETAIL BUKU---------------------------------------------------------------*/
+#detail-buku .blue {
+    margin-top: -25%;
+    position: flex;
+    /* background-color: #888; */
+}
 
+#detail-buku .coverbuku {
+    transform: translateY(-150%);
+    margin-left: 10%;
+}
+
+#detail-buku .text {
+    position: relative;
+    margin-left: 100px;
+    width: 1520px;
+    height: 700px;
+    /* background-color: rgb(182, 182, 255); */
+    font-family: EB Garamond;
+}
+
+#detail-buku .text h1 {
+    font-size: 100px;
+}
+
+#detail-buku .text h2 {
+    font-size: 50px;
+}
+
+#detail-buku .text h3 {
+    font-size: 25px;
+}
+
+#detail-buku .text p {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+#detail-buku .moredetail {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: -30%;
+    margin-left: 30%;
+    position: relative;
+    width: 1520px;
+    height: 100px;
+    /* background-color: red; */
+}
+
+#detail-buku .moredetail .detail {
+    width: 200px;
+    height: inherit;
+    background-color: rgb(255, 255, 255);
+    border: 2px black solid;
+    font-family: EB Garamond;
+}
+
+#detail-buku .moredetail .detail h5 {
+    margin-top: 5%;
+    color: #4D4D4D;
+    font-size: 20px;
+}
+
+#detail-buku .moredetail .detail p {
+    font-size: 30px;
+}
+
+#detail-buku .moredetail .btn {
+    background-color: #082138;
+    color: white;
+    font-size: 25px;
+}
+
+#detail-buku .back {
+    position: relative;
+    margin-top: -20%;
+    margin-left: 15%;
+    width: 320px;
+    height: 130px;
+    /* background-color: red; */
+}
+
+#detail-buku .back:hover {
+    transform: scale(1.05);
+}
+
+
+#detail-buku .back img {
+    position: relative;
+    width: 130px;
+    height: inherit;
+}
+
+#detail-buku .back .backtext {
+    position: relative;
+    width: 100px;
+    margin-left: 10%;
+    margin-top: 20%;
+    /* background-color: white; */
+    text-decoration: none;
+    font-size: 50px;
+    font-family: EB Garamond;
+}
 
 
 /*---------------------------------------------------------DONASI---------------------------------------------------------------*/
