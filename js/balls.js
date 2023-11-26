@@ -105,7 +105,7 @@ for (let i = 0; i < 6; i++) {
         y = Math.random() * canvas.height;
 
         // Check for collisions with existing balls
-        validPosition = balls.every(ball => !checkCollision({ x, y, radius: 350 }, ball));
+        validPosition = balls.every(ball => !checkCollision({ x, y, radius: 275 }, ball));
     }
 
     const radius = 275;
