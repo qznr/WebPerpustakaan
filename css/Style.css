@@ -80,10 +80,6 @@ nav .nav-link, .navbar-toggler {
     color: black !important;
 }
 
-#katalog {
-    margin-bottom: 100px;
-}
-
 .drop-margin{
     transform: translateX(-40%);
 }
