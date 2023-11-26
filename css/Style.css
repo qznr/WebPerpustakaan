@@ -948,7 +948,8 @@ nav .nav-link, .navbar-toggler {
 }
 
 #donasi-jadwal .flatpickr-calendar {
-    transform: scale(2.0) translateY(-28%);
+    transform: scale(2.0);
+    animation: transform 0.3s ease-out;
 }
 
 
