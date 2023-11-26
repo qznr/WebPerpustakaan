@@ -1747,6 +1747,7 @@ nav .nav-link, .navbar-toggler {
     color: gold;
 }
 
+<<<<<<< HEAD
 @media (max-width: 1375px) {
     #pengembalian .cover {
         height: 1150px;
@@ -1792,6 +1793,23 @@ nav .nav-link, .navbar-toggler {
     }  
 }
 
+=======
+#pengembalian #onsite img {
+    width: 70px;
+    height: 70px;
+}
+
+#pengembalian #onsite h5 {
+    margin-top: 10px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+>>>>>>> d2d790224832cf84f651d13b6ebdc1f5fd006854
 
 
 /*---------------------------------------------------------PENGEMBALIAN RIWAYAT---------------------------------------------------------------*/
