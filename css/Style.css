@@ -1356,6 +1356,7 @@ nav .nav-link, .navbar-toggler {
 }
 
 #login .white-box{
+    margin-top: 5%;
     width: 1086px;
     height: 748px;
     content: "";
@@ -2038,7 +2039,7 @@ nav .nav-link, .navbar-toggler {
 }
 
 #register .white-box{
-    margin-top: 30%;
+    margin-top: 35%;
     /* top: 110%; */
     content: "";
     display: block;
@@ -2321,7 +2322,7 @@ nav .nav-link, .navbar-toggler {
 }
 
 #user-profile .white-box{
-    margin-top: 20%;
+    margin-top: 30%;
     width: 1252px;
     height: 1552px;
     flex-shrink: 0;
@@ -2484,6 +2485,7 @@ nav .nav-link, .navbar-toggler {
     height: 145vh;
 }
 #verifikasi .white-box {
+    margin-top: 5%;
     width: 1086px;
     height: 748px;
     flex-shrink: 0;
