@@ -560,6 +560,10 @@ nav .nav-link, .navbar-toggler {
 
 @media (max-width :1200px) {
     #detail-buku .text {
+        transform: translateY(-10%);
+    }
+
+    #detail-buku footer {
         transform: translateY(-13%);
     }
 
@@ -615,10 +619,6 @@ nav .nav-link, .navbar-toggler {
 
 #detail-buku .back {
     position: relative;
-    margin-top: -20%;
-    margin-left: 15%;
-    width: 320px;
-    height: 130px;
     /* background-color: red; */
 }
 
