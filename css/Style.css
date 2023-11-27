@@ -559,6 +559,10 @@ nav .nav-link, .navbar-toggler {
 
 @media (max-width :1200px) {
 
+    #backdrop {
+        display: none;
+    }
+
     #detail-buku .blue {
         position: relative;
         margin-top: 0%;
