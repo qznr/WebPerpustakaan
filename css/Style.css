@@ -547,7 +547,7 @@ nav .nav-link, .navbar-toggler {
     position: relative;
     margin-top: -25%;
     display: block;
-    transform: translateY(-15%);
+    transform: translate(-3%,-15%);
     /* background-color: #888; */
 }
 
