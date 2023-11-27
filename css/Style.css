@@ -575,16 +575,6 @@ nav .nav-link, .navbar-toggler {
         transform: translate(0,0);
 
     }
-
-    #backdrop {
-        display: none;
-    }
-
-
-    #detail-buku .popup .content {
-        width: 640px;
-        height: 515px;
-    }
 }
 
 #detail-buku .text {
@@ -695,6 +685,7 @@ nav .nav-link, .navbar-toggler {
 
 #detail-buku .popup .content h1 {
     font-size: 50px;
+    margin-top: 300px;
 }
 
 #detail-buku .popup .content .btn-2 {
@@ -726,7 +717,7 @@ nav .nav-link, .navbar-toggler {
     height: 8%;
     background: #222;
     color: #fff;
-    font-size: 5vw;
+    font-size: 50px;
     font-weight: 600;
     line-height: 45px;
     text-align: center;
@@ -743,11 +734,11 @@ nav .nav-link, .navbar-toggler {
 }
 
 #detail-buku #confirm .success {
+    position: absolute;
     width: 216.198px;
     height: 218px;
-    transform: translateX(-5%);
     flex-shrink: 0;
-    margin: 64px 150px 0px 180px;
+    transform: translate(-50%, 20%);
 }
 
 #detail-buku #confirm a .btn-2 {
@@ -772,6 +763,41 @@ nav .nav-link, .navbar-toggler {
 
 #detail-buku #confirm a .btn-2:hover {
     background-color: #000;
+}
+
+@media (max-width: 556px) {
+    #detail-buku .popup .content {
+        width: 90%;
+        height: 60%;
+        overflow-x: hidden;
+        border-radius: 20px;
+    }
+
+    #detail-buku .popup .content h1 {
+        font-size: 50px;
+    }
+
+    #detail-buku .popup .content .btn-2 {
+        width: 150px;
+        height: 70px;
+        font-size: 30px;
+        margin: 1% auto; /* Center the image horizontally */
+        display: block; /* Ensure it's a block-level element for margin auto to work */
+        position: absolute;
+        left: 50%;
+        top: 400px; /* Adjust the top position as needed */
+    }
+
+    #detail-buku .popup .close-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 2em;
+        line-height: 30px;
+    }
+
+    #detail-buku #confirm a .btn-2 {
+        font-size: 25px;
+    }
 }
 
 
