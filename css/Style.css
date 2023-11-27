@@ -553,19 +553,33 @@ nav .nav-link, .navbar-toggler {
 
 #detail-buku .coverbuku {
     position: absolute;
-    max-height: 560;
+    max-height: 560px;
     transform: translate(-150%,25%);
-
 }
 
 @media (max-width :1200px) {
-    #detail-buku .text {
-        transform: translateY(-10%);
+
+    #detail-buku .blue {
+        position: relative;
+        margin-top: 0%;
+        display: block;
+        transform: translate(0,0);
+        /* background-color: #888; */
     }
 
-    #detail-buku footer {
-        transform: translateY(-13%);
+    #detail-buku .coverbuku {
+        display: flex;
+        border: #000;
+        position: relative;
+        max-height: 560;
+        transform: translate(0,0);
+
     }
+
+    #backdrop {
+        display: none;
+    }
+
 
     #detail-buku .popup .content {
         width: 640px;
