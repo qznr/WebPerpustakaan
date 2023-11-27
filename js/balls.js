@@ -95,7 +95,7 @@ function handleCollision(ball1, ball2) {
 }
 
 // Create balls
-for (let i = 0; i < 6; i++) {
+for (let i = 0; i < 3; i++) {
     let validPosition = false;
     let x, y;
 
