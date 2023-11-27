@@ -547,7 +547,7 @@ nav .nav-link, .navbar-toggler {
     position: relative;
     margin-top: -25%;
     display: block;
-    transform: translateY(-10%);
+    transform: translateY(-15%);
     /* background-color: #888; */
 }
 
@@ -560,7 +560,7 @@ nav .nav-link, .navbar-toggler {
 
 @media (max-width :1200px) {
     #detail-buku .text {
-        transform: translateY(-8%);
+        transform: translateY(-13%);
     }
 
 }
