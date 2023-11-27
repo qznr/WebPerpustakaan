@@ -544,22 +544,29 @@ nav .nav-link, .navbar-toggler {
 
 /*---------------------------------------------------------DETAIL BUKU---------------------------------------------------------------*/
 #detail-buku .blue {
+    position: relative;
     margin-top: -25%;
-    position: flex;
+    display: block;
+    transform: translateY(-10%);
     /* background-color: #888; */
 }
 
 #detail-buku .coverbuku {
-    transform: translateY(-150%);
-    margin-left: 10%;
+    position: absolute;
+    max-height: 560;
+    transform: translate(-150%,25%);
+
+}
+
+@media (max-width :1200px) {
+    #detail-buku .text {
+        transform: translateY(-8%);
+    }
+
 }
 
 #detail-buku .text {
     position: relative;
-    margin-left: 100px;
-    width: 1520px;
-    height: 700px;
-    /* background-color: rgb(182, 182, 255); */
     font-family: EB Garamond;
 }
 
@@ -580,20 +587,9 @@ nav .nav-link, .navbar-toggler {
     font-size: 25px;
 }
 
-#detail-buku .moredetail {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin-top: -30%;
-    margin-left: 30%;
-    position: relative;
-    width: 1520px;
-    height: 100px;
-    /* background-color: red; */
-}
+
 
 #detail-buku .moredetail .detail {
-    width: 200px;
-    height: inherit;
     background-color: rgb(255, 255, 255);
     border: 2px black solid;
     font-family: EB Garamond;
@@ -610,6 +606,7 @@ nav .nav-link, .navbar-toggler {
 }
 
 #detail-buku .moredetail .btn {
+    height: 7.5rem;
     background-color: #082138;
     color: white;
     font-size: 25px;
