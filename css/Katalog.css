@@ -316,11 +316,15 @@
 }
 
 #confirm .success {
+    position: absolute;
     width: 216.198px;
     height: 218px;
-    transform: translateX(-5%);
     flex-shrink: 0;
-    margin: 64px 150px 0px 180px;
+    transform: translate(-50%, 20%);
+}
+
+#confirm .add {
+    margin-top: 300px;
 }
 
 #confirm a .btn-2 {
@@ -421,6 +425,10 @@
         border-radius: 20px;
     }
 
+    #confirm .content {
+        height: 60%;
+    }
+
     .popup .content #popup-image {
         min-width: 264px;
         max-width: 100%; /* Ensure the image does not exceed the parent container */
@@ -468,6 +476,15 @@
         position: absolute;
         left: 50%;
         top: 650px; /* Adjust the top position as needed */
+    }
+
+    #confirm .btn-2 {
+        margin-top: 20px;
+        top: 420px;
+    }
+
+    #confirm a .btn-2{
+        font-size: 25px;
     }
     
     .popup .content .btn-3 {
