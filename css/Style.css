@@ -567,6 +567,10 @@ nav .nav-link, .navbar-toggler {
         transform: translateY(-13%);
     }
 
+    #detail-buku .popup .content {
+        width: 640px;
+        height: 515px;
+    }
 }
 
 #detail-buku .text {
